@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import logoBlancTexte from './static/img/logo_texte_blanc.png'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='container1'>
+        <div className='container2'>
+          <div className='container3'>
+            <img src={logoBlancTexte} alt="Logo" className='logo' />
+            <h3 className='title'>Mon site est en cours de création !</h3>
+            <p>En attendant, n’hésitez pas à me contacter pour toute question ou prise de rendez-vous :</p>
+            <div className='contact'>
+              <a href='https://www.instagram.com/claire__aube/#' target='_blank' className='instagram'>
+                <p>Sur Instagram :</p>
+                <p>@claire__aube</p>
+              </a>
+              <a href='mailto:claireaube.accompagnement@gmail.com' className='instagram'>
+                <p>Par email :</p>
+                <p>claireaube.accompagnement@gmail.com</p>
+              </a>
+            </div>
+            <h4 className='title'>À très bientôt !</h4>
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
-
-export default App
