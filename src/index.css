@@ -15,9 +15,14 @@
   --typoMontserra: 'Montserrat', sans-serif;
 }
 
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
 body {
   font-family: var(--typoMontserra);
-  background-image: url('./static/img/flower.png');
+  background-color: var(--terracota);
   height: 100vh;
   margin: 0;
 }
@@ -27,35 +32,45 @@ body {
   width: 200px;
 }
 
-.title {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--typoTanPearl);
+  text-align: center;
+  text-wrap: balance;
 }
 
 p {
   font-family: var(--typoMontserra);
+  text-align: center;
+  text-wrap: balance;
 }
 
-.container1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.h-100 {
   height: 100vh;
 }
 
-.container2 {
-  padding: 24px;
+.w-100 {
+  width: 100%;
+}
+
+.containerCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerConstruction {
+  padding: 1em 2em;
   padding-top: 0px;
   background-color: var(--terracota);
   color: var(--blanc);
   display: inline-block;
   border-radius: 10px;
-}
-
-.container3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .contact {
@@ -65,8 +80,51 @@ p {
   width: 100%;
 }
 
-.instagram {
+.contact .containerCenter {
   padding: 14px;
   color: var(--blanc);
   text-decoration: none;
+  gap: 4px;
+}
+
+.contact .icon {
+  height: 25px;
+  width: 25px;
+}
+
+.contact p {
+  margin: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+  .containerCenter .contact {
+    flex-direction: column;
+  }
+
+  .containerCenter.h-100 {
+    padding: 2em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .containerCenter.h-100 {
+    padding: 0em;
+  }
+
+  .containerConstruction {
+    padding: 0em;
+  }
+
+  .containerCenter {
+    padding: 0.5em;
+  }
+
+}
+@media screen and (min-width: 800px) {
+  body {
+    background-image: url('./static/img/flower.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }

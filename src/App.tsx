@@ -1,22 +1,28 @@
-import logoBlancTexte from './static/img/logo_texte_blanc.png'
+import logoBlancTexte from './static/img/logo_text_white.png'
+import instagramLogo from './static/img/instagram.svg'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 
 export default function App() {
   return (
     <>
-      <div className='container1'>
-        <div className='container2'>
-          <div className='container3'>
-            <img src={logoBlancTexte} alt="Logo" className='logo' />
-            <h3 className='title'>Mon site est en cours de création !</h3>
-            <p>En attendant, n’hésitez pas à me contacter pour toute question ou prise de rendez-vous :</p>
-            <div className='contact'>
-              <a href='https://www.instagram.com/claire__aube/#' target='_blank' className='instagram'>
-                <p>Sur Instagram :</p>
-                <p>@claire__aube</p>
+      <div className='containerCenter h-100'>
+        <div className='containerConstruction'>
+          <div className='containerCenter'>
+            <img src={logoBlancTexte} alt="Logo Claire Aube" className='logo' />
+            <h3 className='title'>Mon site est en cours de création&nbsp;!</h3>
+            <p>En attendant, n’hésitez pas à me contacter pour toute question ou prise de rendez-vous&nbsp;:</p>
+            <div className='containerCenter contact'>
+              <a href='https://www.instagram.com/claire__aube/#' target='_blank' className='containerCenter w-100'>
+                <img src={instagramLogo} alt="Logo Instagram" className='icon' />
+                <p>Sur Instagram&nbsp;:</p>
+                <b>@claire__aube</b>
               </a>
-              <a href='mailto:claireaube.accompagnement@gmail.com' className='instagram'>
-                <p>Par email :</p>
-                <p>claireaube.accompagnement@gmail.com</p>
+              <a href='mailto:claireaube.accompagnement@gmail.com' className='containerCenter w-100'>
+                <FontAwesomeIcon icon={faEnvelope} className='icon' />
+                <p>Par email&nbsp;:</p>
+                <b className='bold'>claireaube.accompagnement@gmail.com</b>
               </a>
             </div>
             <h4 className='title'>À très bientôt !</h4>
