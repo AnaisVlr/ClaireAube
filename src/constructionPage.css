@@ -56,7 +56,7 @@ div.container.contact.container p{
 
 @media screen and (min-width: 800px) {
   body {
-    background-image: url('./public/img/flower.webp');
+    background-image: url('./assets/img/flower.webp');
     background-repeat: no-repeat;
     background-size: cover;
   }

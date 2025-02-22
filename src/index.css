@@ -2,8 +2,8 @@
 @font-face {
   font-family: 'Tan Pearl';
   src: 
-    url('/fonts/tan-pearl.woff2') format('woff2'),
-    url('./public/font/tan-pearl.otf') format('opentype');
+    url('./assets/fonts/tan-pearl.woff2') format('woff2'),
+    url('./assets/fonts/tan-pearl.otf') format('opentype');
   font-display: swap;
 }
 

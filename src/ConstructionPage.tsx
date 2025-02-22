@@ -1,4 +1,5 @@
 import './constructionPage.css'
+import logoWhite from './assets/img/logo_text_white.webp'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
@@ -8,7 +9,7 @@ export default function ConstructionPage() {
   return (
     <>
       <div className='container main'>
-        <img src='./public/img/logo_text_white.webp' alt="Logo Claire Aube" className='logo' loading="lazy"/>
+        <img src={logoWhite} alt="Logo Claire Aube" className='logo' loading="lazy"/>
         <h3>Mon site est en cours de création&nbsp;!</h3>
         <p>En attendant, n’hésitez pas à me contacter pour toute question ou prise de rendez-vous&nbsp;:</p>
         <div className='container g-1'>
