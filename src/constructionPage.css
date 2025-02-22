@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container.main {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 100%;
+}
+
+.logo {
+  height: 200px;
+  width: 200px;
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-family: var(--typoTanPearl);
+}
+
+h4 {
+  font-size: 1rem;
+  font-family: var(--typoTanPearl);
+}
+
+p, h3, h4 {
+  text-align: center;
+}
+
+.mail {
+  font-size: 0.90rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+div.container.contact{
+  gap: 0.50rem;
+  padding: 0.50rem;
+  width: 100%;
+}
+
+div.container.contact.container p{
+  margin: 0px;
+}
+
+.g-1 {
+  gap: 1rem;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 800px) {
+  body {
+    background-image: url('./public/img/flower.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container.main {
+    padding: 0rem 2rem;
+    height: auto;
+    background-color: var(--terracota);
+    border-radius: 0.5rem;
+  }
+
+  .container.g-1 {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
