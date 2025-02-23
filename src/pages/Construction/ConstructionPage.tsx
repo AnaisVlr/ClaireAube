@@ -1,9 +1,10 @@
 import './constructionPage.css'
-import logoWhite from './assets/img/logo_text_white.webp'
+import logoWhite from '../../assets/img/logo_text_white.webp'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { NavLink } from 'react-router'
 
 export default function ConstructionPage() {
   return (
@@ -12,6 +13,7 @@ export default function ConstructionPage() {
         <img src={logoWhite} alt="Logo Claire Aube" className='logo' loading="lazy"/>
         <h3>Mon site est en cours de création&nbsp;!</h3>
         <p>En attendant, n’hésitez pas à me contacter pour toute question ou prise de rendez-vous&nbsp;:</p>
+        <NavLink to="/concerts">All Concerts</NavLink>
         <div className='container g-1'>
           <div className='container contact'>
             <FontAwesomeIcon icon={faInstagram} className='icon' />
