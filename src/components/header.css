@@ -1,0 +1,59 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  padding: 1rem;
+  font-family: var(--typoTanPearl);
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+.navMenu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.nav-active{
+  text-decoration: underline;
+}
+
+.contact-button{
+  padding: 0.25rem;
+  background-color: var(--terracota);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-label {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: 15;
+  border-radius: 5px;
+  display: none;
+  flex-direction: column;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu a {
+  padding-top: 0.5rem;
+  text-decoration: none;
+  transition: background 0.3s;
+}
