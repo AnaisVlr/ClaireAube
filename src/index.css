@@ -20,9 +20,9 @@
 
 body {
   font-family: var(--typoMontserra);
-  background-color: var(--terracota);
-  color: var(--blanc);
-  font-size: 16px;
+  background-color: var(--blanc);
+  color: var(--terracota);
+  font-size: 14px;
   margin: 0px;
   height: 100vh;
 }
@@ -32,6 +32,6 @@ body {
 }
 
 a {
-  color: var(--blanc);
+  color: var(--terracota);
   text-decoration: none;
 }

@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router";
 
 import './header.css';
-import logoWhite from '../assets/img/logo_text_white.webp'
+import logoTerracota from '../assets/img/logo_terracota.webp'
 
 export default function Header() {
   const navItems = [
@@ -25,7 +25,7 @@ export default function Header() {
     <>
     <header className="header">
       <Link to="/">
-      <img src={logoWhite} alt="Logo Claire Aube" className='logo' loading="lazy"/>
+      <img src={logoTerracota} alt="Logo Claire Aube" className='logo' loading="lazy"/>
       </Link>
       <nav className="navMenu">
           {navItems.map((item) => (
@@ -54,11 +54,13 @@ export default function Header() {
             )
           ))}
       </nav>
-      <Link to="/contact">
-        <button className="contact-button">
-          Me contacter
-        </button>
-      </Link>
+      <div className="contact-button">
+        <Link to="/contact">
+          <button>
+            Me contacter
+          </button>
+        </Link>
+      </div>
     </header>
   </>
   );
