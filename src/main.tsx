@@ -5,6 +5,7 @@ import CareRituals from './pages/Care/CareRituals.tsx';
 import Consultations from './pages/Care/Consultations.tsx';
 import Guidelines from './pages/Care/Guidelines.tsx';
 import Header from './components/Header.tsx';
+import Footer from './components/Footer.tsx';
 
 import './index.css'
 
@@ -17,5 +18,6 @@ createRoot(document.getElementById('root')!).render(
       <Route path="/guidances" element={<Guidelines />} />
       <Route path="/soin-rituels" element={<CareRituals />} />
     </Routes>
+    <Footer/>
   </BrowserRouter>,
 )

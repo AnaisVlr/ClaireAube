@@ -46,14 +46,14 @@
 }
 
 .dropdown-menu {
-  position: absolute;
-  left: 0;
-  top: 15;
+  position: fixed;
   border-radius: 5px;
   display: none;
   flex-direction: column;
   min-width: 200px;
   z-index: 1000;
+  background-color: var(--blanc);
+  padding: 1rem;
 }
 
 .dropdown:hover .dropdown-menu {

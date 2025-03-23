@@ -1,0 +1,42 @@
+.care-rituals .banner {
+  padding-top: 6rem;
+  background-color: var(--terracota);
+  color: var(--blanc);
+}
+
+.care-rituals h2 {
+  font-family: var(--typoTanPearl);
+  margin: 0;
+}
+
+.care-rituals .introduction {
+  padding: 1rem 6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.care-rituals .introduction img {
+  height: 20rem;
+  width: auto;
+}
+
+.care-rituals .introduction-suite {
+  background-color: var(--rose);
+  color: var(--blanc);
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 2rem 16rem;
+}
+
+.care-rituals .rituals-for {
+  padding: 1rem 6rem;
+}
+
+.rituals-essence {
+  padding: 1rem 6rem;
+  background-image: url('../../assets/img//fond_mur_terracota.webp');
+  background-size: cover;
+  color: var(--blanc);
+}

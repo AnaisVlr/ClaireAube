@@ -1,0 +1,122 @@
+footer {
+  padding: 2rem 6rem 0.5rem 6rem;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer .logo {
+  height: 13rem;
+  width: 13rem;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.head h2 {
+  font-family: var(--typoTanPearl);
+  margin: 0;
+}
+
+.head .head-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.instagram-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.instagram-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+  padding-left: 0.25rem;
+}
+
+.instagram-feed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.instagram-feed-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.instagram-feed-item {
+  height: 4rem;
+  width: 4rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact button {
+  font-weight: 700;
+  padding: 0.5rem 5rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.contact button:hover {
+  background-color: var(--blanc);
+  color: var(--terracota);
+}
+
+.contact-ways {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.contact-ways button {
+  border: var(--terracota) 0.20em solid;
+  border-radius: 10px;
+  background-color: var(--blanc);
+  padding: 0.25rem;
+}
+
+.contact-ways .icon {
+  color: var(--terracota);
+  height: 1.5rem;
+  width: 1.5rem;
+}
