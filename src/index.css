@@ -25,6 +25,8 @@ body {
   font-size: 14px;
   margin: 0px;
   height: 100vh;
+
+  list-style-image : url('../src/assets/img/icons/Icons.svg');
 }
 
 #root {

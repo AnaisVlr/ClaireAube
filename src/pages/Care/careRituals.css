@@ -1,7 +1,19 @@
+/* Bannière */
 .care-rituals .banner {
-  padding-top: 6rem;
-  background-color: var(--terracota);
+  padding: 6rem 0rem 1.5rem 0rem;
   color: var(--blanc);
+  background-image: url('../../assets/img/soins-rituels/rituals-banner.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.care-rituals .banner-text {
+  font-size: 1.5rem;
+  padding: 0rem 6rem;
+}
+
+.care-rituals .banner-text p {
+  margin: 0;
 }
 
 .care-rituals h2 {
@@ -9,17 +21,25 @@
   margin: 0;
 }
 
+/* Introduction */
+
 .care-rituals .introduction {
-  padding: 1rem 6rem;
+  padding: 2rem 12rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 20px;
+  justify-content: center;
+  gap: 4rem;
 }
 
 .care-rituals .introduction img {
-  height: 20rem;
+  height: 25rem;
   width: auto;
+  border-radius: 4px;
+}
+
+.care-rituals .introduction p {
+  margin: 0;
 }
 
 .care-rituals .introduction-suite {
@@ -28,7 +48,9 @@
   padding: 1rem;
   border-radius: 4px;
   margin: 2rem 16rem;
+  text-align: center;
 }
+
 
 .care-rituals .rituals-for {
   padding: 1rem 6rem;
@@ -39,4 +61,61 @@
   background-image: url('../../assets/img//fond_mur_terracota.webp');
   background-size: cover;
   color: var(--blanc);
+}
+
+
+/* Description des rituels */
+.rituals-description {
+  padding: 1rem 6rem;
+  background-color: var(--rose);
+  color: var(--blanc);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rituals-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.ritual-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.ritual-item img {
+  width: 15em;
+  height: auto;
+}
+
+.ritual-category {
+  border: 1px solid var(--blanc);
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.season-ritual {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  gap: 1rem;
+  background-color: var(--vert);
+}
+
+.season-ritual img {
+  width: 20rem;
+  height: auto;
+}
+
+.season-ritual .ritual-item img{
+  width: 10em;
+  height: auto;
 }
