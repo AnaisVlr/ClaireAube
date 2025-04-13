@@ -23,11 +23,11 @@ export default function Header() {
 
   return (
     <>
-    <header className="header">
+    <header className="header flex-row align-center p-50 bg-white">
       <Link to="/">
       <img src={logoTerracota} alt="Logo Claire Aube" className='logo' loading="lazy"/>
       </Link>
-      <nav className="navMenu">
+      <nav className="navMenu flex-row align-center justify-center">
           {navItems.map((item) => (
             item.children ? (
               <div className="dropdown" key={item.label}>
@@ -56,9 +56,7 @@ export default function Header() {
       </nav>
       <div className="contact-button">
         <Link to="/contact">
-          <button>
             Me contacter
-          </button>
         </Link>
       </div>
     </header>

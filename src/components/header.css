@@ -1,15 +1,9 @@
 .header{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   top: 0;
-  padding: 0.5rem;
   font-family: var(--typoTanPearl);
-  overflow-x: hidden;
-  z-index: 1000;
   position: fixed;
-  width: 100%;
-  background-color: var(--blanc);
+  z-index: 1000;
+  width: -webkit-fill-available !important;
 }
 
 .logo {
@@ -18,10 +12,6 @@
 }
 
 .navMenu{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   gap: 2rem;
 }
@@ -30,9 +20,14 @@
   text-decoration: underline;
 }
 
-.contact-button{
-  padding: 0.25rem;
+.contact-button a{
+  padding: 0.5rem;
   background-color: var(--terracota);
+  color: var(--blanc);
+  border-radius: 4px;
+  font-family: var(--typoMontserra);
+  white-space: nowrap;
+  font-weight: 500;
 }
 
 .dropdown {
@@ -64,14 +59,4 @@
   padding-top: 0.5rem;
   text-decoration: none;
   transition: background 0.3s;
-}
-button {
-  background-color: var(--terracota);
-  color: var(--blanc);
-  border: none;
-  height: fit-content;
-  border-radius: 3px;
-  padding: 0.5rem;
-  cursor: pointer;
-  font-family: var(--typoMontserra);
 }

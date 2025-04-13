@@ -2,8 +2,8 @@
 @font-face {
   font-family: 'Tan Pearl';
   src: 
-    url('./assets/fonts/tan-pearl.woff2') format('woff2'),
-    url('./assets/fonts/tan-pearl.otf') format('opentype');
+  url('./assets/fonts/tan-pearl.woff2') format('woff2'),
+  url('./assets/fonts/tan-pearl.otf') format('opentype');
   font-display: swap;
 }
 
@@ -18,6 +18,10 @@
   --typoMontserra: 'Montserrat', sans-serif;
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
   font-family: var(--typoMontserra);
   background-color: var(--blanc);
@@ -27,6 +31,12 @@ body {
   height: 100vh;
 
   list-style-image : url('../src/assets/img/icons/Icons.svg');
+
+  position: absolute;
+  top: 3rem;
+  bottom: 0;
+  width: 100%;
+  overflow: auto;
 }
 
 #root {
@@ -36,4 +46,143 @@ body {
 a {
   color: var(--terracota);
   text-decoration: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0px; /* largeur de la scrollbar verticale */
+  background: transparent;
+}
+
+/* Padding */
+.px-6 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.py-2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.p-25 {
+  padding: 0.25rem;
+}
+.p-50 {
+  padding: 0.5rem;
+}
+.p-1 {
+  padding: 1rem;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
+
+/* Flex */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Alignement */
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+/* Justification */
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+/* Gap */
+.gap-25 {
+  gap: 0.25rem;
+}
+.gap-50 {
+  gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+
+/* Boutons */
+button, .btn {
+  font-family: var(--typoMontserra);
+  font-weight: 500;
+  border-radius: 4px;
+  border: none;
+}
+
+.btn-sm {
+  padding: 0.5rem;
+}
+
+.btn-lg {
+  padding: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--terracota);
+  color: var(--blanc);
+}
+
+.btn-secondary {
+  background-color: var(--blanc);
+  color: var(--terracota);
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  color: var(--terracota);
+  border: 1px solid var(--terracota);
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  color: var(--blanc);
+  border: 1px solid var(--blanc);
+}
+
+/* Background color */
+.bg-white {
+  background-color: var(--blanc);
+}
+.bg-terracota {
+  background-color: var(--terracota);
 }

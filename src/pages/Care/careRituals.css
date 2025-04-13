@@ -1,78 +1,91 @@
+.care-rituals h4 {
+  font-family: var(--typoTanPearl);
+  font-size: 1.25rem;
+  margin: 0;
+}
+
 /* Bannière */
 .care-rituals .banner {
-  padding: 6rem 0rem 1.5rem 0rem;
+  padding: 5rem 0rem 0rem 0rem;
   color: var(--blanc);
   background-image: url('../../assets/img/soins-rituels/rituals-banner.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.care-rituals .banner-text {
+.banner-header-title {
   font-size: 1.5rem;
-  padding: 0rem 6rem;
 }
 
-.care-rituals .banner-text p {
-  margin: 0;
-}
-
-.care-rituals h2 {
+.banner-header-title h2 {
   font-family: var(--typoTanPearl);
   margin: 0;
 }
 
-/* Introduction */
-
-.care-rituals .introduction {
-  padding: 2rem 12rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 4rem;
+.banner-header-title p {
+  margin: 0;
 }
 
-.care-rituals .introduction img {
-  height: 25rem;
+.banner-text {
+  background-color: rgba(32, 18, 18, 0.5);
+  color: var(--blanc);
+  padding: 1rem;
+  margin: 2rem 4rem 0rem 4rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Introduction */
+
+.introduction {
+  padding: 2rem 6rem;
+  gap: 4rem;
+  background-color: #201212;
+  color: var(--blanc);
+}
+
+.rituals-for {
+  background-color: rgba(229, 133, 92, 0.15);
+  padding: 1rem;
+  padding-bottom: 0rem;
+  border-radius: 4px;
+}
+
+.introduction-text {
+  text-align: center;
+}
+
+/* Essence des rituels */
+
+.rituals-essence {
+  background-image: url('../../assets/img//fond_mur_terracota.webp');
+  background-size: cover;
+  color: var(--blanc);
+  text-align: center;
+}
+
+/* Possibilités */
+.rituals-possibilities {
+  padding: 3rem 6rem;
+  color: var(--terracota);
+  justify-content: space-around;
+}
+
+.rituals-possibilities img {
+  height: 23rem;
   width: auto;
   border-radius: 4px;
 }
 
-.care-rituals .introduction p {
-  margin: 0;
-}
-
-.care-rituals .introduction-suite {
-  background-color: var(--rose);
-  color: var(--blanc);
-  padding: 1rem;
-  border-radius: 4px;
-  margin: 2rem 16rem;
-  text-align: center;
-}
-
-
-.care-rituals .rituals-for {
-  padding: 1rem 6rem;
-}
-
-.rituals-essence {
-  padding: 1rem 6rem;
-  background-image: url('../../assets/img//fond_mur_terracota.webp');
-  background-size: cover;
-  color: var(--blanc);
-}
-
-
 /* Description des rituels */
 .rituals-description {
-  padding: 1rem 6rem;
-  background-color: var(--rose);
+  background-color: var(--terracota);
   color: var(--blanc);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+}
+
+.rituals-description h3 {
+  font-size: 1.75rem;
+  margin: 0;
 }
 
 .rituals-line {
@@ -80,42 +93,106 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: top;
+  gap: 2rem;
 }
 
 .ritual-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 1rem;
+  justify-content: flex-start;
+  padding: 0.5rem;
   text-align: center;
 }
 
 .ritual-item img {
-  width: 15em;
-  height: auto;
+  width: auto;
+  height: 15rem;
+  border-radius: 4px;
+}
+
+.ritual-item h6 {
+  font-family: var(--typoTanPearl);
+  font-size: 1rem;
+  margin: 0;
+  padding: 0.5rem 0rem;
+}
+
+.ritual-item button {
+  background-color: var(--blanc);
+  color: var(--terracota);
+  font-weight: 500;
 }
 
 .ritual-category {
   border: 1px solid var(--blanc);
   border-radius: 4px;
   padding: 1rem;
+  font-size: 1.25rem;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .season-ritual {
   display: flex;
   flex-direction: row;
   align-items: top;
-  gap: 1rem;
-  background-color: var(--vert);
+  background-color: var(--blanc);
+  color: var(--terracota);
+  margin: 0rem 10rem;
+  border-radius: 4px;
 }
 
 .season-ritual img {
-  width: 20rem;
+  width: 15rem;
   height: auto;
+  border-radius: 4px 0px 0px 4px;
 }
 
-.season-ritual .ritual-item img{
-  width: 10em;
+.season-ritual-description {
+  padding: 2rem;
+}
+
+.rituals-personalized p {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+/* Explications soins */
+.explication-rituals {
+  background : linear-gradient(var(--terracota), var(--blanc));
+}
+
+.explication-rituals p {
+  margin: 2rem;
+}
+
+/* Espace de soin */
+.space-care {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.space-care-description {
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.space-care-description img {
+  width: 20rem;
+  height: auto;
+  border-radius: 4px;
+}
+
+.space-care-description p {
+  margin: 0;
+}
+
+/* Contact */
+.rituals-contact-img {
+  width: 20rem;
   height: auto;
 }

@@ -27,15 +27,15 @@ export default function HomePage() {
 
   return (
     <>
-      <div className='container'>
+      <div className='flex-column'>
         <div className="imageHomePage">
           <img src={FlowerImg} alt="Picture background home page" loading="lazy" />
         </div>
-        <div className="presentation-container">
+        <div className="presentation-container flex-row align-center justify-between">
           <div className="pictureProfile">
             <img src={FlowerImg} alt="Photo de Claire" loading="lazy" />
           </div>
-          <div className="presentation-text-container">
+          <div className="flex-column gap-1">
             <div className="presentation-title">Bienvenue</div>
             <div>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate non quidem
@@ -50,17 +50,17 @@ export default function HomePage() {
             </div>
             <div className="presentation-signature">Claire</div>
             <div>
-              <button>Je prends rendez-vous !</button>
+              <button className="btn-primary btn-sm">Je prends rendez-vous !</button>
             </div>
           </div>
         </div>
-        <div className="citation-container">
+        <div className="citation-container flex-row align-center justify-center">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis culpa saepe debitis.
           Aut obcaecati pariatur animi quam cupiditate!
         </div>
         <div className="prestations-container">
           <div className="prestations-title">Mes prestations</div>
-          <div className="prestations-list">
+          <div className="flex-row align-center justify-center gap-2">
             {prestationItems.map((prestation) => (
               <div className={prestation.class} key={prestation.label}>
                 <div className="prestations-item-inner">
@@ -70,7 +70,7 @@ export default function HomePage() {
                   <div className="prestations-item-back">
                     <div className="prestations-item-title">{prestation.label}</div>
                     <p>{prestation.description}</p>
-                    <a href={prestation.href} className="prestations-item-button">En savoir plus</a>
+                    <a href={prestation.href} className="btn btn-sm btn-secondary">En savoir plus</a>
                   </div>
                 </div>
               </div>
