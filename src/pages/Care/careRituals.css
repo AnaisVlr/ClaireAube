@@ -1,6 +1,4 @@
 .care-rituals h4 {
-  font-family: var(--typoTanPearl);
-  font-size: 1.25rem;
   margin: 0;
 }
 
@@ -86,6 +84,7 @@
 .rituals-description h3 {
   font-size: 1.75rem;
   margin: 0;
+  font-weight: 500;
 }
 
 .rituals-line {
@@ -160,7 +159,7 @@
 
 /* Explications soins */
 .explication-rituals {
-  background : linear-gradient(var(--terracota), var(--blanc));
+  /* background : linear-gradient(var(--terracota), var(--blanc)); */
 }
 
 .explication-rituals p {
@@ -193,6 +192,6 @@
 
 /* Contact */
 .rituals-contact-img {
-  width: 20rem;
+  width: 10rem;
   height: auto;
 }

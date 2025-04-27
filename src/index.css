@@ -7,6 +7,38 @@
   font-display: swap;
 }
 
+.fs-1 {
+  font-size: 1rem;
+}
+
+.fs-1-25 {
+  font-size: 1.25rem;
+}
+
+.fs-1-5 {
+  font-size: 1.5rem;
+}
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.ff-basic {
+  font-family: var(--typoMontserra);
+}
+
+.ff-title {
+  font-family: var(--typoTanPearl);
+}
+
 /* Properties */
 :root {
   --terracota: #552710;
@@ -48,10 +80,28 @@ a {
   text-decoration: none;
 }
 
+.fit-content {
+  width: fit-content;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 0px; /* largeur de la scrollbar verticale */
   background: transparent;
+}
+
+/* Alignement texte */
+.text-center {
+  text-align: center;
+}
+
+/* Margin */
+.m-0 {
+  margin: 0px;
+}
+
+.m-1 {
+  margin: 1rem;
 }
 
 /* Padding */
@@ -65,6 +115,10 @@ a {
   padding-bottom: 2rem;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .p-25 {
   padding: 0.25rem;
 }
@@ -75,8 +129,20 @@ a {
   padding: 1rem;
 }
 
+.pt-1 {
+  padding-top: 1rem;
+}
+
 .pt-2 {
   padding-top: 2rem;
+}
+
+.pt-5 {
+  padding-top: 5rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
 }
 
 
@@ -139,6 +205,11 @@ a {
 }
 .gap-2 {
   gap: 2rem;
+}
+
+/* Radius */
+.br-4 {
+  border-radius: 4px;
 }
 
 /* Boutons */

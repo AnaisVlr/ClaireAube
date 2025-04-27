@@ -42,7 +42,7 @@ export default function CareRituals() {
             Pour honorer votre incarnation humaine.
           </p>
           <div className='rituals-for'>
-            <h4>Des rituels pour ...</h4>
+            <h4 className='fs-1-25 fw-500'>Des rituels pour ...</h4>
             <ul>
               <li>Prendre soin de soi</li>
               <li>Renouer avec sa beauté originelle</li>
@@ -65,7 +65,7 @@ export default function CareRituals() {
       {/* Essence des rituels */}
 
       <div className="rituals-essence px-6 py-2">
-        <h4>L'essence des soins rituels</h4>
+        <h4 className='fs-1-25 ff-title'>L'essence des soins rituels</h4>
         <p>
           Tous mes soins font appel à la sagesse de la Terre et du vivant. <br />
           Ils allient la Médecine des plantes, des abeilles, du son, de l’eau, des minéraux... et l’art du toucher sacré.<br />
@@ -77,7 +77,7 @@ export default function CareRituals() {
       {/* Possibilités */}
       <div className="rituals-possibilities px-6 py-2 flex-row">
         <div>
-          <h4>Selon le soin, vous pourrez vous voir proposer :</h4>
+          <h4 className='fs-1'>Selon le soin, vous pourrez vous voir proposer :</h4>
           <ul>
             <li>De la visualisation</li>
             <li>Du massage</li>
@@ -244,8 +244,8 @@ export default function CareRituals() {
         </p>
       </div>
 
-      <div className="flex-column align-center justify-center">
-        <h4>Mon espace de soin :</h4>
+      <div className="flex-column align-center justify-center px-6">
+        <h4 className='fs-1-25 ff-title'>Mon espace de soin :</h4>
         <div className="space-care-description flex">
           <img src={flowerWall} alt="Photo de l'espace de soin" loading="lazy" />
           <p>
@@ -256,7 +256,7 @@ export default function CareRituals() {
         </div>
       </div>
 
-      <div className="flex-row align-center justify-between px-6 py-2">
+      <div className="flex-row align-center justify-center gap-1 px-6 py-2">
         <img src={flowerHand} alt="Logo Claire Aube" loading="lazy" className='rituals-contact-img'/>
         <div className="flex-column align-center justify-center gap-2">
           <p>

@@ -1,0 +1,30 @@
+.calendly-container {
+  background-color: hsl(20, 68%, 20%, 0.2);
+  margin: 0.5rem;
+  border-radius: 4px;
+}
+
+.form-contact {
+  background-color: hsl(20, 68%, 20%, 0.5);
+  color: var(--blanc);
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+.form-contact input, .form-contact textarea, .form-contact input[type="checkbox"] {
+  background-color: var(--blanc);
+  color: hsl(20, 68%, 20%, 0.7);
+  border: none;
+  border-radius: 4px;
+  padding: 0.4rem;
+  font-family: var(--typoMontserra);
+}
+
+.form-contact input:focus, .form-contact textarea:focus {
+  outline-color: hsl(20, 68%, 20%);
+  outline-style: solid;
+}
+
+.form-contact-label {
+  font-weight: 500;
+}
