@@ -106,9 +106,8 @@ export default function CareRituals() {
             <img src={poitrine} alt="" loading="lazy" className="rituel" />
             <h6>Rituel de la poitrine et du coeur</h6>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptates,
-              sint cupiditate culpa, vitae voluptas excepturi vel et beatae fugiat eos maiores
-              iste soluta nisi! Nihil soluta labore sequi voluptas.
+              Un rituel pour honorer sa poitrine, prendre soin de ses émotions,
+               ses relations, et se reconnecter avec son coeur.
             </p>
             <button className='btn-sm btn-secondary'>En savoir +</button>
           </div>
@@ -118,9 +117,8 @@ export default function CareRituals() {
             <img src={matri} alt="" loading="lazy" className="rituel" />
             <h6>Rituel Matricia</h6>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptates,
-              sint cupiditate culpa, vitae voluptas excepturi vel et beatae fugiat eos maiores
-              iste soluta nisi! Nihil soluta labore sequi voluptas.
+              Un soin de libération des mémoires utérines, et de soutien aux maux et pathologies
+              de l'utérus.
             </p>
             <button className='btn-sm btn-secondary'>En savoir +</button>
           </div>
@@ -130,9 +128,8 @@ export default function CareRituals() {
             <img src={flowerHand} alt="" loading="lazy" className="rituel" />
             <h6>Rituel Chrysalide</h6>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptates,
-              sint cupiditate culpa, vitae voluptas excepturi vel et beatae fugiat eos maiores
-              iste soluta nisi! Nihil soluta labore sequi voluptas.
+              Un rituel de passage et de métamorphose? Pour célébrer ses transitions de vie, 
+              clore un étape et en ouvrir une nouvelle. Un espace où est sacralisée la renaissance de l'être.
             </p>
             <button className='btn-sm btn-secondary'>En savoir +</button>
           </div>
@@ -149,9 +146,8 @@ export default function CareRituals() {
             <img src={matronae} alt="" loading="lazy" className="rituel" />
             <h6>Rituel des Matronae</h6>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptates,
-              sint cupiditate culpa, vitae voluptas excepturi vel et beatae fugiat eos maiores
-              iste soluta nisi! Nihil soluta labore sequi voluptas.
+              Inspiré de nos traditions européennes et du savoir des Matrones, les accoucheuses
+              traditionnelles, pour prendre soin de la jeune maman en post-partum immédiat.
             </p>
             <button className='btn-sm btn-secondary'>En savoir +</button>
           </div>
@@ -161,9 +157,8 @@ export default function CareRituals() {
             <img src={flowerHand} alt="" loading="lazy" className="rituel" />
             <h6>Rituel du bain des Relevailles</h6>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptates,
-              sint cupiditate culpa, vitae voluptas excepturi vel et beatae fugiat eos maiores
-              iste soluta nisi! Nihil soluta labore sequi voluptas.
+              Un rituel pour clôturer symboliquement la fin du "mois d'or", et officialiser le
+               retour au monde de la jeune maman.
             </p>
             <button className='btn-sm btn-secondary'>En savoir +</button>
           </div>
@@ -214,9 +209,8 @@ export default function CareRituals() {
               <img src={gardienTerre} alt="" loading="lazy" className="rituel" />
               <h6>Rituel des Gardiens de la Terre</h6>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptates,
-                sint cupiditate culpa, vitae voluptas excepturi vel et beatae fugiat eos maiores
-                iste soluta nisi! Nihil soluta labore sequi voluptas.
+                Un soin botanique, de beauté et bien être du visage et du buste, selon vos besoins physiques,
+                 psychiques et émotionnels.
               </p>
               <button className='btn-sm btn-secondary'>En savoir +</button>
             </div>
@@ -225,9 +219,9 @@ export default function CareRituals() {
               <img src={onctions} alt="" loading="lazy" className="rituel" />
               <h6>Rituel Onctions Sacrées</h6>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptates,
-                sint cupiditate culpa, vitae voluptas excepturi vel et beatae fugiat eos maiores
-                iste soluta nisi! Nihil soluta labore sequi voluptas.
+                Un rituel en deux temps, à la découverte de votre oction sacrée thérapeutique. Un soin 
+                qui place l'aromathérapie vibratoire et sprirituelle au service de votre évolution 
+                personnelle.
               </p>
               <button className='btn-sm btn-secondary'>En savoir +</button>
             </div>

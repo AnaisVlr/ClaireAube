@@ -6,21 +6,21 @@ export default function HomePage() {
     { label: "Consultations", 
       href: "/consultations", 
       class: "prestations-item consultations-picture",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+      description: "Un accompagnement qui peut autant porter sur des problématiques physiques, qu'émotionnelles et psychiques."
     },
     { label: "Guidances", 
       href: "/guidances", 
       class: "prestations-item guidances-picture",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+      description: "Deux voies d'exploration, deux outils d'introspection différents, pour éclairer vos chemins et mettre du mouvement dans vos pèlerinages personnels."
     },
     { label: "Soins rituels", 
       href: "/soin-rituels", 
-      class: "prestations-item services-picture",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+      class: "prestations-item soins-picture",
+      description: "Plus que des soins, de vrais rituels transformateurs. Des espaces vibrants et magiques pour honorer vos corps et soutenir les transformations."
     },
     { label: "Autres services", 
       href: "/autre-services", 
-      class: "prestations-item soins-picture",
+      class: "prestations-item services-picture",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
   ];
@@ -38,15 +38,17 @@ export default function HomePage() {
           <div className="flex-column gap-1">
             <div className="presentation-title">Bienvenue</div>
             <div>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate non quidem
-              voluptates unde ducimus vero velit quae quaerat in eum dolorem sequi veniam perferendis
-              praesentium, accusamus temporibus architecto quam quis?
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate non quidem
-              voluptates unde ducimus vero velit quae quaerat in eum dolorem sequi veniam perferendis
-              praesentium, accusamus temporibus architecto quam quis?
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate non quidem
-              voluptates unde ducimus vero velit quae quaerat in eum dolorem sequi veniam perferendis
-              praesentium, accusamus temporibus architecto quam quis?
+            Je vous accompagne avec douceur, empathie, bienveillance… mais aussi avec l’éthique profonde
+             de vous transmettre des savoirs utiles et justes pour vous. De vous aider à vous 
+             réapproprier votre souveraineté dans vos parcours de santé et de mieux-être. 
+             Je crée des espaces sacrés où vous pouvez vous déposer en toute confiance, vous laisser être,
+              vous retrouver. Des parenthèses suspendues pour aller à la rencontre de votre magie intérieure 
+              et de vos ressources.
+             Je tisse des liens, qui vous permettent des moments de reliance à vous même, et à d’autres femmes.
+             Je lance des passerelles entre l’avant et l’après, et j’invite à la reconnexion aux sagesses 
+             éternelles. Je cultive l’amour du beau et du doux, et je le met au service de votre âme. 
+             J’honore la femme, dans toute sa vulnérabilité et toute sa force ; dans sa lumière comme 
+             dans ses ombres. Je suis là, je vous vois et vous entend
             </div>
             <div className="presentation-signature">Claire</div>
             <div>

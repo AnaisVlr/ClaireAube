@@ -70,18 +70,18 @@ img.framed {
 }
 
 .consultations-picture{
-  background-image: url('../../assets/img/flower_hand.webp');
+  background-image: url('../../assets/img/consults.webp');
   background-size: cover;
   background-color: white ;
 }
 
 .guidances-picture{
-  background-image: url('../../assets/img/hand_water.webp');
+  background-image: url('../../assets/img/guidances.webp');
   background-size: cover;
 }
 
 .soins-picture{
-  background-image: url('../../assets/img/leaf_women.webp');
+  background-image: url('../../assets/img/soins-rituels/soins-rituels-3.webp');
   background-size: cover;
 }
 
@@ -120,6 +120,7 @@ img.framed {
   justify-content: center;
   text-align: center;
   border-radius: 0.25rem;
+  font-size: 0.8rem;
 }
 
 .prestations-item-back {
