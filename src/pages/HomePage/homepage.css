@@ -8,34 +8,10 @@
 
 /* Presentation */
 
-.presentation-container {
-  padding: 3rem 8rem;
-  gap: 5rem;
-  height: 60vh;
-}
-
 .pictureProfile img{
   width: 20rem;
   height: auto;
   border-radius: 50rem 50rem 0rem 0rem;
-}
-
-img.framed {
-  box-shadow:
-    -50px -50px 0 -40px red,
-    50px 50px 0 -40px red;
-}
-
-.presentation-title {
-  font-size: 2rem;
-  font-family: var(--typoTanPearl);
-}
-
-.presentation-signature {
-  width: 100%;
-  text-align: right;
-  font-size: 1rem;
-  font-family: var(--typoTanPearl);
 }
 
 /* Citation */
@@ -51,13 +27,6 @@ img.framed {
   background-image: url('../../assets/img//fond_mur_terracota.webp');
   background-size: cover;
   color: var(--blanc);
-}
-
-.prestations-title {
-  font-size: 1.35rem;
-  font-family: var(--typoTanPearl);
-  text-align: center;
-  padding-bottom: 1.5rem;
 }
 
 .prestations-item {

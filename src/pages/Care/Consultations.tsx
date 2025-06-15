@@ -1,4 +1,4 @@
-import { Button, Grid, Paper, Typography } from "@mui/material"
+import { Box, Button, Container, Grid, Paper, Typography } from "@mui/material"
 import { BulletedList } from "../../components/BulletedList"
 import { FAQ } from "../../components/FAQ"
 import { QuestionType } from "../../types"
@@ -56,8 +56,7 @@ export const Consultations = () => {
   ]
 
   return (
-    <>
-      <Grid className="px-6 py-2" container spacing={2}>
+      <Container className="px-6 py-2">
         {/* Intro*/}
         <Grid size={12}>
           <Typography variant="h6" gutterBottom>
@@ -124,26 +123,26 @@ export const Consultations = () => {
 
         {/* Déroulé et modalités */}
         <Grid container spacing={2} size={12}>
-          <Grid size={6}>
+          <Grid size={6} container spacing={2} >
             <Typography variant="h6">
               A la séance :
             </Typography>
-            <Paper>
+            <Box sx={{p: 2, border: "1px solid", display: "flex", flexDirection:"column", justifyContent: "center", alignItems: "center"}}>
               <Typography>
                 1ère séance
               </Typography>
               <Typography>
                 1h30
               </Typography>
-            </Paper>
-            <Paper>
+            </Box>
+            <Box sx={{p: 2, border: "1px solid", display: "flex", flexDirection:"column", justifyContent: "center", alignItems: "center"}}>
               <Typography>
                 Séances de suivi
               </Typography>
               <Typography>
                 45 minutes
               </Typography>
-            </Paper>
+            </Box>
           </Grid>
 
           <Grid size={6}>
@@ -155,9 +154,9 @@ export const Consultations = () => {
 
         {/* FAQ */}
         <Grid size={12}>
+          <Typography variant="h6">FAQ :</Typography>
           <FAQ questionList={questionsFAQ} />
         </Grid>
-      </Grid>
-    </>
+      </Container>
   )
 }

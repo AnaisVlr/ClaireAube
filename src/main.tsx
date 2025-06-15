@@ -4,7 +4,7 @@ import HomePage from './pages/HomePage/HomePage.tsx'
 import CareRituals from './pages/Care/CareRituals.tsx';
 import { Consultations } from './pages/Care/Consultations.tsx';
 import Guidelines from './pages/Care/Guidelines.tsx';
-import Header from './components/Header.tsx';
+import { Header } from './components/Header.tsx';
 import Footer from './components/Footer.tsx';
 import Contact from './pages/Contact/Contact.tsx';
 
@@ -16,9 +16,19 @@ const theme = createTheme({
   palette: {
     primary: {
       main: "#552710",
-      light: "#42a5f5",
-      dark: "#1565c0",
+      light: "#77523f",
+      dark: "#3b1b0b",
       contrastText: "#E6D0B8"
+    },
+    secondary: {
+      main: "#E6D0B8",
+      light: "#ebd9c6",
+      dark: "#a19180",
+      contrastText: "#552710"
+    },
+    text: {
+      primary: "#552710",
+      secondary: "77523f"
     }
   },
   typography: {

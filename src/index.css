@@ -71,6 +71,10 @@ body {
   overflow: auto;
 }
 
+.typoTanPearl {
+  font-family: var(--typoTanPearl) !important;
+}
+
 #root {
   height: 100%;
 }
