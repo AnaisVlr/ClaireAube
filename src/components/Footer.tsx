@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 
 import './footer.css';
-import logoTerracota from '../assets/img/logo_terracota.webp'
+import logoTerracota from '../assets/img/logo/logo_terracota.webp'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
