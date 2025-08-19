@@ -3,13 +3,15 @@ import FlowerImg from '../../assets/img/flower.webp';
 import { PrestationItem } from '../../components/PrestationItem';
 import { PrestationType } from '../../types';
 import './homepage.css';
+import { useTexts } from '../../hooks/useTexts';
 
-export default function HomePage() {
+export const HomePage = () => {
+  const t = useTexts();
   const prestationItems: PrestationType[] = [
     {
-      title: "Consultations",
+      title: t.consults.consults,
       class: "prestations-item consultations-picture",
-      description: "Un accompagnement qui peut autant porter sur des problématiques physiques, qu'émotionnelles et psychiques.",
+      description: t.homePage.consultsDescription,
       link: "/consultations"
     },
     {
@@ -43,24 +45,13 @@ export default function HomePage() {
             <img src={FlowerImg} alt="Photo de Claire" loading="lazy" />
           </Grid>
           <Grid size={8} container spacing={2}>
-            <Typography className="typoTanPearl" variant="h5">Bienvenue</Typography>
+            <Typography className="typoTanPearl" variant="h5">{t.homePage.welcome}</Typography>
             <Typography>
-              Je vous accompagne avec douceur, empathie, bienveillance… mais aussi avec l’éthique profonde
-              de vous transmettre des savoirs utiles et justes pour vous. De vous aider à vous
-              réapproprier votre souveraineté dans vos parcours de santé et de mieux-être.
-              Je crée des espaces sacrés où vous pouvez vous déposer en toute confiance, vous laisser être,
-              vous retrouver. Des parenthèses suspendues pour aller à la rencontre de votre magie intérieure
-              et de vos ressources.<br/>
-              Je tisse des liens, qui vous permettent des moments de reliance à vous même, et à d’autres femmes.
-              Je lance des passerelles entre l’avant et l’après, et j’invite à la reconnexion aux sagesses
-              éternelles. Je cultive l’amour du beau et du doux, et je le met au service de votre âme.
-              J’honore la femme, dans toute sa vulnérabilité et toute sa force ; dans sa lumière comme
-              dans ses ombres. <br/>
-              Je suis là, je vous vois et vous entend
+              {t.homePage.welcomeText}
             </Typography>
-            <Typography className="typoTanPearl" variant="h5" sx={{ width: "100%", textAlign: "right" }}>Claire</Typography>
+            <Typography className="typoTanPearl" variant="h5" sx={{ width: "100%", textAlign: "right" }}>{t.homePage.claire}</Typography>
             <Grid size={12}>
-              <Button variant={"contained"}>Je prends rendez-vous !</Button>
+              <Button variant={"contained"}>{t.general.takeAppointment}</Button>
             </Grid>
           </Grid>
         </Grid>
@@ -70,7 +61,7 @@ export default function HomePage() {
         </Typography>
       </Container>
       <Grid size={12} container spacing={2} className="prestations-container">
-        <Typography className="typoTanPearl" variant="h5">Mes prestations</Typography>
+        <Typography className="typoTanPearl" variant="h5">{t.homePage.myServices}</Typography>
         <Grid size={12} container spacing={2} justifyContent={"center"}>
           {prestationItems.map((prestation) => (
             <PrestationItem prestation={prestation} />

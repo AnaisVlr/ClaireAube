@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from "react-router";
-import HomePage from './pages/HomePage/HomePage.tsx'
+import { HomePage } from './pages/HomePage/HomePage.tsx'
 import CareRituals from './pages/Care/CareRituals.tsx';
 import { Consultations } from './pages/Care/Consultations.tsx';
 import Guidelines from './pages/Care/Guidelines.tsx';
