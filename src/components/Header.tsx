@@ -1,5 +1,4 @@
-import logo from '../assets/img/logo/logo_terracota.webp'
-import * as React from 'react';
+import logo from '../assets/img/logo/logo_white.png'
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -11,13 +10,38 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { useTexts } from '../hooks/useTexts';
-
+import { useLocation, Link } from "react-router";
+import { useState, useEffect, MouseEvent } from 'react';
 
 export const Header = () => {
-  const t = useTexts();
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
+const t = useTexts();
+  const location = useLocation();
+  const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
+  const [scrolled, setScrolled] = useState(false);
 
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+  // IntersectionObserver au scroll
+  useEffect(() => {
+    const videoSection = document.getElementById("video-section");
+    if (!videoSection) {
+      setScrolled(true); // si pas de vidéo sur la page, navbar opaque
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          setScrolled(!entry.isIntersecting);
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(videoSection);
+
+    return () => observer.disconnect();
+  }, [location.pathname]); 
+
+  const handleOpenNavMenu = (event: MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
 
@@ -33,21 +57,27 @@ export const Header = () => {
   ];
 
   const navItemsXs = [
-    { label: t.homePage.homePage, href: "/" },
-    { label: t.aboutMe.aboutMe, href: "/about" },
-    { label: t.consults.consults, href: "/consultations" },
-    { label: t.rituals.careRituals, href: "/soin-rituels" },
+    ...navItems,
     { label: t.general.contactMe, href: "/contact" },
   ];
 
   return (
-    <AppBar position="fixed" color="secondary">
+    <AppBar
+      position="fixed"
+      elevation={scrolled ? 1 : 0}
+      sx={{
+        transition: "background-color 0.4s ease",
+        backgroundColor: scrolled ? "primary.main" : "transparent",
+        boxShadow: scrolled ? "" : "none",
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
+          {/* Logo Desktop */}
           <Typography
             noWrap
-            component="a"
-            href="/"
+            component={Link}
+            to="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -59,6 +89,7 @@ export const Header = () => {
             <img src={logo} alt="Logo Claire Aube" className='logo' loading="lazy" />
           </Typography>
 
+          {/* Menu Mobile */}
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -70,15 +101,9 @@ export const Header = () => {
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
+              anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
               keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
+              transformOrigin={{ vertical: 'top', horizontal: 'left' }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{ display: { xs: 'block', md: 'none' } }}
@@ -87,18 +112,28 @@ export const Header = () => {
                 <MenuItem
                   key={item.label}
                   onClick={handleCloseNavMenu}
-                  component="a"
-                  href={item.href}>
-                  <Typography sx={{ textAlign: 'center' }}>{item.label}</Typography>
+                  component={Link}
+                  to={item.href}
+                >
+                  <Typography
+                    sx={{
+                      textAlign: 'center',
+                      fontWeight: location.pathname === item.href ? "bold" : "normal",
+                      textDecoration: location.pathname === item.href ? "underline" : "none"
+                    }}
+                  >
+                    {item.label}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
 
+          {/* Logo Mobile */}
           <Typography
             noWrap
-            component="a"
-            href="/"
+            component={Link}
+            to="/"
             sx={{
               mr: 0,
               display: { xs: 'flex', md: 'none' },
@@ -108,26 +143,45 @@ export const Header = () => {
           >
             <img src={logo} alt="Logo Claire Aube" className='logo' loading="lazy" />
           </Typography>
+
+          {/* Menu Desktop */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {navItems.map((item) => (
               <Button
                 key={item.label}
-                onClick={handleCloseNavMenu}
-                component="a"
-                href={item.href}
-                sx={{ my: 0, color: 'primary', display: 'block', textTransform: 'none', fontSize: '1rem' }}
+                component={Link}
+                to={item.href}
+                sx={{
+                  my: 0,
+                  color: 'secondary.main',
+                  display: 'block',
+                  textTransform: 'none',
+                  fontSize: '1rem',
+                  borderBottom: location.pathname === item.href ? "2px solid currentColor" : "2px solid transparent",
+                  borderRadius: 0,
+                  transition: "border-color 0.3s ease",
+                  "&:hover": {
+                    borderBottom: "2px solid currentColor",
+                  }
+                }}
               >
                 {item.label}
               </Button>
-            )
-            )}
+            ))}
           </Box>
 
+          {/* Bouton contact Desktop */}
           <Box sx={{ display: { xs: 'none', md: 'flex' } }} >
             <Button
-              component="a"
-              href="/contact"
-              sx={{ color: "primary", textTransform: 'none', fontSize: '1rem'  }}
+              component={Link}
+              to="/contact"
+              variant="contained"
+              disableElevation
+              sx={{
+                textTransform: 'none',
+                backgroundColor: 'secondary.main',
+                color: 'primary.main'
+              }}
             >
               {t.general.contactMe}
             </Button>
@@ -136,4 +190,4 @@ export const Header = () => {
       </Container>
     </AppBar >
   );
-}
+};

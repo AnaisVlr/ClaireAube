@@ -65,7 +65,7 @@ body {
   list-style-image : url('../src/assets/img/icons/Icons.svg');
 
   position: absolute;
-  top: 3rem;
+  top: 0;
   bottom: 0;
   width: 100%;
   overflow: auto;

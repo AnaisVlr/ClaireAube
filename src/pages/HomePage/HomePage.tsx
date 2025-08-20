@@ -1,5 +1,8 @@
 import { Button, Container, Grid, Typography } from '@mui/material';
-import FlowerImg from '../../assets/img/flower.webp';
+import profilePicture from '../../assets/img/photo_Claire.png';
+import video from '../../assets/img/video_background.mp4';
+import video2 from '../../assets/img/baniere.mp4';
+import logo from '../../assets/img/logo/logo_text_white.webp';
 import { PrestationItem } from '../../components/PrestationItem';
 import { PrestationType } from '../../types';
 import './homepage.css';
@@ -7,6 +10,7 @@ import { useTexts } from '../../hooks/useTexts';
 
 export const HomePage = () => {
   const t = useTexts();
+
   const prestationItems: PrestationType[] = [
     {
       title: t.consults.consults,
@@ -15,34 +19,25 @@ export const HomePage = () => {
       link: "/consultations"
     },
     {
-      title: "Guidances",
-      class: "prestations-item guidances-picture",
-      description: "Deux voies d'exploration, deux outils d'introspection différents, pour éclairer vos chemins et mettre du mouvement dans vos pèlerinages personnels.",
-      link: "/guidances"
-    },
-    {
-      title: "Soins rituels",
+      title: t.rituals.careRituals,
       class: "prestations-item soins-picture",
-      description: "Plus que des soins, de vrais rituels transformateurs. Des espaces vibrants et magiques pour honorer vos corps et soutenir les transformations.",
+      description: t.homePage.careRitualsDescription,
       link: "/soin-rituels"
-    },
-    {
-      title: "Autres services",
-      class: "prestations-item services-picture",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      link: "/autre-services"
     },
   ];
 
   return (
-    <Grid size={12} container spacing={2}>
-      <Grid size={12} className="imageHomePage">
-        <img src={FlowerImg} alt="Picture background home page" loading="lazy" />
+    <Grid size={12} container spacing={0}>
+      <Grid id="video-section" size={12} className="imageHomePage flex-row align-center justify-center p-1">
+        <video autoPlay loop muted playsInline>
+          <source src={video} type="video/mp4"></source>
+        </video>
+        <img src={logo} alt="Logo Claire Aube" loading="lazy" />
       </Grid>
-      <Container sx={{py:2}}>
+      <Container sx={{ py: 2 , pt: 12}}>
         <Grid size={12} container spacing={2}>
           <Grid size={4} className="pictureProfile">
-            <img src={FlowerImg} alt="Photo de Claire" loading="lazy" />
+            <img src={profilePicture} alt="Photo de Claire Aube" loading="lazy" />
           </Grid>
           <Grid size={8} container spacing={2}>
             <Typography className="typoTanPearl" variant="h5">{t.homePage.welcome}</Typography>
@@ -55,11 +50,12 @@ export const HomePage = () => {
             </Grid>
           </Grid>
         </Grid>
-        <Typography className="citation-container flex-row align-center justify-center">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis culpa saepe debitis.
-          Aut obcaecati pariatur animi quam cupiditate!
-        </Typography>
       </Container>
+      <Grid size={12} className="banniere">
+        <video autoPlay muted playsInline>
+          <source src={video2} type="video/mp4"></source>
+        </video>
+      </Grid>
       <Grid size={12} container spacing={2} className="prestations-container">
         <Typography className="typoTanPearl" variant="h5">{t.homePage.myServices}</Typography>
         <Grid size={12} container spacing={2} justifyContent={"center"}>
