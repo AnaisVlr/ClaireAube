@@ -10,3 +10,12 @@ export interface PrestationType {
   link: string
 }
 
+export interface TimelineItem {
+  title: string,
+  image: string
+}
+
+export interface TimelineType {
+  timelineItems: TimelineItem[]
+}
+

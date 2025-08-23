@@ -14,7 +14,7 @@ import { useLocation, Link } from "react-router";
 import { useState, useEffect, MouseEvent } from 'react';
 
 export const Header = () => {
-const t = useTexts();
+  const t = useTexts();
   const location = useLocation();
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const [scrolled, setScrolled] = useState(false);

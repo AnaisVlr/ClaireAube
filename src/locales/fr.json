@@ -23,7 +23,63 @@
     "careRituals": "Soins rituels"
   },
   "consults": {
-    "consults": "Consultations"
+    "consults": "Consultations",
+    "intro": {
+      "intro1": "Mes consultations portent autant sur des problématiques physiques (en vue de soutenir, préparer, rééquilibrer le corps, etc...), qu'émotionnelles et psychiques (peurs, traumatismes, blocages, mémoires transgénérationnelles, etc...).",
+      "intro2": "J'utilise différents outils et approches, que je vous propose selon vos besoins et préférences. Tous mes accompagnements sont individuels et personnalisés. Ils peuvent être ponctuels ou faire l'objet d'un suivi régulier.",
+      "intro3": "Vous pourrez retrouver des propositions de formules, et il est également possible de créer un programme de soin sur mesure."
+    },
+    "thematiques": {
+      "title": "Quelques thématiques qui peuvent être abordée en séance :",
+      "thematique1": "Des maux et pathologies gynécologiques : endométriose, SOPK, OPK, IOP, aménorrhées, etc...",
+      "thematique2": "Du désir d'enfant, des problématiques de fertilité, des PMA",
+      "thematique3": "De la grossesse",
+      "thematique4": "Des grossesses arrêtées (IVG, IMG, ISG) et du deuil périnatal",
+      "thematique5": "Du post-partum et de l'expérience de la maternité",
+      "thematique6": "De la pré-ménopause ou de la ménopause",
+      "thematique7": "Du cycle féminin et des règles (notamment autour des premières règles et de la pratique du flux instinctif)",
+      "thematique8": "De la sexualité et de la contraception (notamment autour de la symptothermie)",
+      "thematique9": "Des traumatismes et mémoires corporelles, émotionnelles, transgénérationnelles liées à l'utérus",
+      "thematique10": "De la reconnexion au féminin"
+    },
+    "expectations": {
+      "title": "Ce que vous pouvez attendre de mes accompagnements :",
+      "intro": "Lorsque nous entamons un travail approfondi ensemble, nous agissons sur différents niveaux, autant sur le corps physique, que sur le psychique et l'énergétique. Ainsi, les bienfaits sont multiples et transformateurs.",
+      "expectation1": "Une amélioration significative de votre santé gynécologique (notamment via le soutien par la phytothérapie).",
+      "expectation2": "Une meilleure compréhension de vous-même, de votre corps et son fonctionnement.",
+      "expectation3": "De la clarté sur vos schémas limitants, patterns répétitifs, mécanismes d'adaptation, systèmes de défense... Du discernement sur les rouages de ce qui peut se passer en vous et dans vos relations.",
+      "expectation4": "De l'amour, de la bienveillance envers vous-même, pour vos corps et vos parcours de Vie.",
+      "expectation5": "De l'empuissancement pour récupérer et vous connecter à  votre pouvoir féminin, pour devenir souveraine de votre vie.",
+      "expectation6": "Une approche symbolique et analytique de vos maux et difficultés.",
+      "expectation7": "Un espace sécurisant pour vous rencontrer, revisiter vos zones d'ombres et vos blessures. Pour illuminer tout ce qui n'a pas été vu, entendu, ou digéré. Et des outils pour accepter et libérer.",
+      "expectation8": "Une reconnexion à votre essence profonde, à vos dons et à votre magie personnelle.",
+      "expectation9": "Du bien être, de la transformation, de l'apaisement, de la confiance.",
+      "expectation10": "Tout ce à quoi vous êtes prêtes à ouvrir la porte, tout ce que vous souhaitez vous offrir à vous même."
+    },
+    "lifeMoments": {
+      "title": "A quels moments de vie je peux vous soutenir ?",
+      "moment1": "Arrivée des premières lunes",
+      "moment2": "Préconception, dès le désir d'enfant",
+      "moment3": "Grossesse",
+      "moment4": "Post partum",
+      "moment5": "Pré-ménopause et ménopause",
+      "otherMoment1": "Lors d'une période de deuil ou de profonde transformation",
+      "otherMoment2": "A tout moment de votre vie ou de votre cycle, quand vous en ressentez le besoin"
+    },
+    "citation": "« Quand la femme ouvre sa matrice à la lumière, c'est l'âme du monde qui s'illumine ». Claire Aube",
+    "faq": {
+      "FAQ": "FAQ :",
+      "question1": "Comment cela se passe-t-il concrètement ?",
+      "answer1": "lll",
+      "question2": "Quelle est la différence entre plusieurs rdv ponctuels et les accompagnements de suivis",
+      "answer2": "",
+      "question3": "Où ont lieu nos rencontres ?",
+      "answer3": "Je vous accueille dans mon espace de soin à côté de Sisteron, dans les Alpes de Haute Provence (04), ou vous propose d'effectuer nos rencontres en visio.",
+      "question4": "Quels sont les tarifs ?",
+      "answer4": "1ère séance : 1h30/75€ \n Séances suivantes : 45min/55€ \nAccompagnements sur mesure :  sur devis",
+      "question5": "Comment prendre RDV ?",
+      "answer5": "Vous pouvez me contacter par message privé sur Instagram ou par mail à cette adresse : claireaube.accompagnement@gmail.com"
+    }
   },
   "general": {
     "takeAppointment": "Je prend RDV !",
@@ -34,13 +90,13 @@
     "title": "Clause de non-responsabilité médicale :",
     "disclaimer1": "Mon accompagnement est strictement non médical. Bien que je possède des connaissances et une formation approfondie en santé féminine, je ne suis pas une professionnelle de santé reconnue. Je ne suis ni médecin, ni sage-femme, ni gynécologue, ni naturopathe.",
     "disclaimer2": "Je ne suis ni habilitée à poser un diagnostic, ni à prescrire un traitement, ni à pratiquer un acte médical.",
-    "disclaimer3": "Dans le cadre de mon accompagnement, je suis à même de vous transmettre des recommandations et conseils en matière d’alimentation, d’hygiène de vie, de complémentation et de soutien par les plantes, des pratiques corporelles, etc… sur la base d’une approche holistique.",
+    "disclaimer3": "Dans le cadre de mon accompagnement, je suis à même de vous transmettre des recommandations et conseils en matière d'alimentation, d'hygiène de vie, de complémentation et de soutien par les plantes, des pratiques corporelles, etc… sur la base d'une approche holistique.",
     "disclaimer4": "Les informations que je vous transmets lors de mes consultations ne se substituent en aucun cas à un suivi médical, une consultation avec un professionnel de santé qualifié et adapté à votre problématique, ou un examen nécessaire à votre parcours de santé.",
-    "disclaimer5": "Je travaille de manière collaborative et n’hésiterais pas à vous référer à des personnes compétentes pour toute situation qui sortent de mon champ d’accompagnement.",
+    "disclaimer5": "Je travaille de manière collaborative et n'hésiterais pas à vous référer à des personnes compétentes pour toute situation qui sortent de mon champ d'accompagnement.",
     "title2": "Concernant mes partages :",
     "share1": "Le contenu de ce site internet, ainsi que celui de mes différents réseaux sociaux associés, est fourni à titre purement informatif, dans une démarche de soutien. Il ne constitue en aucun cas une garantie, explicite ou implicite.",
-    "share2": "Les informations diffusées n’ont en aucun cas pour vocation de remplacer une consultation avec un professionnel de santé.",
-    "share3": "Ni ce site, ni les réseaux sociaux qui y sont liés, ne sauraient être tenus pour responsables de tout dommage, qu’il soit matériel ou corporel, résultant de l’usage ou de l’interprétation des contenus proposés.",
-    "share4": "En acceptant les conditions d’accès et d’utilisation de ce site web, vous acceptez de libérer Claire Aube Zirah de toute responsabilité, y compris juridique et financière, liée à toute action entreprise sur la base des informations partagées ici ou sur les réseaux sociaux associés."
+    "share2": "Les informations diffusées n'ont en aucun cas pour vocation de remplacer une consultation avec un professionnel de santé.",
+    "share3": "Ni ce site, ni les réseaux sociaux qui y sont liés, ne sauraient être tenus pour responsables de tout dommage, qu'il soit matériel ou corporel, résultant de l'usage ou de l'interprétation des contenus proposés.",
+    "share4": "En acceptant les conditions d'accès et d'utilisation de ce site web, vous acceptez de libérer Claire Aube Zirah de toute responsabilité, y compris juridique et financière, liée à toute action entreprise sur la base des informations partagées ici ou sur les réseaux sociaux associés."
   }
 }
