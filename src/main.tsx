@@ -11,13 +11,14 @@ import Contact from './pages/Contact/Contact.tsx';
 import './index.css'
 
 import { createTheme, ThemeProvider } from '@mui/material';
+import { Disclaimer } from './pages/Disclaimer.tsx';
 
 const theme = createTheme({
   palette: {
     primary: {
       main: "#552710",
       light: "#77523f",
-      dark: "#3b1b0b",
+      dark: "rgba(59, 27, 11, 1)",
       contrastText: "#E6D0B8"
     },
     secondary: {
@@ -46,6 +47,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/guidances" element={<Guidelines />} />
         <Route path="/soin-rituels" element={<CareRituals />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/medical-disclaimer" element={<Disclaimer />} />
       </Routes>
       <Footer />
     </ThemeProvider>
