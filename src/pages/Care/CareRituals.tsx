@@ -1,6 +1,4 @@
-import flowerHand from '../../assets/img/flower_hand.webp'
 import ritualPicture from '../../assets/img/soins-rituels/soins-rituels-1.webp'
-
 import Poitrine from '../../assets/img/soins-rituels/Poitrine_Coeur.png'
 import Matricia from '../../assets/img/soins-rituels/Matricia.png'
 import Chrysalide from '../../assets/img/soins-rituels/Chrysalide.png'
@@ -16,104 +14,119 @@ import DernierEnvol from '../../assets/img/soins-rituels/Dernier_Envol.png'
 
 import videoEspace from '../../assets/img/video_espace_soin.mp4'
 
-import './careRituals.css'
-import { Grid, Typography } from '@mui/material'
+import { Button, Grid, Typography } from '@mui/material'
 import { useTexts } from '../../hooks/useTexts'
 import { Map } from '../../components/Map'
 import { RitualItem } from '../../components/RitualItem'
+import { BulletedList } from '../../components/BulletedList'
 
 export const CareRituals = () => {
   const t = useTexts();
 
+  const reasonsItems = [
+    t.rituals.reasons.reason1,
+    t.rituals.reasons.reason2,
+    t.rituals.reasons.reason3,
+    t.rituals.reasons.reason4,
+    t.rituals.reasons.reason5,
+    t.rituals.reasons.reason6,
+  ]
+
+  const possibilitiesItems = [
+    t.rituals.possibilities.p1,
+    t.rituals.possibilities.p2,
+    t.rituals.possibilities.p3,
+    t.rituals.possibilities.p4,
+    t.rituals.possibilities.p5,
+    t.rituals.possibilities.p6,
+    t.rituals.possibilities.p7,
+    t.rituals.possibilities.p8,
+    t.rituals.possibilities.p9,
+    t.rituals.possibilities.p10,
+    t.rituals.possibilities.p11,
+    t.rituals.possibilities.p12,
+  ]
+
   return (
-    <div className="care-rituals flex-column">
-      {/* Bannière */}
-      <div className="banner">
-        <div className="px-6 py-2 flex-column">
-          <div className="banner-header-title flex-column">
-            <h2>Soins Rituels</h2>
-            <p>De la peau à l'âme</p>
-          </div>
-
-          <div className="banner-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam a accusamus,
-            corrupti inventore veritatis ut quasi quo minima provident, asperiores modi ex nihil.
-            Fugiat laboriosam sed facilis modi id quas. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Nobis placeat natus aspernatur odit maiores, sit quasi quae. Tenetur laboriosam, minima repellat enim
-            voluptates molestias magni eius aliquam doloremque dignissimos tempore.
-          </div>
-        </div>
-      </div>
-
+    <Grid container flexDirection={'column'} spacing={3} pt={{ xs: '4rem', sm: '6rem' }}>
       {/* Introduction */}
-      <div className="introduction px-6 py-2 flex-column align-center justify-center">
-        <div className="flex-row">
-          <p>
-            Il est évident pour moi que le chemin de guérison passe par le corps... <br /><br />
-            Le fait de prendre soin, de chérir, de magnifier sa beauté a toujours fait partie des routines des communautés de femmes. <br /><br />
-            Ainsi, je vous propose de renouer avec ces traditions, cette sagesse du toucher. <br /><br />
-            Plus que des soins, de vrais rituels transformateurs. <br /><br />
-            Des espaces vibrants et magiques pour vous retrouver, vous cocooner, vous ramener à votre essence primordiale. <br /><br />
-            Pour honorer votre incarnation humaine.
-          </p>
-          <div className='rituals-for'>
-            <h4 className='fs-1-25 fw-500'>Des rituels pour ...</h4>
-            <ul>
-              <li>Prendre soin de soi</li>
-              <li>Renouer avec sa beauté originelle</li>
-              <li>Honorer les corps, leurs fissures et leurs éclats</li>
-              <li>Soutenir les transformations et les ancrer dans la matière</li>
-              <li>La femme qui porte et donne la vie</li>
-              <li>S’ouvrir, se retrouver ; connecter le cœur, le corps et l’esprit</li>
-            </ul>
-          </div>
-        </div>
-        <div className="introduction-text">
-          <p>
-            Chaque soin a été conçu avec la plus grande attention, avec une profondeur de réflexion intime. <br /><br />
-            Fruits de tous les enseignements et sagesses que j’ai récolté ces dernières années, et de mon propre cheminement personnel.<br /><br />
-            Je me sens aujourd’hui particulièrement honorée de mettre mon toucher sacré au service de vos corps et vos âmes.
-          </p>
-        </div>
-      </div>
+      <Grid
+        size={12}
+        container
+        flexDirection={'column'}
+        spacing={3}
+        py={{ xs: 2, sm: "4rem" }}
+        px={{ xs: 2, sm: "6rem" }}
+      >
+        <Typography variant="h5" fontStyle={'italic'} className='typoTanPearl'>{t.rituals.subTitle}</Typography>
+
+        <Grid size={12} container spacing={4} flexDirection={'row'}>
+          <Grid size={{ xs: 12, sm: 6 }} container spacing={2} flexDirection={'column'}>
+            <Typography>{t.rituals.introduction.sentence1}</Typography>
+            <Typography>{t.rituals.introduction.sentence2}</Typography>
+            <Typography>{t.rituals.introduction.sentence3}</Typography>
+            <Typography>{t.rituals.introduction.sentence4}</Typography>
+            <Typography>{t.rituals.introduction.sentence5}</Typography>
+            <Typography>{t.rituals.introduction.sentence6}</Typography>
+          </Grid>
+
+          <Grid size={{ xs: 12, sm: 6 }}>
+            <Typography variant="h6">{t.rituals.reasons.title}</Typography>
+            <BulletedList listItems={reasonsItems} bulletColor="dark" />
+          </Grid>
+        </Grid>
+
+        <Grid container spacing={2} justifyContent={'center'}>
+          <Typography>{t.rituals.ritualsConception.sentence1}</Typography>
+          <Typography>{t.rituals.ritualsConception.sentence2}</Typography>
+          <Typography>{t.rituals.ritualsConception.sentence3}</Typography>
+        </Grid>
+      </Grid>
+
 
       {/* Essence des rituels */}
-      <div className="rituals-essence px-6 py-2">
-        <h4 className='fs-1-25 ff-title'>L'essence des soins rituels</h4>
-        <p>
-          Tous mes soins font appel à la sagesse de la Terre et du vivant. <br />
-          Ils allient la Médecine des plantes, des abeilles, du son, de l’eau, des minéraux... et l’art du toucher sacré.<br />
-          Ils sont empreints de nombreux enseignements issus des médecines ancestrales, telle que la médecine chinoise, la médecine ayurvédique,
-          la médecine taoïste, la médecine amérindienne... <br /> Et, n’oublions pas, la richesse de notre médecine traditionnelle européenne !
-        </p>
-      </div>
+      <Grid
+        size={12}
+        container
+        flexDirection={'column'}
+        spacing={3}
+        py={{ xs: 2, sm: "4rem" }}
+        px={{ xs: 2, sm: "6rem" }}
+      >
+        <Typography variant="h4">{t.rituals.essence.title}</Typography>
+        <Grid size={12} container spacing={2} textAlign={'center'} justifyContent={'center'}>
+          <Typography>{t.rituals.essence.description1}</Typography>
+          <Typography>{t.rituals.essence.description2}</Typography>
+          <Typography>{t.rituals.essence.description3}</Typography>
+          <Typography>{t.rituals.essence.description4}</Typography>
+        </Grid>
+      </Grid>
 
       {/* Possibilités */}
-      <div className="rituals-possibilities px-6 py-2 flex-row">
-        <div>
-          <h4 className='fs-1'>Selon le soin, vous pourrez vous voir proposer :</h4>
-          <ul>
-            <li>De la visualisation</li>
-            <li>Du massage</li>
-            <li>Des étirements doux</li>
-            <li>Des soins physico-énergétiques avec les onctions sacrées</li>
-            <li>Des serrages, bercements, bordages et enveloppement aux tissus</li>
-            <li>Des pratiques de bain et yonisteam</li>
-            <li>Des remèdes de grand-mère tels que les cataplasmes et bouillottes</li>
-            <li>Des pochons chauds</li>
-            <li>Des massages au kansa wand</li>
-            <li>Des tirages d’oracle</li>
-            <li>Des rituels psycho-magiques</li>
-            <li>Etc...</li>
-          </ul>
-        </div>
-        <img src={ritualPicture} alt="" loading="lazy" />
-      </div>
+      <Grid
+        size={12}
+        container
+        flexDirection={{ xs: 'column', sm: 'row' }}
+        spacing={{ xs: 2, sm: 6 }}
+        py={{ xs: 2, sm: "4rem" }}
+        px={{ xs: 2, sm: "6rem" }}
+        alignItems={'center'}
+      >
+        <Grid size={{ xs: 12, sm: 7 }}>
+          <Typography variant="h6">{t.rituals.possibilities.title}</Typography>
+          <BulletedList listItems={possibilitiesItems} bulletColor="dark" />
+        </Grid>
+
+        <Grid size={{ xs: 12, sm: 5 }}>
+          <img src={ritualPicture} alt="" loading="lazy" width={'100%'} style={{ borderRadius: '1rem' }} />
+        </Grid>
+      </Grid>
 
       {/* Liste des rituels */}
-      <Grid size={12} container flexDirection={'column'} spacing={6} py={"4rem"} px={"6rem"}>
+      <Grid size={12} container flexDirection={'column'} spacing={6} py={{ xs: 2, sm: "4rem" }} px={{ xs: 2, sm: "6rem" }}>
         <Typography variant="h3">{t.rituals.ritualsListTitle}</Typography>
 
-        <Grid size={12} container flexDirection={'row'} spacing={4}>
+        <Grid size={12} container flexDirection={{ xs: 'column', sm: 'row' }} spacing={{ xs: 2, sm: 4 }}>
           {/* Rituel de la poitrine et du coeur */}
           <RitualItem name={t.rituals.chestHeart.name} image={Poitrine} description={t.rituals.chestHeart.description} link='/' size={4} />
 
@@ -127,7 +140,7 @@ export const CareRituals = () => {
         <Grid size={12} container flexDirection={'column'} spacing={2}>
           <Typography variant="h3">{t.rituals.ritualsCategory.mom}</Typography>
 
-          <Grid size={12} container flexDirection={'row'} spacing={4}>
+          <Grid size={12} container flexDirection={{ xs: 'column', sm: 'row' }} spacing={{ xs: 2, sm: 4 }}>
             {/* Rituel des Matronae */}
             <RitualItem name={t.rituals.Matronae.name} image={Matronae} description={t.rituals.Matronae.description} link='/' size={6} />
 
@@ -137,8 +150,9 @@ export const CareRituals = () => {
         </Grid>
 
         <Grid size={12} container flexDirection={'column'} spacing={2}>
-          <Typography variant="h3">{t.rituals.ritualsCategory.season}</Typography>
-          <Grid size={12} container flexDirection={'row'} spacing={4}>
+          <Typography variant="h3">{t.rituals.ritualsCategory.season.title}</Typography>
+          <Typography>{t.rituals.ritualsCategory.season.description}</Typography>
+          <Grid size={12} container flexDirection={{ xs: 'column', sm: 'row' }} spacing={{ xs: 2, sm: 4 }}>
             {/* Rituel Yule */}
             <RitualItem name={t.rituals.Yule.name} image={Yule} description={t.rituals.Yule.description} link='/' size={3} />
 
@@ -158,7 +172,7 @@ export const CareRituals = () => {
 
           <Typography>Des soins signature, entièrement personnalisés, pensés pour vous et par vous</Typography>
 
-          <Grid size={12} container flexDirection={'row'} spacing={4}>
+          <Grid size={12} container flexDirection={{ xs: 'column', sm: 'row' }} spacing={{ xs: 2, sm: 4 }}>
             {/* Rituel des Gardiens de la Terre */}
             <RitualItem name={t.rituals.GardiensTerre.name} image={GardiensTerre} description={t.rituals.GardiensTerre.description} link='/' size={4} />
 
@@ -173,18 +187,18 @@ export const CareRituals = () => {
       </Grid>
 
       {/* Espace de soin */}
-      <Grid size={12} container spacing={2} flexDirection={'column'} py={'3rem'} px={'6rem'} className={'treatment-area'}>
+      <Grid size={12} container spacing={2} flexDirection={'column'} py={{ xs: 2, sm: '3rem' }} px={{ xs: 2, sm: '6rem' }}>
         {/* <Typography variant="h4" marginBottom={2}>{t.rituals.treatmentArea.treatmentArea}</Typography> */}
 
         <Grid size={12} container flexDirection={'row'} spacing={2}>
 
-          <Grid size={3}>
-            <video loop autoPlay muted playsInline>
+          <Grid size={{ xs: 12, sm: 3 }} textAlign={'center'} height={'80vh'}>
+            <video loop autoPlay muted playsInline height={'100%'} style={{ borderRadius: '2rem' }}>
               <source src={videoEspace} type="video/mp4"></source>
             </video>
           </Grid>
 
-          <Grid size={9} container flexDirection={'column'} py={2} spacing={4}>
+          <Grid size={{ xs: 12, sm: 9 }} container flexDirection={{ xs: 'row', sm: 'column' }} py={2} spacing={4}>
             <Grid size={12}>
               <Typography variant="h3" className='typoTanPearl'>{t.rituals.treatmentArea.areaName}</Typography>
               <Typography fontStyle={'italic'}>{t.rituals.treatmentArea.etymology1}</Typography>
@@ -201,31 +215,32 @@ export const CareRituals = () => {
         </Grid>
       </Grid>
 
-      <Grid size={12} container flexDirection={'row'} spacing={2} py={'3rem'} px={'6rem'} >
-        <Grid size={3} container flexDirection={'column'} spacing={1}>
+      <Grid
+        size={12}
+        container
+        flexDirection={{ xs: 'column', sm: 'row' }}
+        spacing={{ xs: 2, sm: 6 }}
+        py={{ xs: 2, sm: "4rem" }}
+        px={{ xs: 2, sm: "6rem" }}
+        alignItems={'center'}
+      >
+        <Grid size={{xs: 12, sm: 3}} container flexDirection={'column'} spacing={1}>
           <Typography>{t.general.localisation.sisteron}</Typography>
           <Typography>{t.general.localisation.Forcalquier}</Typography>
           <Typography>{t.general.localisation.Aix}</Typography>
           <Typography>{t.general.localisation.Marseille}</Typography>
         </Grid>
-        <Grid size={9}>
+        <Grid size={{xs: 12, sm: 9}}>
           <Map />
         </Grid>
       </Grid>
 
-      <div className="flex-row align-center justify-center gap-1 px-6 py-2">
-        <img src={flowerHand} alt="Logo Claire Aube" loading="lazy" className='rituals-contact-img' />
-        <div className="flex-column align-center justify-center gap-2">
-          <p>
-            Vous vous sentez appelée à vivre un rituel avec moi ? <br />
-            Vous ne savez pas exactement lequel choisir ?
-          </p>
-          <button className='btn-sm btn-primary'>
-            Contactez-moi
-          </button>
-        </div>
-        <img src={flowerHand} alt="Logo Claire Aube" loading="lazy" className='rituals-contact-img' />
-      </div>
-    </div>
+      <Grid size={12} container spacing={2} flexDirection={'column'} py={2} px={{ xs: 2, sm: '6rem' }}>
+        <Typography>{t.rituals.contact.sentence1}</Typography>
+        <Typography>{t.rituals.contact.sentence2}</Typography>
+
+        <Button variant={"contained"} href="/contact">{t.general.contactMe}</Button>
+      </Grid>
+    </Grid>
   )
 }

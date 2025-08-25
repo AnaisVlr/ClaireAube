@@ -21,6 +21,29 @@
   },
   "rituals": {
     "careRituals": "Soins rituels",
+    "subTitle": "De la peau à l'âme",
+    "introduction": {
+      "sentence1": "Il est évident pour moi que le chemin de guérison passe par le corps...",
+      "sentence2": "Le fait de prendre soin, de chérir, de magnifier sa beauté a toujours fait partie des routines des communautés de femmes.",
+      "sentence3": "Ainsi, je vous propose de renouer avec ces traditions, cette sagesse du toucher.",
+      "sentence4": "Plus que des soins, de vrais rituels transformateurs.",
+      "sentence5": "Des espaces vibrants et magiques pour vous retrouver, vous cocooner, vous ramener à votre essence primordiale.",
+      "sentence6": "Pour honorer votre incarnation humaine."
+    },
+    "reasons": {
+      "title": "Des rituels pour ...",
+      "reason1": "Prendre soin de soi",
+      "reason2": "Renouer avec sa beauté originelle",
+      "reason3": "Honorer les corps, leurs fissures et leurs éclats",
+      "reason4": "Soutenir les transformations et les ancrer dans la matière",
+      "reason5": "La femme qui porte et donne la vie",
+      "reason6": "S'ouvrir, se retrouver ; connecter le cœur, le corps et l'esprit"
+    },
+    "ritualsConception": {
+      "sentence1": "Chaque soin a été conçu avec la plus grande attention, avec une profondeur de réflexion intime.",
+      "sentence2": "Fruits de tous les enseignements et sagesses que j'ai récolté ces dernières années, et de mon propre cheminement personnel.",
+      "sentence3": "Je me sens aujourd'hui particulièrement honorée de mettre mon toucher sacré au service de vos corps et vos âmes."
+    },
     "treatmentArea": {
       "treatmentArea": "Mon espace de soin :",
       "areaName": "Balma",
@@ -31,10 +54,36 @@
       "presentation3": "C'est un lieu de parole et de soin, un havre de ressourcement où vous pouvez pleinement vous déposer en toute intimité. Un cocon enveloppant où règnent la douceur, l'harmonie… et un brin de magie !",
       "presentation4": "Ce qu'il dégage est entité à part entière de ma proposition, et je me réjouis de vous faire découvrir mon univers."
     },
+    "essence": {
+      "title": "L'essence des soins rituels",
+      "description1": "Tous mes soins font appel à la sagesse de la Terre et du vivant.",
+      "description2": "Ils allient la Médecine des plantes, des abeilles, du son, de l'eau, des minéraux... et l'art du toucher sacré.",
+      "description3": "Ils sont empreints de nombreux enseignements issus des médecines ancestrales, telle que la médecine chinoise, la médecine ayurvédique, la médecine taoïste, la médecine amérindienne...",
+      "description4": "Et, n'oublions pas, la richesse de notre médecine traditionnelle européenne !"
+    },
+    "possibilities": {
+      "title": "Selon le soin, vous pourrez vous voir proposer :",
+      "p1": "De la visualisation",
+      "p2": "Du massage",
+      "p3": "Des étirements doux",
+      "p4": "Des soins physico-énergétiques avec les onctions sacrées",
+      "p5": "Des serrages, bercements, bordages et enveloppement aux tissus",
+      "p6": "Des pratiques de bain et yonisteam",
+      "p7": "Des remèdes de grand-mère tels que les cataplasmes et bouillottes",
+      "p8": "Des pochons chauds",
+      "p9": "Des massages au kansa wand",
+      "p10": "Des tirages d'oracle",
+      "p11": "Des rituels psycho-magiques",
+      "p12": "Etc..."
+
+    },
     "ritualsListTitle": "Découvrez tous mes rituels de soin",
     "ritualsCategory": {
       "mom": "Les rituels pour les mamans",
-      "season": "Les rituels saisonniers",
+      "season": {
+        "title": "Les rituels saisonniers",
+        "description": "4 rituels pour les 4 saisons de l'année ; ou pour honorer vos propres saisons intérieures."
+      },
       "personalized": "Les rituels sur mesure"
     },
     "chestHeart": {
@@ -58,20 +107,20 @@
       "description": "Le soin pour clôturer symboliquement la fin du mois d'or"
     },
     "Yule": {
-      "name": "",
-      "description": ""
+      "name": "Rituel de Yule",
+      "description": "Hiver"
     },
     "Ostara": {
-      "name": "",
-      "description": ""
+      "name": "Rituel d'Ostara",
+      "description": "Printemps"
     },
     "Litha": {
-      "name": "",
-      "description": ""
+      "name": "Rituel Litha",
+      "description": "Eté"
     },
     "Mabon": {
-      "name": "",
-      "description": ""
+      "name": "Rituel Mabon",
+      "description": "Automne"
     },
     "GardiensTerre": {
       "name": "Rituel des Gardiens de la Terre",
@@ -84,6 +133,10 @@
     "DernierEnvol" : {
       "name": "Dernier Envol",
       "description": "Pour celles qui se préparent au grand voyage, au retour dans les bras du Ciel"
+    },
+    "contact": {
+      "sentence1": "Vous vous sentez appelée à vivre un rituel avec moi ?",
+      "sentence2": "Vous ne savez pas exactement lequel choisir ?"
     }
   },
   "consults": {

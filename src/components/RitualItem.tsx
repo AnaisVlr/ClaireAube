@@ -7,10 +7,14 @@ export const RitualItem = (props: RitualItemType) => {
   const t = useTexts();
 
   return (
-    <Grid size={size} container flexDirection={"column"} spacing={2}>
-      <img src={image} alt={name} loading="lazy" width={'100%'}/>
+    <Grid size={{ sm: 12, sm: size }} container flexDirection={"column"} justifyContent={"space-between"} spacing={2}>
+      <Grid size={12} height={'65vh'} textAlign={"center"}>
+        <img src={image} alt={name} loading="lazy" height={'100%'} />
+      </Grid>
       <Typography textAlign={"center"}>{description}</Typography>
-      <Button variant={"contained"} color='secondary' href={link}>{t.general.learnMore}</Button>
+      <Grid textAlign={"center"}>
+        <Button variant={"contained"} href={link}>{t.general.learnMore}</Button>
+      </Grid>
     </Grid>
   );
 };
