@@ -19,3 +19,11 @@ export interface TimelineType {
   timelineItems: TimelineItem[]
 }
 
+export interface RitualItemType {
+  name: string,
+  image: string,
+  description: string,
+  link: string,
+  size: number
+}
+

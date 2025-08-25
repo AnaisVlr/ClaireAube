@@ -20,7 +20,71 @@
     "aboutMe": "A propos"
   },
   "rituals": {
-    "careRituals": "Soins rituels"
+    "careRituals": "Soins rituels",
+    "treatmentArea": {
+      "treatmentArea": "Mon espace de soin :",
+      "areaName": "Balma",
+      "etymology1": "balma ['balmo̞]",
+      "etymology2": "Nom Féminin. La grotte, le baume",
+      "presentation1": "Je vous accueille au sein de mon cabinet, dans l'espace partagé « Aux p'tits soins de la Vallée », à Noyers sur Jabron dans les Alpes de Haute Provence (04).",
+      "presentation2": "Cet espace est un écrin intégralement réservé aux femmes ; un sanctuaire où chaque détail a été pensé en conscience pour honorer le féminin.",
+      "presentation3": "C'est un lieu de parole et de soin, un havre de ressourcement où vous pouvez pleinement vous déposer en toute intimité. Un cocon enveloppant où règnent la douceur, l'harmonie… et un brin de magie !",
+      "presentation4": "Ce qu'il dégage est entité à part entière de ma proposition, et je me réjouis de vous faire découvrir mon univers."
+    },
+    "ritualsListTitle": "Découvrez tous mes rituels de soin",
+    "ritualsCategory": {
+      "mom": "Les rituels pour les mamans",
+      "season": "Les rituels saisonniers",
+      "personalized": "Les rituels sur mesure"
+    },
+    "chestHeart": {
+      "name": "Rituel de la poitrine et du coeur",
+      "description": "Pour honorer sa poitrine, se reconnecter à son cœur et à ses émotions."
+    },
+    "Matricia": {
+      "name": "Rituel Matricia",
+      "description": "Le soin profond de libération physico- énergétique de sa matrice"
+    },
+    "Chrysalide": {
+      "name": "Rituel Chrysalide",
+      "description": "Le rituel de passage par excellence, pour honorer les transitions et étapes de la vie"
+    },
+    "Matronae": {
+      "name": "Rituel des Matronae",
+      "description": "Le rituel de la jeune accouchée, du post partum immédiat"
+    },
+    "Relevailles": {
+      "name": "Rituel du bain des Relevailles",
+      "description": "Le soin pour clôturer symboliquement la fin du mois d'or"
+    },
+    "Yule": {
+      "name": "",
+      "description": ""
+    },
+    "Ostara": {
+      "name": "",
+      "description": ""
+    },
+    "Litha": {
+      "name": "",
+      "description": ""
+    },
+    "Mabon": {
+      "name": "",
+      "description": ""
+    },
+    "GardiensTerre": {
+      "name": "Rituel des Gardiens de la Terre",
+      "description": "Soin botanique de beauté et bien être, en collaboration avec les richesses de la Terre Mère"
+    },
+    "Myrrhophores": {
+      "name": "Myrrhophores",
+      "description": "Le soin inspiré des saintes femmes porteuses d'huile, à base d'onctions sacrées"
+    },
+    "DernierEnvol" : {
+      "name": "Dernier Envol",
+      "description": "Pour celles qui se préparent au grand voyage, au retour dans les bras du Ciel"
+    }
   },
   "consults": {
     "consults": "Consultations",
@@ -84,7 +148,13 @@
   "general": {
     "takeAppointment": "Je prend RDV !",
     "contactMe": "Me contacter",
-    "learnMore": "En savoir +"
+    "learnMore": "En savoir +",
+    "localisation": {
+      "sisteron": "10 min de Sisteron",
+      "Forcalquier": "45min de Forcalquier",
+      "Aix": "1h15 d'Aix en Provence",
+      "Marseille": "1h30 de Marseille"
+    }
   },
   "disclaimer": {
     "title": "Clause de non-responsabilité médicale :",

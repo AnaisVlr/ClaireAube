@@ -75,120 +75,14 @@
   border-radius: 4px;
 }
 
-/* Description des rituels */
-.rituals-description {
-  background-color: var(--terracota);
-  color: var(--blanc);
-}
 
-.rituals-description h3 {
-  font-size: 1.75rem;
-  margin: 0;
-  font-weight: 500;
-}
-
-.rituals-line {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: top;
-  gap: 2rem;
-}
-
-.ritual-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0.5rem;
-  text-align: center;
-}
-
-.ritual-item img {
-  width: auto;
-  height: 15rem;
-  border-radius: 4px;
-}
-
-.ritual-item h6 {
-  font-family: var(--typoTanPearl);
-  font-size: 1rem;
-  margin: 0;
-  padding: 0.5rem 0rem;
-}
-
-.ritual-item button {
-  background-color: var(--blanc);
-  color: var(--terracota);
-  font-weight: 500;
-}
-
-.ritual-category {
-  border: 1px solid var(--blanc);
-  border-radius: 4px;
-  padding: 1rem;
-  font-size: 1.25rem;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.season-ritual {
-  display: flex;
-  flex-direction: row;
-  align-items: top;
-  background-color: var(--blanc);
-  color: var(--terracota);
-  margin: 0rem 10rem;
-  border-radius: 4px;
-}
-
-.season-ritual img {
-  width: 15rem;
-  height: auto;
-  border-radius: 4px 0px 0px 4px;
-}
-
-.season-ritual-description {
-  padding: 2rem;
-}
-
-.rituals-personalized p {
-  text-align: center;
-  margin: 0;
-  margin-bottom: 1rem;
-}
-
-/* Explications soins */
-.explication-rituals {
-  /* background : linear-gradient(var(--terracota), var(--blanc)); */
-}
-
-.explication-rituals p {
-  margin: 2rem;
-}
 
 /* Espace de soin */
-.space-care {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.treatment-area video {
+  height: 80vh;
+  border-radius: 2rem;
 }
 
-.space-care-description {
-  flex-direction: row;
-  align-items: start;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.space-care-description img {
-  width: 20rem;
-  height: auto;
-  border-radius: 4px;
-}
-
-.space-care-description p {
-  margin: 0;
-}
 
 /* Contact */
 .rituals-contact-img {

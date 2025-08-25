@@ -1,16 +1,30 @@
 import flowerHand from '../../assets/img/flower_hand.webp'
 import ritualPicture from '../../assets/img/soins-rituels/soins-rituels-1.webp'
-import carteSaison from '../../assets/img/soins-rituels/soins-rituels-4.webp'
-import gardienTerre from '../../assets/img/soins-rituels/gardien-de-la-terre-1.webp'
-import matri from '../../assets/img/soins-rituels/matri.webp'
-import matronae from '../../assets/img/soins-rituels/matronae.webp'
-import onctions from '../../assets/img/soins-rituels/onctions_sacrees.webp'
-import poitrine from '../../assets/img/soins-rituels/poitrine-coeur.webp'
-import flowerWall from '../../assets/img/flower-wall.webp'
+
+import Poitrine from '../../assets/img/soins-rituels/Poitrine_Coeur.png'
+import Matricia from '../../assets/img/soins-rituels/Matricia.png'
+import Chrysalide from '../../assets/img/soins-rituels/Chrysalide.png'
+import Matronae from '../../assets/img/soins-rituels/Matronae.png'
+import Relevailles from '../../assets/img/soins-rituels/Relevailles.png'
+import Yule from '../../assets/img/soins-rituels/Yule.png'
+import Ostara from '../../assets/img/soins-rituels/Ostara.png'
+import Litha from '../../assets/img/soins-rituels/Litha.png'
+import Mabon from '../../assets/img/soins-rituels/Mabon.png'
+import GardiensTerre from '../../assets/img/soins-rituels/Gardiens_Terre.png'
+import Myrrophore from '../../assets/img/soins-rituels/Myrrophore.png'
+import DernierEnvol from '../../assets/img/soins-rituels/Dernier_Envol.png'
+
+import videoEspace from '../../assets/img/video_espace_soin.mp4'
 
 import './careRituals.css'
+import { Grid, Typography } from '@mui/material'
+import { useTexts } from '../../hooks/useTexts'
+import { Map } from '../../components/Map'
+import { RitualItem } from '../../components/RitualItem'
 
-export default function CareRituals() {
+export const CareRituals = () => {
+  const t = useTexts();
+
   return (
     <div className="care-rituals flex-column">
       {/* Bannière */}
@@ -63,7 +77,6 @@ export default function CareRituals() {
       </div>
 
       {/* Essence des rituels */}
-
       <div className="rituals-essence px-6 py-2">
         <h4 className='fs-1-25 ff-title'>L'essence des soins rituels</h4>
         <p>
@@ -97,161 +110,111 @@ export default function CareRituals() {
       </div>
 
       {/* Liste des rituels */}
-      <div className="rituals-description px-6 py-2 flex-column align-center justify-center gap-2">
-        <h3>Découvrez tous mes rituels de soin</h3>
+      <Grid size={12} container flexDirection={'column'} spacing={6} py={"4rem"} px={"6rem"}>
+        <Typography variant="h3">{t.rituals.ritualsListTitle}</Typography>
 
-        <div className="rituals-line">
+        <Grid size={12} container flexDirection={'row'} spacing={4}>
           {/* Rituel de la poitrine et du coeur */}
-          <div className="ritual-item">
-            <img src={poitrine} alt="" loading="lazy" className="rituel" />
-            <h6>Rituel de la poitrine et du coeur</h6>
-            <p>
-              Un rituel pour honorer sa poitrine, prendre soin de ses émotions,
-               ses relations, et se reconnecter avec son coeur.
-            </p>
-            <button className='btn-sm btn-secondary'>En savoir +</button>
-          </div>
+          <RitualItem name={t.rituals.chestHeart.name} image={Poitrine} description={t.rituals.chestHeart.description} link='/' size={4} />
 
           {/* Rituel de la Matricia */}
-          <div className="ritual-item">
-            <img src={matri} alt="" loading="lazy" className="rituel" />
-            <h6>Rituel Matricia</h6>
-            <p>
-              Un soin de libération des mémoires utérines, et de soutien aux maux et pathologies
-              de l'utérus.
-            </p>
-            <button className='btn-sm btn-secondary'>En savoir +</button>
-          </div>
+          <RitualItem name={t.rituals.Matricia.name} image={Matricia} description={t.rituals.Matricia.description} link='/' size={4} />
 
           {/* Rituel Chrysalide */}
-          <div className="ritual-item">
-            <img src={flowerHand} alt="" loading="lazy" className="rituel" />
-            <h6>Rituel Chrysalide</h6>
-            <p>
-              Un rituel de passage et de métamorphose? Pour célébrer ses transitions de vie, 
-              clore un étape et en ouvrir une nouvelle. Un espace où est sacralisée la renaissance de l'être.
-            </p>
-            <button className='btn-sm btn-secondary'>En savoir +</button>
-          </div>
-        </div>
+          <RitualItem name={t.rituals.Chrysalide.name} image={Chrysalide} description={t.rituals.Chrysalide.description} link='/' size={4} />
+        </Grid>
 
-        <div className="ritual-category">
-          Les rituels pour les mamans
-        </div>
+        <Grid size={12} container flexDirection={'column'} spacing={2}>
+          <Typography variant="h3">{t.rituals.ritualsCategory.mom}</Typography>
 
-        <div className="rituals-line">
+          <Grid size={12} container flexDirection={'row'} spacing={4}>
+            {/* Rituel des Matronae */}
+            <RitualItem name={t.rituals.Matronae.name} image={Matronae} description={t.rituals.Matronae.description} link='/' size={6} />
 
-          {/* Rituel des Matronae */}
-          <div className="ritual-item">
-            <img src={matronae} alt="" loading="lazy" className="rituel" />
-            <h6>Rituel des Matronae</h6>
-            <p>
-              Inspiré de nos traditions européennes et du savoir des Matrones, les accoucheuses
-              traditionnelles, pour prendre soin de la jeune maman en post-partum immédiat.
-            </p>
-            <button className='btn-sm btn-secondary'>En savoir +</button>
-          </div>
+            {/* Rituel du bain des Relevailles */}
+            <RitualItem name={t.rituals.Relevailles.name} image={Relevailles} description={t.rituals.Relevailles.description} link='/' size={6} />
+          </Grid>
+        </Grid>
 
-          {/* Rituel du bain des Relevailles */}
-          <div className="ritual-item">
-            <img src={flowerHand} alt="" loading="lazy" className="rituel" />
-            <h6>Rituel du bain des Relevailles</h6>
-            <p>
-              Un rituel pour clôturer symboliquement la fin du "mois d'or", et officialiser le
-               retour au monde de la jeune maman.
-            </p>
-            <button className='btn-sm btn-secondary'>En savoir +</button>
-          </div>
-        </div>
+        <Grid size={12} container flexDirection={'column'} spacing={2}>
+          <Typography variant="h3">{t.rituals.ritualsCategory.season}</Typography>
+          <Grid size={12} container flexDirection={'row'} spacing={4}>
+            {/* Rituel Yule */}
+            <RitualItem name={t.rituals.Yule.name} image={Yule} description={t.rituals.Yule.description} link='/' size={3} />
 
-        <div className="ritual-category">
-          Les rituels saisonniers
-        </div>
+            {/* Rituel Ostara  */}
+            <RitualItem name={t.rituals.Ostara.name} image={Ostara} description={t.rituals.Ostara.description} link='/' size={3} />
 
-        <div>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Odit quam quis fugit quaerat illo ab, molestiae minus.
-          Eligendi nisi cupiditate vel iusto omnis laudantium officia fugit expedita quod? Quo, itaque.
-        </div>
+            {/* Rituel Litha*/}
+            <RitualItem name={t.rituals.Litha.name} image={Litha} description={t.rituals.Litha.description} link='/' size={3} />
 
-        <div className="season-ritual">
-          <img src={carteSaison} alt="Image avec la roue des saisons Celtes" loading="lazy" />
+            {/* Rituel Mabon*/}
+            <RitualItem name={t.rituals.Mabon.name} image={Mabon} description={t.rituals.Mabon.description} link='/' size={3} />
+          </Grid>
+        </Grid>
 
-          <div className="season-ritual-description">
-            <h4>En ce moment, découvrez le rituel de Yule&nbsp;:</h4>
-            {/* Rituel de Yule */}
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptates,
-              sint cupiditate culpa, vitae voluptas excepturi vel et beatae fugiat eos maiores
-              iste soluta nisi! Nihil soluta labore sequi voluptas.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptates,
-              sint cupiditate culpa, vitae voluptas excepturi vel et beatae fugiat eos maiores
-              iste soluta nisi! Nihil soluta labore sequi voluptas.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptates,
-              sint cupiditate culpa, vitae voluptas excepturi vel et beatae fugiat eos maiores
-              iste soluta nisi! Nihil soluta labore sequi voluptas.
-            </p>
-            <button className='btn-sm btn-primary'>En savoir +</button>
-          </div>
-        </div>
+        <Grid size={12} container flexDirection={'column'} spacing={2}>
+          <Typography variant="h3">{t.rituals.ritualsCategory.personalized}</Typography>
 
-        <div className="ritual-category">
-          Les rituels sur mesure
-        </div>
+          <Typography>Des soins signature, entièrement personnalisés, pensés pour vous et par vous</Typography>
 
-        <div className="rituals-personalized">
-          <p>
-            Des soins signature, entièrement personnalisés, pensés pour vous et par vous
-          </p>
+          <Grid size={12} container flexDirection={'row'} spacing={4}>
+            {/* Rituel des Gardiens de la Terre */}
+            <RitualItem name={t.rituals.GardiensTerre.name} image={GardiensTerre} description={t.rituals.GardiensTerre.description} link='/' size={4} />
 
-          <div className="rituals-line">
-            <div className="ritual-item">
-              <img src={gardienTerre} alt="" loading="lazy" className="rituel" />
-              <h6>Rituel des Gardiens de la Terre</h6>
-              <p>
-                Un soin botanique, de beauté et bien être du visage et du buste, selon vos besoins physiques,
-                 psychiques et émotionnels.
-              </p>
-              <button className='btn-sm btn-secondary'>En savoir +</button>
-            </div>
+            {/* Rituel Myrrhophores  */}
+            <RitualItem name={t.rituals.Myrrhophores.name} image={Myrrophore} description={t.rituals.Myrrhophores.description} link='/' size={4} />
 
-            <div className="ritual-item">
-              <img src={onctions} alt="" loading="lazy" className="rituel" />
-              <h6>Rituel Onctions Sacrées</h6>
-              <p>
-                Un rituel en deux temps, à la découverte de votre oction sacrée thérapeutique. Un soin 
-                qui place l'aromathérapie vibratoire et sprirituelle au service de votre évolution 
-                personnelle.
-              </p>
-              <button className='btn-sm btn-secondary'>En savoir +</button>
-            </div>
-          </div>
-        </div>
+            {/* Rituel Dernier Envol */}
+            <RitualItem name={t.rituals.DernierEnvol.name} image={DernierEnvol} description={t.rituals.DernierEnvol.description} link='/' size={4} />
+          </Grid>
+        </Grid>
 
-      </div>
+      </Grid>
 
-      <div className="explication-rituals px-6 py-2">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic reiciendis placeat eos
-          officiis eveniet? Quibusdam quidem provident, quasi cupiditate at nam, amet nemo
-          ullam dolores temporibus suscipit vel corporis fuga?
-        </p>
-      </div>
+      {/* Espace de soin */}
+      <Grid size={12} container spacing={2} flexDirection={'column'} py={'3rem'} px={'6rem'} className={'treatment-area'}>
+        {/* <Typography variant="h4" marginBottom={2}>{t.rituals.treatmentArea.treatmentArea}</Typography> */}
 
-      <div className="flex-column align-center justify-center px-6">
-        <h4 className='fs-1-25 ff-title'>Mon espace de soin :</h4>
-        <div className="space-care-description flex">
-          <img src={flowerWall} alt="Photo de l'espace de soin" loading="lazy" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic reiciendis placeat eos
-            officiis eveniet? Quibusdam quidem provident, quasi cupiditate at nam, amet nemo
-            ullam dolores temporibus suscipit vel corporis fuga?
-          </p>
-        </div>
-      </div>
+        <Grid size={12} container flexDirection={'row'} spacing={2}>
+
+          <Grid size={3}>
+            <video loop autoPlay muted playsInline>
+              <source src={videoEspace} type="video/mp4"></source>
+            </video>
+          </Grid>
+
+          <Grid size={9} container flexDirection={'column'} py={2} spacing={4}>
+            <Grid size={12}>
+              <Typography variant="h3" className='typoTanPearl'>{t.rituals.treatmentArea.areaName}</Typography>
+              <Typography fontStyle={'italic'}>{t.rituals.treatmentArea.etymology1}</Typography>
+              <Typography>{t.rituals.treatmentArea.etymology2}</Typography>
+            </Grid>
+
+            <Grid size={12} container flexDirection={'column'} spacing={1}>
+              <Typography>{t.rituals.treatmentArea.presentation1}</Typography>
+              <Typography>{t.rituals.treatmentArea.presentation2}</Typography>
+              <Typography>{t.rituals.treatmentArea.presentation3}</Typography>
+              <Typography>{t.rituals.treatmentArea.presentation4}</Typography>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+
+      <Grid size={12} container flexDirection={'row'} spacing={2} py={'3rem'} px={'6rem'} >
+        <Grid size={3} container flexDirection={'column'} spacing={1}>
+          <Typography>{t.general.localisation.sisteron}</Typography>
+          <Typography>{t.general.localisation.Forcalquier}</Typography>
+          <Typography>{t.general.localisation.Aix}</Typography>
+          <Typography>{t.general.localisation.Marseille}</Typography>
+        </Grid>
+        <Grid size={9}>
+          <Map />
+        </Grid>
+      </Grid>
 
       <div className="flex-row align-center justify-center gap-1 px-6 py-2">
-        <img src={flowerHand} alt="Logo Claire Aube" loading="lazy" className='rituals-contact-img'/>
+        <img src={flowerHand} alt="Logo Claire Aube" loading="lazy" className='rituals-contact-img' />
         <div className="flex-column align-center justify-center gap-2">
           <p>
             Vous vous sentez appelée à vivre un rituel avec moi ? <br />
