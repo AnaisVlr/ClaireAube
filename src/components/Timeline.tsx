@@ -1,21 +1,22 @@
-import { Box, Container, Typography, Avatar } from "@mui/material";
+import { Typography, Avatar, useTheme, useMediaQuery, Grid, Box } from "@mui/material";
 import { TimelineType } from "../types";
 
 export const Timeline = (props: TimelineType) => {
   const { timelineItems } = props;
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <Container sx={{ py: 8 }}>
-      <Box
-        sx={{
-          position: "relative",
-          mt: 8,
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
-        {/* Ligne horizontale */}
+    <Grid
+      container
+      spacing={4}
+      py={2}
+      position="relative"
+      justifyContent={isSmallScreen ? "center" : "space-between"}
+      alignItems="center"
+    >
+      {/* Ligne horizontale uniquement sur grand écran */}
+      {!isSmallScreen && (
         <Box
           sx={{
             position: "absolute",
@@ -23,20 +24,19 @@ export const Timeline = (props: TimelineType) => {
             left: 0,
             width: "100%",
             height: "4px",
-            bgcolor: "primary.main",
+            bgcolor: "primary.dark",
             zIndex: 1,
           }}
         />
+      )}
 
+      <Grid size={12} container spacing={2}>
         {timelineItems.map((item, index) => (
-          <Box
+          <Grid
             key={index}
-            sx={{
-              position: "relative",
-              textAlign: "center",
-              zIndex: 2,
-              flex: 1,
-            }}
+            size={{ xs: 12, sm: 2.4 }}
+            textAlign={"center"}
+            zIndex={2}
           >
             <Avatar
               src={item.image}
@@ -44,19 +44,19 @@ export const Timeline = (props: TimelineType) => {
               sx={{
                 width: 100,
                 height: 100,
-                border: "4px solid",
-                borderColor: "secondary.main",
                 mx: "auto",
                 mb: 2,
-                bgcolor: "background.paper",
+                padding: 1.5,
+                borderColor: "secondary.main",
+                backgroundColor: "primary.dark",
               }}
             />
             <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
               {item.title}
             </Typography>
-          </Box>
+          </Grid>
         ))}
-      </Box>
-    </Container>
+      </Grid>
+    </Grid>
   );
 };

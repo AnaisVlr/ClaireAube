@@ -187,19 +187,29 @@
     "faq": {
       "FAQ": "FAQ :",
       "question1": "Comment cela se passe-t-il concrètement ?",
-      "answer1": "lll",
+      "answer1_1": "Tous mes accompagnements sont individuels et personnalisés. Il n'y a pas de trame préétablie dans nos rencontres.",
+      "answer1_2": "Selon votre cas, vos problématiques, la densité du protocole de soin que je souhaite vous proposer et la nature de votre démarche ; ma façon de procéder ne sera pas la même, et mes suggestions pourront varier d'une séance à l'autre.",
+      "answer1_3": "Travailler avec le vivant c'est accepter de se laisser porter par l'instant présent.",
+      "answer1_4": "De votre côté, je vous invite à poser les mots sur ce qui vous appelle vers cet accompagnement ; une intention claire agit comme une boussole au départ du voyage. Mais gardez au cœur l'élan de rester ouverte à ce que nos rencontres peuvent vous amener à rencontrer. Le cheminement thérapeutique peut prendre de nombreux chemins et ouvrir de nombreuses portes, parfois cachées de notre mental et notre conscience…",
       "question2": "Quelle est la différence entre plusieurs rdv ponctuels et les accompagnements de suivis",
-      "answer2": "",
+      "answer2_1": "Nos rendez-vous peuvent être ponctuels ou faire l'objet d'un suivi régulier.",
+      "answer2_2": "Dans le cadre des rdv ponctuels, j'ouvre un espace en début de séance et il se referme à la fin. Il n'y a pas de continuité ou de suivi entre les séances.",
+      "answer2_3": "Lors d'un accompagnement suivi, un espace énergétique continu est ouvert entre vous et moi, de la première à la dernière séance. Je reste disponible pour répondre à vos questions, je prends de vos nouvelles et je peux affiner votre protocole de soin sur vos retours. Selon mes ressentis, je peux vous proposer des pratiques pour approfondir le travail et vous soutenir dans son intégration.",
+      "answer2_4": "Si vous souhaitez vous engager dans un suivi régulier, vous pourrez prochainement retrouver des propositions de formules, et il est également possible de créer un programme de soin sur mesure (sur devis).",
       "question3": "Où ont lieu nos rencontres ?",
       "answer3": "Je vous accueille dans mon espace de soin à côté de Sisteron, dans les Alpes de Haute Provence (04), ou vous propose d'effectuer nos rencontres en visio.",
       "question4": "Quels sont les tarifs ?",
-      "answer4": "1ère séance : 1h30/75€ \n Séances suivantes : 45min/55€ \nAccompagnements sur mesure :  sur devis",
+      "answer4_1": "1ère séance : 1h30/75€",
+      "answer4_2": "Séances suivantes : 45min/55€",
+      "answer4_3": "Accompagnements sur mesure :  sur devis",
       "question5": "Comment prendre RDV ?",
-      "answer5": "Vous pouvez me contacter par message privé sur Instagram ou par mail à cette adresse : claireaube.accompagnement@gmail.com"
+      "answer5": "Vous pouvez me contacter par message privé sur Instagram ou par mail à cette adresse :"
     }
   },
   "general": {
     "takeAppointment": "Je prend RDV !",
+    "takeAppointmentViaInsta": "Prendre RDV via Instagram",
+    "takeAppointmentViaEmail": "Prendre RDV par mail",
     "contactMe": "Me contacter",
     "learnMore": "En savoir +",
     "localisation": {
@@ -207,7 +217,8 @@
       "Forcalquier": "45min de Forcalquier",
       "Aix": "1h15 d'Aix en Provence",
       "Marseille": "1h30 de Marseille"
-    }
+    },
+    "email": "claireaube.accompagnement@gmail.com"
   },
   "disclaimer": {
     "title": "Clause de non-responsabilité médicale :",

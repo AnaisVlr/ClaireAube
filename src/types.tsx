@@ -1,7 +1,4 @@
-export interface QuestionType {
-  question: string,
-  answer: string
-}
+import { ReactNode } from "react"
 
 export interface PrestationType {
   title: string,
@@ -25,5 +22,24 @@ export interface RitualItemType {
   description: string,
   link: string,
   size: number
+}
+
+export interface QuestionType {
+  question: string;
+  answer: ReactNode; 
+}
+
+export interface FAQType {
+  questionList: QuestionType[];
+}
+
+export interface CityTravel {
+  city: string;
+  byCar: string;
+}
+
+export interface LocalisationType {
+  title?: string;
+  cities: CityTravel[];
 }
 

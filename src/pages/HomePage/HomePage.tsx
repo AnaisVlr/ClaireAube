@@ -28,44 +28,90 @@ export const HomePage = () => {
 
   return (
     <Grid size={12} container spacing={0}>
-      <Grid id="video-section" size={12} className="imageHomePage flex-row align-center justify-center p-1">
-        <video autoPlay loop muted playsInline>
+      {/* Vidéo */}
+      <Grid id="video-section" size={12} height={"100vh"}>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{
+            position: "absolute",
+            top: "0",
+            zIndex: "-1",
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "center"
+          }}
+        >
           <source src={video} type="video/mp4"></source>
         </video>
-        <img src={logo} alt="Logo Claire Aube" loading="lazy" />
+        <img
+          src={logo}
+          alt="Logo Claire Aube"
+          loading="lazy"
+          width={"100%"}
+          height={"100%"}
+          style={{ objectFit: "contain" }}
+        />
       </Grid>
-      <Container sx={{ py: 2, pt: 12, pb: 6 }}>
-        <Grid size={12} container spacing={2}>
-          <Grid size={4} className="pictureProfile">
-            <img src={profilePicture} alt="Photo de Claire Aube" loading="lazy" />
-          </Grid>
-          <Grid size={8} container spacing={2} sx={{ flexDirection: "column" }}>
-            <Typography className="typoTanPearl" variant="h5">{t.homePage.welcome}</Typography>
-            <Typography>{t.homePage.welcomeText}</Typography>
-            <Typography>{t.homePage.welcomeText2}</Typography>
-            <Typography>{t.homePage.welcomeText3}</Typography>
-            <Typography>{t.homePage.welcomeText4}</Typography>
-            <Grid size={12} container spacing={2} sx={{ flexDirection: "row", alignItems: "center" }}>
-              <Typography>{t.homePage.welcomeText5}</Typography>
-              <Button variant={"contained"} href="/contact">{t.general.takeAppointment}</Button>
-            </Grid>
+
+      {/* Intro */}
+      <Grid
+        container
+        size={12}
+        spacing={2}
+        flexDirection={{ xs: 'column', sm: 'row' }}
+        py={2}
+        px={2}
+        pt={{ xs: 6, sm: 12 }}
+      >
+        <Grid size={{ xs: 12, sm: 4 }} className="pictureProfile" textAlign={'center'}>
+          <img src={profilePicture} alt="Photo de Claire Aube" loading="lazy" />
+        </Grid>
+        <Grid size={{ xs: 12, sm: 8 }} container spacing={2} flexDirection={'column'}>
+          <Typography className="typoTanPearl" variant="h5">{t.homePage.welcome}</Typography>
+          <Typography>{t.homePage.welcomeText}</Typography>
+          <Typography>{t.homePage.welcomeText2}</Typography>
+          <Typography>{t.homePage.welcomeText3}</Typography>
+          <Typography>{t.homePage.welcomeText4}</Typography>
+          <Grid size={12} container spacing={2} flexDirection={'row'} alignItems={'center'}>
+            <Typography>{t.homePage.welcomeText5}</Typography>
+            <Button variant={"contained"} href="/contact">{t.general.takeAppointment}</Button>
           </Grid>
         </Grid>
-      </Container>
-      <video autoPlay muted playsInline className="banniere">
-        <source src={video2} type="video/mp4"></source>
+      </Grid>
+
+      <video autoPlay muted playsInline width={"100%"}>
+        <source src={video2} type="video/mp4" />
       </video>
-      <Grid size={12} container spacing={2} className="prestations-container" sx={{ flexDirection: "column", height: "100%", pb: 6 }}>
+
+      <Grid
+        container
+        size={12}
+        spacing={2}
+        py={2}
+        px={2}
+        flexDirection={'column'}
+        className="prestations-container"
+      >
         <Typography className="typoTanPearl" variant="h5" sx={{ pb: 1 }}>{t.homePage.myServices}</Typography>
         <Typography>{t.homePage.servicesDescription1}</Typography>
         <Typography>{t.homePage.servicesDescription2}</Typography>
         <Typography>{t.homePage.servicesDescription3}</Typography>
-        <Grid size={12} container spacing={2} justifyContent={"center"}>
+        <Grid
+          size={12}
+          container
+          spacing={2}
+          flexDirection={{ xs: 'column', sm: 'row' }}
+        >
           {prestationItems.map((prestation) => (
             <PrestationItem prestation={prestation} />
           ))}
         </Grid>
       </Grid>
+
       <Grid size={12} container spacing={2} flexDirection={'row'} justifyContent={'center'} className="disclaimer-container" sx={{ p: 6 }}>
         <Grid
           size={12}
@@ -86,6 +132,6 @@ export const HomePage = () => {
           </Grid>
         </Grid>
       </Grid>
-    </Grid>
+    </Grid >
   );
 }

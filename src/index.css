@@ -261,3 +261,8 @@ button, .btn {
 .bg-terracota {
   background-color: var(--terracota);
 }
+
+/* Timeline */
+.MuiAvatar-root.MuiAvatar-circular img {
+  width: 80%;
+}

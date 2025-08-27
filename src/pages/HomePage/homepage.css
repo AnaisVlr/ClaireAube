@@ -1,33 +1,3 @@
-/* Image de fond */
-.imageHomePage img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.imageHomePage video {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  object-position: center;
-}
-
-.banniere {
-  width: 100vw;
-}
-
-.banniere video {
-  width: 100vw;
-  object-fit: cover;
-  object-position: center;
-}
-
-.imageHomePage {
-  height: 100vh;
-}
 
 /* Presentation */
 
