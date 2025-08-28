@@ -19,6 +19,7 @@ import { useTexts } from '../../hooks/useTexts'
 import { Map } from '../../components/Map'
 import { RitualItem } from '../../components/RitualItem'
 import { BulletedList } from '../../components/BulletedList'
+import { Localisation } from '../../components/Localisation'
 
 export const CareRituals = () => {
   const t = useTexts();
@@ -45,6 +46,13 @@ export const CareRituals = () => {
     t.rituals.possibilities.p10,
     t.rituals.possibilities.p11,
     t.rituals.possibilities.p12,
+  ]
+
+  const cities = [
+    { city: "Sisteron", byCar: "10 minutes en voiture" },
+    { city: "Forcalquier", byCar: "45 minutes en voiture" },
+    { city: "Aix en Provence", byCar: "1h15 en voiture" },
+    { city: "Marseille", byCar: "1h30 en voiture" },
   ]
 
   return (
@@ -187,7 +195,7 @@ export const CareRituals = () => {
       </Grid>
 
       {/* Espace de soin */}
-      <Grid size={12} container spacing={2} flexDirection={'column'} py={{ xs: 2, sm: '3rem' }} px={{ xs: 2, sm: '6rem' }}>
+      <Grid size={12} container spacing={4} flexDirection={'column'} py={{ xs: 2, sm: '3rem' }} px={{ xs: 2, sm: '6rem' }}>
         {/* <Typography variant="h4" marginBottom={2}>{t.rituals.treatmentArea.treatmentArea}</Typography> */}
 
         <Grid size={12} container flexDirection={'row'} spacing={2}>
@@ -213,27 +221,14 @@ export const CareRituals = () => {
             </Grid>
           </Grid>
         </Grid>
+
+        <Grid>
+          <Typography variant="h5" fontWeight="bold" gutterBottom>Comment venir ?</Typography>
+          <Localisation cities={cities} />
+        </Grid>
       </Grid>
 
-      <Grid
-        size={12}
-        container
-        flexDirection={{ xs: 'column', sm: 'row' }}
-        spacing={{ xs: 2, sm: 6 }}
-        py={{ xs: 2, sm: "4rem" }}
-        px={{ xs: 2, sm: "6rem" }}
-        alignItems={'center'}
-      >
-        <Grid size={{xs: 12, sm: 3}} container flexDirection={'column'} spacing={1}>
-          <Typography>{t.general.localisation.sisteron}</Typography>
-          <Typography>{t.general.localisation.Forcalquier}</Typography>
-          <Typography>{t.general.localisation.Aix}</Typography>
-          <Typography>{t.general.localisation.Marseille}</Typography>
-        </Grid>
-        <Grid size={{xs: 12, sm: 9}}>
-          <Map />
-        </Grid>
-      </Grid>
+
 
       <Grid size={12} container spacing={2} flexDirection={'column'} py={2} px={{ xs: 2, sm: '6rem' }}>
         <Typography>{t.rituals.contact.sentence1}</Typography>
