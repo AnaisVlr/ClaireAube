@@ -212,13 +212,14 @@
     "takeAppointmentViaEmail": "Prendre RDV par mail",
     "contactMe": "Me contacter",
     "learnMore": "En savoir +",
-    "localisation": {
-      "sisteron": "10 min de Sisteron",
-      "Forcalquier": "45min de Forcalquier",
-      "Aix": "1h15 d'Aix en Provence",
-      "Marseille": "1h30 de Marseille"
-    },
-    "email": "claireaube.accompagnement@gmail.com"
+    "email": "claireaube.accompagnement@gmail.com",
+    "fullName": "Claire Aube",
+    "job": "Thérapeute holistique en santé Féminine et Ritualiste",
+    "findMeOnInsta": "Retrouve moi sur Instagram",
+    "legalMention": "Mentions légales",
+    "privatePolicy": "Politique de confidentialité",
+    "CGS": "CGS",
+    "medicalDisclaimer": "Médical disclaimer"
   },
   "disclaimer": {
     "title": "Clause de non-responsabilité médicale :",
