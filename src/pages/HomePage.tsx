@@ -1,12 +1,15 @@
-import { Button, Container, Grid, Typography } from '@mui/material';
-import profilePicture from '../../assets/img/photo_Claire.png';
-import video from '../../assets/img/video_background.mp4';
-import video2 from '../../assets/img/banniere.mp4';
-import logo from '../../assets/img/logo/logo_text_white.webp';
-import { PrestationItem } from '../../components/PrestationItem';
-import { PrestationType } from '../../types';
-import './homepage.css';
-import { useTexts } from '../../hooks/useTexts';
+import { Button, Grid, Typography } from '@mui/material';
+import { PrestationItem } from '../components/PrestationItem';
+import { PrestationType } from '../types';
+import { useTexts } from '../hooks/useTexts';
+import '../index.css';
+
+import profilePicture from '../assets/img/photo_Claire.png';
+import video from '../assets/img/video_background.mp4';
+import video2 from '../assets/img/banniere.mp4';
+import logo from '../assets/img/logo/logo_text_white.webp';
+import consultImg from '../assets/img/consult.png';
+import ritualsImg from '../assets/img/soins-rituels/soins-rituels-3.webp';
 
 export const HomePage = () => {
   const t = useTexts();
@@ -14,13 +17,13 @@ export const HomePage = () => {
   const prestationItems: PrestationType[] = [
     {
       title: t.consults.consults,
-      class: "prestations-item consultations-picture",
+      image: consultImg,
       description: t.homePage.consultsDescription,
       link: "/consultations"
     },
     {
       title: t.rituals.careRituals,
-      class: "prestations-item soins-picture",
+      image: ritualsImg,
       description: t.homePage.careRitualsDescription,
       link: "/soin-rituels"
     },
@@ -91,18 +94,21 @@ export const HomePage = () => {
         container
         size={12}
         spacing={2}
-        py={2}
-        px={2}
+        py={6}
+        px={6}
         flexDirection={'column'}
         className="prestations-container"
       >
         <Typography className="typoTanPearl" variant="h5" sx={{ pb: 1 }}>{t.homePage.myServices}</Typography>
-        <Typography>{t.homePage.servicesDescription1}</Typography>
-        <Typography>{t.homePage.servicesDescription2}</Typography>
-        <Typography>{t.homePage.servicesDescription3}</Typography>
+        <Grid container spacing={1}>
+          <Typography>{t.homePage.servicesDescription1}</Typography>
+          <Typography>{t.homePage.servicesDescription2}</Typography>
+          <Typography>{t.homePage.servicesDescription3}</Typography>
+        </Grid>
         <Grid
           size={12}
           container
+          justifyContent={'center'}
           spacing={2}
           flexDirection={{ xs: 'column', sm: 'row' }}
         >

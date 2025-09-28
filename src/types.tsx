@@ -2,7 +2,7 @@ import { ReactNode } from "react"
 
 export interface PrestationType {
   title: string,
-  class: string,
+  image: string,
   description: string,
   link: string
 }
