@@ -1,74 +1,166 @@
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import './contact.css'
-import { Box, Button, Checkbox, Container, FormControl, FormControlLabel, FormGroup, Grid, TextField, Typography } from '@mui/material';
+import './contact.css';
+import { Button, Checkbox, FormControlLabel, Grid, TextField, Typography } from '@mui/material';
 import { useTexts } from '../../hooks/useTexts';
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("xdkgnggl");
   const t = useTexts();
+
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return (
+      <Grid
+        container
+        direction="column"
+        alignItems="center"
+        justifyContent="center"
+        px={6}
+        py={12}
+        spacing={4}
+      >
+
+        <Typography>
+          ✅ {t.contact.formSent}
+        </Typography>
+
+        <Typography>
+          {t.contact.thankForContact}
+        </Typography>
+
+        <Button
+          variant="contained"
+          href="/"
+        >
+          {t.contact.backToHome}
+        </Button>
+      </Grid>
+    );
   }
+
+
   return (
-    <Container className='pt-1 px-6 pb-1'>
-      <Typography variant="h4">Me contacter</Typography>
+    <Grid container px={6} py={10} spacing={2}>
+      <Typography variant="h4">{t.general.contactMe}</Typography>
 
-      <Grid container spacing={2} size={12}>
-        <Grid size={6} >
-          <Typography>Besoin d'information ?<br />
-            Faisons connaissance via ce formulaire de contact
-          </Typography>
+      <Grid container spacing={4}>
 
-          <Grid display={"flex"} justifyContent={"center"}>
-            <Typography>OU</Typography>
+        {/* Bloc gauche */}
+        <Grid size={{ xs: 12, sm: 6 }}>
+          <Typography>{t.contact.needInformation}</Typography>
+
+          {/* Bloc formulaire */}
+          <Grid
+            size={12}
+            component="form"
+            onSubmit={handleSubmit}
+            container
+            spacing={2}
+          >
+            <Grid size={{ xs: 12, sm: 6 }}>
+              <TextField
+                fullWidth
+                name="firstName"
+                label="Prénom"
+                variant="outlined"
+                required
+              />
+            </Grid>
+            <Grid size={{ xs: 12, sm: 6 }}>
+              <TextField
+                fullWidth
+                name="lastName"
+                label="Nom"
+                variant="outlined"
+                required
+              />
+            </Grid>
+
+            <Grid size={12}>
+              <TextField
+                fullWidth
+                type="email"
+                name="email"
+                label="Email"
+                variant="outlined"
+                required
+              />
+            </Grid>
+
+            <Grid size={12}>
+              <Typography>{t.contact.prestations}</Typography>
+              <FormControlLabel
+                control={<Checkbox name="services" value="Consultation" />}
+                label="Consultation"
+              />
+              <FormControlLabel
+                control={<Checkbox name="services" value="Rituel de soin" />}
+                label="Rituel de soin"
+              />
+              <FormControlLabel
+                control={<Checkbox name="services" value="Guidance" />}
+                label="Guidance"
+              />
+              <FormControlLabel
+                control={<Checkbox name="services" value="Autre" />}
+                label="Autre"
+              />
+            </Grid>
+
+            <Grid size={12}>
+              <TextField
+                name="message"
+                label="Détaillez votre demande :"
+                multiline
+                rows={4}
+                fullWidth
+                required
+              />
+            </Grid>
+
+            <Grid size={12}>
+              <Button variant="contained" type="submit" disabled={state.submitting}>
+                {state.submitting ? 'Envoi en cours…' : 'Envoyer'}
+              </Button>
+            </Grid>
           </Grid>
-          <Grid display={"flex"} justifyContent={"space-around"}>
-            <Button sx={{ flexDirection: 'column' }} component="a" href={"mailto:" + t.general.email}>
+
+        </Grid>
+        <Grid size={{ xs: 12, sm: 6 }}>
+          <Typography fontWeight={600}>{t.contact.otherWayToContactMe}</Typography>
+
+          <Grid display="flex" justifyContent="space-around" mb={2}>
+            <Button sx={{ flexDirection: 'column', textTransform: 'none' }} component="a" href={`mailto:${t.general.email}`}>
               <FontAwesomeIcon icon={faEnvelope} />
               <Typography>{t.general.byEmail}</Typography>
             </Button>
-            <Button sx={{ flexDirection: 'column' }} component="a" href={"tel:" + t.general.phone}>
+            <Button sx={{ flexDirection: 'column', textTransform: 'none' }} component="a" href={`tel:${t.general.phone}`}>
               <FontAwesomeIcon icon={faPhone} />
               <Typography>{t.general.byPhone}</Typography>
             </Button>
           </Grid>
 
-          <Grid display={"flex"} justifyContent={"center"} container spacing={2} sx={{ p: 2, m: 0.5, borderRadius: 1, backgroundColor: 'secondary.main' }}>
-            <Typography>Vous pouvez aussi prendre RDV directement en ligne !</Typography>
-            <Button>
-              <a href='https://calendly.com/claireaube-accompagnement' target='_blank' className='btn-sm btn-primary br-4 fit-content'>
-                Prendre RDV
-              </a>
+          <Typography fontWeight={600}>{t.contact.takeAppointmentOnline}</Typography>
+
+          <Grid
+            display="flex"
+            justifyContent={'center'}
+            spacing={2}
+          >
+            <Button
+              variant="contained"
+              component="a"
+              href="https://calendly.com/claireaube-accompagnement"
+              target="_blank"
+            >
+              <Typography>{t.contact.takeAppointment}</Typography>
             </Button>
           </Grid>
         </Grid>
-
-        <Grid component="form" onSubmit={handleSubmit} container spacing={2} size={6}>
-          <TextField id="firstName" label="Prénom" variant="outlined" />
-          <TextField id="lastName" label="Nom" variant="outlined" />
-          <TextField fullWidth id="email" label="Email" variant="outlined" />
-          <Typography>Prestation(s) d'intéret : </Typography>
-          <Grid>
-            <FormControlLabel control={<Checkbox value={"Consultation"} />} label="Consultation" />
-            <FormControlLabel control={<Checkbox value={"Rituel de soin"} />} label="Rituel de soin" />
-            <FormControlLabel control={<Checkbox value={"Guidance"} />} label="Guidance" />
-            <FormControlLabel control={<Checkbox value={"Autre"} />} label="Autre" />
-          </Grid>
-          <TextField
-            id="message"
-            label="Détaillez votre demande :"
-            multiline
-            rows={4}
-            defaultValue=""
-            fullWidth
-          />
-          <Button variant="contained" type="submit">Envoyer</Button>
-        </Grid>
       </Grid>
-    </Container >
+    </Grid>
   );
 }

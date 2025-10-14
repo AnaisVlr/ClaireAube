@@ -224,7 +224,8 @@
     "byEmail": "Par mail",
     "byPhone": "De vive voix",
     "footer": "© 2025 Claire Aube - Tous droits réservés - ",
-    "contactForm": "Formulaire de contact"
+    "contactForm": "Formulaire de contact",
+    "or": "OU"
   },
   "disclaimer": {
     "title": "Clause de non-responsabilité médicale :",
@@ -238,5 +239,16 @@
     "share2": "Les informations diffusées n'ont en aucun cas pour vocation de remplacer une consultation avec un professionnel de santé.",
     "share3": "Ni ce site, ni les réseaux sociaux qui y sont liés, ne sauraient être tenus pour responsables de tout dommage, qu'il soit matériel ou corporel, résultant de l'usage ou de l'interprétation des contenus proposés.",
     "share4": "En acceptant les conditions d'accès et d'utilisation de ce site web, vous acceptez de libérer Claire Aube Zirah de toute responsabilité, y compris juridique et financière, liée à toute action entreprise sur la base des informations partagées ici ou sur les réseaux sociaux associés."
+  },
+  "contact": {
+    "formSent": "Formulaire envoyé avec succès !",
+    "needInformation": "Besoin d'information ? Faisons connaissance via ce formulaire de contact.",
+    "takeAppointmentOnline": "Vous pouvez aussi prendre RDV directement en ligne !",
+    "takeAppointment": "Prendre RDV !",
+    "prestations": "Prestation(s) d'intéret :",
+    "thankForContact": "Merci pour votre message. Je vous répondrai dès que possible.",
+    "backToHome": "Retour à l'accueil",
+    "otherWayToContactMe": "Autres moyens de contact :"
+    
   }
 }
