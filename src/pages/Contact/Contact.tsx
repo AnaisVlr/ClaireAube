@@ -5,9 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './contact.css'
 import { Box, Button, Checkbox, Container, FormControl, FormControlLabel, FormGroup, Grid, TextField, Typography } from '@mui/material';
+import { useTexts } from '../../hooks/useTexts';
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("xdkgnggl");
+  const t = useTexts();
   if (state.succeeded) {
     return <p>Thanks for joining!</p>;
   }
@@ -25,21 +27,17 @@ export default function Contact() {
             <Typography>OU</Typography>
           </Grid>
           <Grid display={"flex"} justifyContent={"space-around"}>
-            <Button>
-              <a href='mailto:claireaube.accompagnement@gmail.com' className="btn-sm flex-column">
-                <FontAwesomeIcon icon={faEnvelope} className='contact-icon fs-2' />
-                <div className='fw-bold'>Par mail</div>
-              </a>
+            <Button sx={{ flexDirection: 'column' }} component="a" href={"mailto:" + t.general.email}>
+              <FontAwesomeIcon icon={faEnvelope} />
+              <Typography>{t.general.byEmail}</Typography>
             </Button>
-            <Button>
-              <a href='tel:+33761210693' className="btn-sm flex-column">
-                <FontAwesomeIcon icon={faPhone} className='contact-icon fs-2' />
-                <div className='fw-bold'>De vive voix</div>
-              </a>
+            <Button sx={{ flexDirection: 'column' }} component="a" href={"tel:" + t.general.phone}>
+              <FontAwesomeIcon icon={faPhone} />
+              <Typography>{t.general.byPhone}</Typography>
             </Button>
           </Grid>
 
-          <Grid display={"flex"} justifyContent={"center"} container spacing={2} sx={{ p: 2, m: 0.5, borderRadius: 1, backgroundColor:'secondary.main'}}>
+          <Grid display={"flex"} justifyContent={"center"} container spacing={2} sx={{ p: 2, m: 0.5, borderRadius: 1, backgroundColor: 'secondary.main' }}>
             <Typography>Vous pouvez aussi prendre RDV directement en ligne !</Typography>
             <Button>
               <a href='https://calendly.com/claireaube-accompagnement' target='_blank' className='btn-sm btn-primary br-4 fit-content'>

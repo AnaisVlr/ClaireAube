@@ -219,7 +219,12 @@
     "legalMention": "Mentions légales",
     "privatePolicy": "Politique de confidentialité",
     "CGS": "CGS",
-    "medicalDisclaimer": "Médical disclaimer"
+    "medicalDisclaimer": "Médical disclaimer",
+    "phone": "+33761210693",
+    "byEmail": "Par mail",
+    "byPhone": "De vive voix",
+    "footer": "© 2025 Claire Aube - Tous droits réservés - ",
+    "contactForm": "Formulaire de contact"
   },
   "disclaimer": {
     "title": "Clause de non-responsabilité médicale :",
