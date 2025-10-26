@@ -3,11 +3,10 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import './contact.css';
 import { Button, Checkbox, FormControlLabel, Grid, TextField, Typography } from '@mui/material';
-import { useTexts } from '../../hooks/useTexts';
+import { useTexts } from '../hooks/useTexts';
 
-export default function Contact() {
+export const Contact = () => {
   const [state, handleSubmit] = useForm("xdkgnggl");
   const t = useTexts();
 

@@ -25,7 +25,7 @@ export interface RitualItemType {
 }
 
 export interface QuestionType {
-  question: string;
+  question: string | null;
   answer: ReactNode; 
 }
 
@@ -41,5 +41,19 @@ export interface CityTravel {
 export interface LocalisationType {
   title?: string;
   cities: CityTravel[];
+}
+
+export interface RitualInformations {
+  ritualName : string,
+  ritualPicture: string,
+  ritualDescrition : ReactNode,
+  whatsIncludes : string
+  physicalBenefits : string[],
+  energeticEmotionalBenefits : string[],
+  when : string[],
+  duration : string,
+  pricing: string,
+  isToKnow: boolean,
+  toKnow: string,
 }
 

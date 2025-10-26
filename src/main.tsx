@@ -1,17 +1,20 @@
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from "react-router";
+
+import { createTheme, ThemeProvider } from '@mui/material';
+
 import { HomePage } from './pages/HomePage.tsx'
 import { CareRituals } from './pages/Care/CareRituals.tsx';
 import { Consultations } from './pages/Care/Consultations.tsx';
 import Guidelines from './pages/Care/Guidelines.tsx';
 import { Header } from './components/Header.tsx';
 import Footer from './components/Footer.tsx';
-import Contact from './pages/Contact/Contact.tsx';
+import { Contact } from './pages/Contact.tsx';
+import { Ritual } from './pages/Care/Ritual.tsx';
+import { Disclaimer } from './pages/Disclaimer.tsx';
 
 import './index.css'
 
-import { createTheme, ThemeProvider } from '@mui/material';
-import { Disclaimer } from './pages/Disclaimer.tsx';
 
 const theme = createTheme({
   palette: {
@@ -46,6 +49,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/consultations" element={<Consultations />} />
         <Route path="/guidances" element={<Guidelines />} />
         <Route path="/soin-rituels" element={<CareRituals />} />
+        <Route path="/soin-rituels/:ritualName" element={<Ritual/>} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/medical-disclaimer" element={<Disclaimer />} />
       </Routes>

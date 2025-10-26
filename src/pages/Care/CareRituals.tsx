@@ -136,13 +136,13 @@ export const CareRituals = () => {
 
         <Grid size={12} container flexDirection={{ xs: 'column', sm: 'row' }} spacing={{ xs: 2, sm: 4 }}>
           {/* Rituel de la poitrine et du coeur */}
-          <RitualItem name={t.rituals.chestHeart.name} image={Poitrine} description={t.rituals.chestHeart.description} link='/' size={4} />
+          <RitualItem name={t.rituals.chestHeart.name} image={Poitrine} description={t.rituals.chestHeart.description} link='/soin-rituels/poitrine-coeur' size={4} />
 
           {/* Rituel de la Matricia */}
-          <RitualItem name={t.rituals.Matricia.name} image={Matricia} description={t.rituals.Matricia.description} link='/' size={4} />
+          <RitualItem name={t.rituals.Matricia.name} image={Matricia} description={t.rituals.Matricia.description} link='/soin-rituels/matricia' size={4} />
 
           {/* Rituel Chrysalide */}
-          <RitualItem name={t.rituals.Chrysalide.name} image={Chrysalide} description={t.rituals.Chrysalide.description} link='/' size={4} />
+          <RitualItem name={t.rituals.Chrysalide.name} image={Chrysalide} description={t.rituals.Chrysalide.description} link='/soin-rituels/chrysalide' size={4} />
         </Grid>
 
         <Grid size={12} container flexDirection={'column'} spacing={2}>
@@ -150,10 +150,10 @@ export const CareRituals = () => {
 
           <Grid size={12} container flexDirection={{ xs: 'column', sm: 'row' }} spacing={{ xs: 2, sm: 4 }}>
             {/* Rituel des Matronae */}
-            <RitualItem name={t.rituals.Matronae.name} image={Matronae} description={t.rituals.Matronae.description} link='/' size={6} />
+            <RitualItem name={t.rituals.Matronae.name} image={Matronae} description={t.rituals.Matronae.description} link='/soin-rituels/matronae' size={6} />
 
             {/* Rituel du bain des Relevailles */}
-            <RitualItem name={t.rituals.Relevailles.name} image={Relevailles} description={t.rituals.Relevailles.description} link='/' size={6} />
+            <RitualItem name={t.rituals.Relevailles.name} image={Relevailles} description={t.rituals.Relevailles.description} link='/soin-rituels/relevailles' size={6} />
           </Grid>
         </Grid>
 

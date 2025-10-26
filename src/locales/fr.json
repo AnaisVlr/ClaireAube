@@ -88,7 +88,57 @@
     },
     "chestHeart": {
       "name": "Rituel de la poitrine et du coeur",
-      "description": "Pour honorer sa poitrine, se reconnecter à son cœur et à ses émotions."
+      "description": "Pour honorer sa poitrine, se reconnecter à son cœur et à ses émotions.",
+      "descriptionDetail": {
+        "p1": "Un rituel pour honorer sa poitrine, pour prendre soin de ses émotions, se reconnecter avec son cœur.",
+        "p2": "On vient travailler sur sa relation aux autres et à soi, sur les blessures de l'estime de soi, les peines de cœur, etc... C'est un soin très axé sur l'amour, l'amour de soi, l'amour maternel et universel. ",
+        "p3": "La rose est une alliée de ce soin : elle vient harmoniser, ouvrir le coeur. Elle a une grande action sur la sphère émotionnelle, et apporte douceur, réconfort, confiance."
+      },
+      "physicalBenefits": {
+        "title": "Bienfaits physiques",
+        "p1": "Améliore la circulation sanguine et lymphatique",
+        "p2": "Libère les fascias",
+        "p3": "Favorise l'élimination des toxines emmagasinées dans cette zone",
+        "p4": "Soulage les tensions, les douleurs et pesanteurs",
+        "p5": "Libère des hormones telles que l'ocytocine, la sérotonine et les endorphines, qui apportent une sensation de bien-être, d'apaisement.",
+        "p6": "Réduit le cortisol, l'hormone du stress",
+        "p7": "Stimule le nerf vague",
+        "p8": "Purifie et régénère la peau de la poitrine et du décolleté"
+      },
+      "energeticEmotionalBenefits": {
+        "title": "Bienfaits énergétiques et émotionnels",
+        "p1": "Apporte un soulagement émotionnel des maux qui pèsent sur le coeur",
+        "p2": "Améliore l'estime de soi et son image corporelle",
+        "p3": "Réconcilie avec sa poitrine ",
+        "p4": "Ouvre le chakra du cœur "
+      },
+      "when": {
+        "r1": "Se sentent déconnectées de leurs émotions",
+        "r2": "Traversent une rupture affective ou un deuil physique/émotionnel",
+        "r3": "Souhaitent ritualiser la fin de leur allaitement et remercier leurs seins pour tout le travail accompli",
+        "r4": "Manquent, ou ont manqué d'amour, et plus particulièrement d'amour maternel",
+        "r5": "Cherchent à se reconnecter et à activer leur énergie féminine yin",
+        "r6": "Souhaitent ouvrir leur coeur à une plus grande capacité d'amour, de compsassion et d'empathie pour elles-mêmes et les autres",
+        "r7": "Ont besoin de soutien lors des transitions de vie qui transforment la poitrine : puberté, maternité, allaitement, ménopause...",
+        "r8": "Ont des blessures liées à l'image corporelle de leur poitrine, suite à des expériences négatives ou des difficultés maternelles (honte, rejet, critiques, sentiment de trahison...)",
+        "r9": "Manquent d'estime d'elles-mêmes",
+        "r10": "Veulent célébrer la fin de leur cancer du sein, prendre soin d'elles suite à une reconstruction mammaire ou une mastectomie (sur aval de votre médecin)"
+      },
+      "whatsIncludes": {
+        "title": "Ce rituel comprend :",
+        "i1": "visualisation,",
+        "i2": "diapason,",
+        "i3": "massage,",
+        "i4": "pochons chauds,",
+        "i5": "cataplasme,",
+        "i6": "drainage,",
+        "i7": "serrage de la poitrine,",
+        "i8": "transmission de l'automassage de la poitrine...",
+        "list": "Visualisation, diapason, massage, pochons chauds, cataplasme, drainage, serrage de la poitrine, transmission de l'automassage de la poitrine..."
+      },
+      "duration": "3h",
+      "pricing": "190€ (+45€ avec le kintsugi du cœur à ramener chez soi)",
+      "toKnow": "Le soin est réalisé avec la poitrine nue, et tout le sein est massé. Des caches-tétons peuvent être proposés à la demande, mais il est préférable de faire sans."
     },
     "Matricia": {
       "name": "Rituel Matricia",
@@ -137,6 +187,16 @@
     "contact": {
       "sentence1": "Vous vous sentez appelée à vivre un rituel avec moi ?",
       "sentence2": "Vous ne savez pas exactement lequel choisir ?"
+    },
+    "ritualDetails" : {
+      "FAQ" : {
+        "when": "Quand offrir ou s'offrir ce soin ?",
+        "duration": "Durée du soin",
+        "location": "Où a lieu le soin ?",
+        "pricing": "Tarif du soin",
+        "whatsInclude": "Ce qui est inclus",
+        "toKnow": "A savoir"
+      }
     }
   },
   "consults": {
@@ -249,6 +309,5 @@
     "thankForContact": "Merci pour votre message. Je vous répondrai dès que possible.",
     "backToHome": "Retour à l'accueil",
     "otherWayToContactMe": "Autres moyens de contact :"
-    
   }
 }

@@ -9,7 +9,8 @@ export const FAQ = ({ questionList }: FAQType) => {
   return (
     <>
       {questionList.map((question, idx) => (
-        <Accordion key={idx} sx={{ backgroundColor: "primary.contrastText" }}>
+        question ? 
+        <Accordion key={idx} sx={{ backgroundColor: "secondary.light" }}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls={`panel${idx}-content`}
@@ -24,7 +25,7 @@ export const FAQ = ({ questionList }: FAQType) => {
               question.answer
             )}
           </AccordionDetails>
-        </Accordion>
+        </Accordion> : null
       ))}
     </>
   );
