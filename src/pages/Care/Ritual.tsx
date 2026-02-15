@@ -31,7 +31,10 @@ export const Ritual = () => {
   const questionsFAQ: QuestionType[] = [
     {
       question: t.rituals.ritualDetails.FAQ.when,
-      answer: <BulletedList listItems={data.when} bulletColor="dark" />
+      answer: <>
+        <Typography>{t.rituals.forTheWomenWho}</Typography>
+        <BulletedList listItems={data.when} bulletColor="dark" />
+      </>
     },
     {
       question: t.rituals.ritualDetails.FAQ.duration,
@@ -46,12 +49,16 @@ export const Ritual = () => {
       answer: data.pricing
     },
     {
-      question: t.rituals.ritualDetails.FAQ.whatsInclude,
-      answer: data.whatsIncludes
-    },
-    {
       question: data.isToKnow ? t.rituals.ritualDetails.FAQ.toKnow : null,
       answer: data.toKnow
+    },
+    {
+      question: data.isContraindication ? t.rituals.ritualDetails.FAQ.contraindication : null,
+      answer: data.contraindication
+    },
+    {
+      question: data.isImportant ? t.rituals.ritualDetails.FAQ.important : null,
+      answer: data.important
     }
   ].filter((obj) => obj.question && obj.answer);
 

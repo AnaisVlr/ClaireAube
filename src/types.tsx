@@ -55,5 +55,9 @@ export interface RitualInformations {
   pricing: string,
   isToKnow: boolean,
   toKnow: string,
+  isContraindication: boolean,
+  contraindication: string,
+  isImportant: boolean,
+  important: string
 }
 

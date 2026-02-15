@@ -16,7 +16,6 @@ import videoEspace from '../../assets/img/video_espace_soin.mp4'
 
 import { Button, Grid, Typography } from '@mui/material'
 import { useTexts } from '../../hooks/useTexts'
-import { Map } from '../../components/Map'
 import { RitualItem } from '../../components/RitualItem'
 import { BulletedList } from '../../components/BulletedList'
 import { Localisation } from '../../components/Localisation'
@@ -162,16 +161,16 @@ export const CareRituals = () => {
           <Typography>{t.rituals.ritualsCategory.season.description}</Typography>
           <Grid size={12} container flexDirection={{ xs: 'column', sm: 'row' }} spacing={{ xs: 2, sm: 4 }}>
             {/* Rituel Yule */}
-            <RitualItem name={t.rituals.Yule.name} image={Yule} description={t.rituals.Yule.description} link='/' size={3} />
+            <RitualItem name={t.rituals.Yule.name} image={Yule} description={t.rituals.Yule.description} link='/soin-rituels/yule' size={3} />
 
             {/* Rituel Ostara  */}
-            <RitualItem name={t.rituals.Ostara.name} image={Ostara} description={t.rituals.Ostara.description} link='/' size={3} />
+            <RitualItem name={t.rituals.Ostara.name} image={Ostara} description={t.rituals.Ostara.description} link='/soin-rituels/ostara' size={3} />
 
             {/* Rituel Litha*/}
-            <RitualItem name={t.rituals.Litha.name} image={Litha} description={t.rituals.Litha.description} link='/' size={3} />
+            <RitualItem name={t.rituals.Litha.name} image={Litha} description={t.rituals.Litha.description} link='/soin-rituels/litha' size={3} />
 
             {/* Rituel Mabon*/}
-            <RitualItem name={t.rituals.Mabon.name} image={Mabon} description={t.rituals.Mabon.description} link='/' size={3} />
+            <RitualItem name={t.rituals.Mabon.name} image={Mabon} description={t.rituals.Mabon.description} link='/soin-rituels/mabon' size={3} />
           </Grid>
         </Grid>
 
@@ -182,13 +181,13 @@ export const CareRituals = () => {
 
           <Grid size={12} container flexDirection={{ xs: 'column', sm: 'row' }} spacing={{ xs: 2, sm: 4 }}>
             {/* Rituel des Gardiens de la Terre */}
-            <RitualItem name={t.rituals.GardiensTerre.name} image={GardiensTerre} description={t.rituals.GardiensTerre.description} link='/' size={4} />
+            <RitualItem name={t.rituals.GardiensTerre.name} image={GardiensTerre} description={t.rituals.GardiensTerre.description} link='/soin-rituels/gardien-terre' size={4} />
 
             {/* Rituel Myrrhophores  */}
-            <RitualItem name={t.rituals.Myrrhophores.name} image={Myrrophore} description={t.rituals.Myrrhophores.description} link='/' size={4} />
+            <RitualItem name={t.rituals.Myrrhophores.name} image={Myrrophore} description={t.rituals.Myrrhophores.description} link='/soin-rituels/myrrophore' size={4} />
 
             {/* Rituel Dernier Envol */}
-            <RitualItem name={t.rituals.DernierEnvol.name} image={DernierEnvol} description={t.rituals.DernierEnvol.description} link='/' size={4} />
+            <RitualItem name={t.rituals.DernierEnvol.name} image={DernierEnvol} description={t.rituals.DernierEnvol.description} link='/soin-rituels/dernier-envol' size={4} />
           </Grid>
         </Grid>
 

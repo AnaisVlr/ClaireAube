@@ -142,31 +142,390 @@
     },
     "Matricia": {
       "name": "Rituel Matricia",
-      "description": "Le soin profond de libération physico- énergétique de sa matrice"
+      "description": "Le soin profond de libération physico- énergétique de sa matrice",
+      "descriptionDetail": {
+        "p1": "Un soin physico-énergétique de connexion à sa matrice, pour se mettre à l'écoute de cette partie du corps malheureusement trop souvent brimée, malmenée, mise sous silence",
+        "p2": "Un rituel profond de libération des mémoires utérines, vécues et héritées, mais aussi subies lors de sa vie fœtale.",
+        "p3": "Le soin Matricia facilite également l'activation de son chaudron créatif, de son intuition et son énergie de vie",
+        "p4": "Il est idéal en soutien aux maux et pathologies de l'utérus, et pour favoriser la fertilité."
+      },
+      "physicalBenefits": {
+        "title": "Bienfaits physiques",
+        "p1": "Ramène du mouvement dans le petit bassin",
+        "p2": "Libère les toxines",
+        "p3": "Améliore l'oxygénation de la zone pelvienne",
+        "p4": "Optimise le dialogue hormonal ovaires-cerveau",
+        "p5": "Active le système parasympathique et stimule le nerf vague (diminue donc le cortisol, hormone du stress)",
+        "p6": "Détoxifie (l'utérus étant lié aux organes foie, rate et aux reins en médecine chinoise)",
+        "p7": "Favorise la fertilité et la conception",
+        "p8": "Active les neurotransmetteurs situés dans le ventre",
+        "p9": "Soutien la bonne santé des organes pelvien"
+      },
+      "energeticEmotionalBenefits": {
+        "title": "Bienfaits énergétiques et émotionnels",
+        "p1": "Accompagne les libérations de mémoires cristallisées dans le corps, et active un processus de nettoyage énergétique.",
+        "p2": "Aide à se conneccter à son essence profonde, à sa vérité.",
+        "p3": "Permet d'accéder à son pouvoir créatif et de concrétisation.",
+        "p4": "Active l'énergie du chakra sacré, et relance la vitalité, la libido...",
+        "p5": "Délimite et referme (si trop ouvert) son espace intime, et le protège des invasions énergétiques et des fuites inappropriées.",
+        "p6": "Ouvre l'espace intime (si fermé), et active le canal de réception féminin, permettant ainsi l'accès aux informations subtiles."
+      },
+      "when": {
+        "r1": "Ont vécu des blessures de l'intime (abus, viols, inceste, violences obstétricales, perte d'enfant, traumatismes de l'accouchement, etc...).",
+        "r2": "Souffrent de pathologies utérines, d'infertilité inexpliquée, de douleurs, d'irrégularité menstruelle, de SPM, de congestion pelvienne, etc...",
+        "r3": "Sont coupées de leur force vitale et sexuelle (problèmes de libido, manque d'énergie), n'arrivent pas à aller au bout des choses.",
+        "r4": "Ont besoin de soutien dans le cadre d'une IVG, IMG, ISG ou ING.",
+        "r5": "N'arrivent pas à prendre leur place, à se faire entendre et respecter ; qui souffrent d'un manque de légitimité, qui se reconnaissent dans le syndrome de l'imposteur ou dans le “people pleaser”.",
+        "r6": "Vivent le passage de la ménopause et la naissance d'une nouvelle relation avec leur utérus.",
+        "r7": "Souhaitent se reconnecter à leur énergie féminine, créatrice et intuitive.",
+        "r8": "Veulent se réconcilier avec leur corps, se réapproprier leur espace intime.",
+        "r9": "Souhaitent préparer leur nid pour une grossesse.",
+        "r10": "Ont des mémoires familiales transgénérationnelles liées à l'utérus.",
+        "r11": "Ont grandi dans le tabou du sexe, de la sexualité, des règles...",
+        "r12": "Ont subit des expériences difficiles pendant leur vie intra-utérine (déconnexion maternelle, déni de grossesse, jumeau perdu, deuil, violences...).",
+        "r13": "Vivent un surinvestissement relationnel maternel, amoureux ou mémoriel.",
+        "r14": "Souffrent de problématiques de territoire, de fusion (envahissement subi de l'autre ou imposé à l'autre)."
+      },
+      "whatsIncludes": {
+        "title": "Ce rituel comprend :",
+        "i1": "Bain de vapeur périnéal,",
+        "i2": "visualisation,",
+        "i3": "cataplasme,",
+        "i4": "massage de l'utérus avec une onction sacrée,",
+        "i5": "diapason,",
+        "i6": "serrage du bassin...",
+        "list": "Bain de vapeur périnéal, visualisation, cataplasme, massage de l'utérus avec une onction sacrée, diapason, serrage du bassin..."
+      },
+      "duration": "3h",
+      "pricing": "185€",
+      "toKnow": "Ce soin comporend des gestes au niveau du ventre, du pubis, de l'aine et de l'intérieur des jambes. Il est réalisé sans sous-vêtement. Bien sûr, l'intimité est respectée (paréo autour des hanches, plaid...). Il peut être réalisé que l'on ait un utérus physique ou non (si hystérectomie).",
+      "contraindication": "grossesse ; période du post-partum ; cancer et lymphomes ; occlusions intestinales ; descente d'organe, pose de filet ; stérilet ; anneaux gastriques, sleeve, bypass ; anesthésie générale récente ; chirurgie et cicatrice récente."
     },
     "Chrysalide": {
       "name": "Rituel Chrysalide",
-      "description": "Le rituel de passage par excellence, pour honorer les transitions et étapes de la vie"
+      "description": "Le rituel de passage par excellence, pour honorer les transitions et étapes de la vie",
+      "descriptionDetail": {
+        "p1": "Un rituel pour honorer sa cyclicité et ses transitions de vie.",
+        "p2": "Un temps pour clore une étape, où peut être accueilli et honoré ce qui a été ; mais aussi pour en ouvrir une nouvelle ; où peut être célébré le renouveau et ce qui s'en vient.",
+        "p3": "Un espace où est sacrélisé la renaissance de l'être.",
+        "p4": "Ce soin se réalise à 4 mains, 2 femmes qui prennent soin d'une autre femme. C'est un moment de cocréation et de partage entre chaque participante, une expérience d'amour et de soutien tout en sororité.",
+        "p5": "Ce soin est donné avec toute l'intimité, la douceur et la bienveillance nécessaires à l'accompagnement de la transformation. La femme est ici soutenue, épaulée et choyée dans sa métamorph'ose. Chaque geste, chaque toucher est fait dans le plus grand respect, et avec l'intention d'amour la plus pure.",
+        "p6": "On honore le corps, chacune de ses parts, pour ce qu'il a vécu, donné, soutenu... On honore la femme, dans toute sa vulnérabilité, et dans toute sa souveraineté. On honore l'âme et ses évolutions. On honore le sacré et le divin en soi.",
+        "p7": "Les serrages réalisés permettent de recentrer corps et esprit, de ramener son énergie au cœur de soi. L'enveloppement dans les tissus offre une sensation unique de contenance et de sécurité. On revient dans son cocon originel, qui nourrit et protège les transformations. Lorsque le soin touche à sa fin, c'est alors le moment de sortir de cette chrysalide et ouvrir ses ailes pour embrasser symboliquement une nouvelle vie et une nouvelle version de soi."
+      },
+      "physicalBenefits": {
+        "title": "Bienfaits physiques",
+        "p1": "Ce soin a une visée principalement symbolique et énergétique, mais de par le massage, la montée en chaleur et les serrages, il va évidement apporter beaucoup de bien-être (soulagement des tensions, libération des fascias, amélioration de la circulation sanguine et lymphatique, stimulation du nerf vague, élimination des toxines...)."
+      },
+      "energeticEmotionalBenefits": {
+        "title": "Bienfaits énergétiques et émotionnels",
+        "p1": "Rééquilibre les 7 chakras.",
+        "p2": "Relance la circulation énergétique des corps subtils.",
+        "p3": "Offre l'espace à la libération émotionnelle.",
+        "p4": "Libère les mémoires du corps.",
+        "p5": "Permet de réintégrer des parties de soi, de revenir à un état originel.",
+        "p6": "Imprime l'information du passage dans les cellules et dans tout son être."
+      },
+      "when": {
+        "r1": "Vivent un deuil physique ou symbolique.",
+        "r2": "Changent de vie (carrière, lieu de vie...).",
+        "r3": "S'apprêtent à vivre l'union sacrée du mariage (pour marquer un EVJF).",
+        "r4": "Souhaitent se célébrer et honorer un nouveau tour du soleil (anniversaire).",
+        "r5": "Accueillent leurs premières lunes.",
+        "r6": "Entrent dans l'ère de la Femme sage et rencontrent la ménopause.",
+        "r7": "Sont nées par césarienne et n'ont pas pu être actrices dans leur processus de mise au monde."
+      },
+      "whatsIncludes": {
+        "title": "Ce rituel comprend :",
+        "list": "Ecoute active autour d'une boisson épicée, massage corps intégral, montée en chaleur, serrage du corps aux tissus en 7 points, activation par une onction sacrée de passage, retour à soi, temps d'échange et tirage d'oracle."
+      },
+      "duration": "4h",
+      "pricing": "350€",
+      "toKnow": "Ce soin est idéalement réalisé sans sous-vêtement. Bien-sûr, l'intimité est respectée. Réalisé à 4 mains, avec ma soeur de coeur Manon, doula et sophrologue."
     },
     "Matronae": {
       "name": "Rituel des Matronae",
-      "description": "Le rituel de la jeune accouchée, du post partum immédiat"
+      "description": "Le rituel de la jeune accouchée, du post partum immédiat",
+      "descriptionDetail": {
+        "p1": "Un rituel inspiré de nos traditions européennes et du savoir des Matrones, les accoucheuses traditionnelles, pour prendre soin de la jeune maman.",
+        "p2": "Toutes les étapes du soin, les préparations de plantes et les breuvages utilisés sont issus d'un long travail de recherche sur ce qui se faisait avant, sur les rites ancestraux pratiqués autour de la naissance et du post-partum.",
+        "p3": "Ce soin était habituellement donné quotidiennement, durant les 40 jours qui suivaient l'accouchement. Il parle de l'histoire oubliée des femmes qui prenaient soins des autres ; et du matrimoine de nos grand-mères, de nos guérisseuses."
+      },
+      "physicalBenefits": {
+        "title": "Bienfaits physiques",
+        "p1": "Soulage les douleurs et libère les fascias",
+        "p2": "Favorise la remise en place des organes",
+        "p3": "Ramène du mouvement dans le petit bassin",
+        "p4": "Favorise la bonne cicatrisation des tissus et diminue les œdèmes au niveau périnéal",
+        "p5": "Active la circulation sanguine et lymphatique",
+        "p6": "Ramène de la tonicité à la peau",
+        "p7": "Soulage les tensions et engorgements de la poitrine",
+        "p8": "Libère des hormones telles que l'ocytocine, la sérotonine et les endorphines, qui apportent une sensation de bien-être, d'apaisement",
+        "p9": "Réduit le cortisol, hormone du stress",
+        "p10": "Stimule le nerf vague"
+      },
+      "energeticEmotionalBenefits": {
+        "title": "Bienfaits énergétiques et émotionnels",
+        "p1": "Offre du soutien, de la douceur, de l'écoute, pour accompagner le tsunami émotionnel de l'entrée dans la maternité",
+        "p2": "Permet de conscientiser et intégrer le grand passage magique de la femme à la mère.",
+        "p3": "Vient réchauffer et stimuler l'énergie vitale des organes"
+      },
+      "when": {
+        "r1": "Sont en post-partum immédiat"
+      },
+      "whatsIncludes": {
+        "title": "Ce rituel comprend :",
+        "i1": "Ecoute active autour d'une boisson restaurante,",
+        "i2": "bain de vapeur périnéal ou bain de siège aux plantes,",
+        "i3": "massage corps intégral,",
+        "i4": "cataplasme ventre et poitrine,",
+        "i5": "bandage,",
+        "i6": "serrage et bordage aux tissus.",
+        "list": "Ecoute active autour d'une boisson restaurante, bain de vapeur périnéal ou bain de siège aux plantes, massage corps intégral, cataplasme ventre et poitrine, bandage, serrage et bordage aux tissus."
+      },
+      "duration": "2h30",
+      "pricing": "160€",
+      "toKnow": "Si vous souhaitez venir avec votre bébé, il est possible de faire des pauses pendant le soin s'il a besoin de vous. Néanmoins je recommande la présence d'un proche pour s'en occuper et vous permettre de profiter au maximum du rituel. Vos proches sont les bienvenus dans mon local de soin. En cas de difficultés d'organisation (maman solo, pas de relai, etc...), n'hésitez pas à me contacter. Nous trouverons des solutions.",
+      "contraindication": "Au sujet des bains (de siège ou de vapeur), ils ne seront pas réalisés en cas de : saignements rouges et frais, fièvre, infection, bouffées de chaleur, lochies jaunâtres, sueurs nocturnes. Ni si l'accouchement a été spontané avant la 38ème semaine. Par précaution, et en dehors de ces cas de figure ci dessus, on attendra 7 jours pour pratiquer les bains.",
+      "important": "Ramener un foulard ou un châle pour couvrir le ventre en sortant du soin"
     },
     "Relevailles": {
       "name": "Rituel du bain des Relevailles",
-      "description": "Le soin pour clôturer symboliquement la fin du mois d'or"
+      "description": "Le soin pour clôturer symboliquement la fin du mois d'or",
+      "descriptionDetail": {
+        "p1": "Inscrit lui aussi dans les rites et traditions européennes, ce soin était ici donné pour clôturer symboliquement la période de la convalescence, la fin du “mois d'or”.",
+        "p2": "Il venait officialiser la réintégration dans la communauté de la mère, annoncer son retour au monde (retour au travail, retour à la vie active, retour à la sensualité retrouvée, etc...).",
+        "p3": "Aujourd'hui, on sait bien que le post-partum dure plusieurs années, et que les changements (physiques, psychiques, cérébraux...) qui s'opèrent chez la jeune maman peuvent l'impacter fortement et longtemps. C'est une nouvelle identité toute entière qui se dessine. ",
+        "p4": "Alors ce soin n'a pas pour but de précipiter les choses... simplement de s'accorder un retour à soi, pour se rappeler qu'au delà d'être une mère, on est aussi une femme."
+      },
+      "physicalBenefits": {
+        "title": "Bienfaits physiques",
+        "p1": "Active la circulation sanguine et lymphatique",
+        "p2": "A une action dynamisante et énergisante sur le corps",
+        "p3": "Ramène de la tonicité et de l'éclat à la peau",
+        "p4": "Libère les fascias",
+        "p5": "Favorise l'élimination des toxines, détoxifie et purifie",
+        "p6": "Soulage les tensions et douleurs",
+        "p7": "Libère des hormones telles que l'ocytocine, la sérotonine et les endorphines, qui apportent une sensation de bien-être, d'apaisement",
+        "p8": "Réduit le cortisol, hormone du stress",
+        "p9": "Stimule le nerf vague"
+      },
+      "energeticEmotionalBenefits": {
+        "title": "Bienfaits énergétiques et émotionnels",
+        "p1": "Acte le passage symbolique des relevailles",
+        "p2": "Ouvre un espace d'accueil des émotions complexes liées à la double identité femme et mère",
+        "p3": "Permet de se reconnecter à son corps, de redélimiter ses contours énergétiques"
+      },
+      "when": {
+        "r1": "Veulent célébrer la fin de leur mois d'or",
+        "r2": "Sont en post-partum et ont besoin de prendre soin d'elles"
+      },
+      "whatsIncludes": {
+        "title": "Ce rituel comprend :",
+        "i1": "Ecoute active autour d'une boisson épicée,",
+        "i2": "bain intégral chaud aux plantes et sel d'epsom,",
+        "i3": "pochon adoucissant,",
+        "i4": "frictions,",
+        "i5": "montée en chaleur et sudation,",
+        "i6": "second bain tiède,",
+        "i7": "massage corps intégral,",
+        "i8": "masque visage,",
+        "i9": "cataplasme ventre et poitrine,",
+        "i10": "bandage,",
+        "i11": "serrage et bordage aux tissus.",
+        "list": "Ecoute active autour d'une boisson épicée, bain intégral chaud aux plantes et sel d'epsom, pochon adoucissant, frictions, montée en chaleur et sudation, second bain tiède, massage corps intégral, masque visage, cataplasme ventre et poitrine, bandage, serrage et bordage aux tissus."
+      },
+      "duration": "3h",
+      "pricing": "185€",
+      "toKnow": "Je recommande que la maman soit pleinement disponible pour vivre ce soin.",
+      "important": "Ramener un foulard ou un châle pour couvrir le ventre en sortant du soin"
     },
     "Yule": {
       "name": "Rituel de Yule",
-      "description": "Hiver"
+      "description": "Hiver",
+      "descriptionDetail": {
+        "p1": "«Quand la danse du soleil est la plus courte et la plus proche de la Terre, les anciens disent que la porte du solstice s'ouvre pour fêter le retour de la lumière».",
+        "p2": "Le solstice d'hiver marque le jour le plus court de l'année, le moment où l'obscurité semble remporter la victoire, juste avant la renaissance du soleil et le lent cheminement vers le retour de la lumière. ",
+        "p3": "Au cœur de l'hiver, je propose un temps en résonance avec la Nature, une parenthèse pour se reposer, se cocooner, se ressourcer. Un espace pour se nourrir et se restaurer intérieurement.",
+        "p4": "Un temps de gratitude pour notre corps et tout ce qu'il a accompli, et un temps pour poser ses intentions pour l'avenir et toutes ses potentialités, qui germent en dormance au creux de soi.",
+        "p5": "Le rituel de Yule est une invitation à se reconnecter à son essence profonde et sa propre lumière. Par ce mouvement de repli sur soi, cette posture réceptive d'introspection, le soin stimule l'écoute de son être authentique, le téléchargement de nouvelles informations ou idées, et il est propice à l'expansion des rêves. Il est en cela très empreint de l'énergie de la carte de l'Ermite du tarot, et donc aussi tout à fait adapté pour honorer ses hivers intérieurs, ses besoins de se couper du monde pour se retrouver, et en soutien à toutes les fins de cycles.",
+        "p6": "La lumière, le feu et la douce chaleur sont omniprésents tout au long du rituel. Les plantes, les épices et résineux qui accompagnent le soin sont sciemment choisis pour stimuler le système immunitaire, rééquilibrer le manque de luminosité saisonnier, et donc favoriser un retour à la joie, une reconnexion à son enfant-soleil intérieur.",
+        "p7": "Pour finir, dans de nombreuses traditions, la mythologie qui entoure Yule est intimement liée aux femmes, aux mères et à la magie de l'enfantement. Depuis la nuit des temps, on y célèbre l'origine du Monde et les Déesses-mères, des divinités de la fertilité et de la fécondité qui président aux mystères de la Vie et de la Mort.",
+        "p8": "Vivre ce soin est aussi une manière d'honorer la mémoire des ancêtres féminines de sa lignée, qui ont porté et donné la Vie, chéri et nourri des générations d'enfants à travers le monde et à travers le temps."
+      },
+      "physicalBenefits": {
+        "title": "Bienfaits physiques",
+        "p1": "Stimule le système immunitaire",
+        "p2": "Dégage les voies respiratoires",
+        "p3": "Libère des hormones telles que l'ocytocine, la sérotonine et les endorphines, qui apportent une sensation de bien-être, d'apaisement.",
+        "p4": "Réduit le cortisol, l'hormone du stress",
+        "p5": "Stimule le nerf vague",
+        "p6": "Libère les fascias",
+        "p7": "Améliore la qualité du sommeil"
+      },
+      "energeticEmotionalBenefits": {
+        "title": "Bienfaits énergétiques et émotionnels",
+        "p1": "Facilite l'introspection, l'écoute intérieure, l'intuition",
+        "p2": "Stimule la capacité à rêver",
+        "p3": "Reconnecte à son soleil intérieur, à la joie de vivre",
+        "p4": "Libère de la place, déleste",
+        "p5": "Vient réchauffer et stimuler l’énergie vitale des organes",
+        "p6": "Calme les distractions mentales",
+        "p7": "Offre une meilleure écoute de ses émotions",
+        "p8": "Ouvre le 3ème œil",
+        "p9": "Apporte un regard neuf sur la vie"
+      },
+      "when": {
+        "r1": "Ont besoin de se cocooner pendant l’hiver",
+        "r2": "Souffrent d’une baisse de moral saisonnière",
+        "r3": "Vivent leur hiver intérieur ( 60 ans et +)",
+        "r4": "Sont dans leur phase menstruelle",
+        "r5": "Ont besoin de travailler leur écoute interne, de se trouver parmi les voix qui les entourent",
+        "r6": "Veulent marquer une fin de cycle, un passage"
+      },
+      "whatsIncludes": {
+        "title": "Ce rituel comprend :",
+        "i1": "Rituel de libération et d’intentions,",
+        "i2": "étirements aux tissus,",
+        "i3": "diapasons,",
+        "i4": "massage ventre manuel et kansa chaud,",
+        "i5": "bougie auriculaire,",
+        "i6": "soin du visage d’hiver (honey tapping, pochons chauds, bain de vapeur aux plantes, cataplasme...)",
+        "list": "Rituel de libération et d’intentions, étirements aux tissus, diapasons, massage ventre manuel et kansa chaud, bougie auriculaire, soin du visage d’hiver (honey tapping, pochons chauds, bain de vapeur aux plantes, cataplasme...)"
+      },
+      "duration": "3h",
+      "pricing": "185€",
+      "contraindication": "Grossesse",
+      "important": "Merci de m'informer en amont en cas d'allergies à certaines plantes/actifs"
     },
     "Ostara": {
       "name": "Rituel d'Ostara",
-      "description": "Printemps"
+      "description": "Printemps",
+      "descriptionDetail": {
+        "p1": "Ostara, deuxième sabbat mineur de la Roue de l’année, est célébré lors de l’équinoxe de printemps.",
+        "p2": "Ce jour marque l’équilibre parfait entre jouret nuit, entre lumière et obscurité.",
+        "p3": "Symboliquement, Ostara nous parle de renaissance, de croissance et de renouveau après la longue traversée de l’hiver, après cette mise au repos de la Terre et ses habitants. Il est temps de sortir de son logis, de son cocon, pour s’ouvrir au monde extérieur.",
+        "p4": "On y célèbre le réveil de la Nature : la douce chaleur qui revient, les bourgeons qui sortent de leur dormance, les premiers bourdonnements des insectes qui s’envolent…",
+        "p5": "Ostara nous invite donc à impulser une énergie nouvelle dans notre vie, à relancer notre sève vitale pour animer nos envies, nos projets, nos désirs… ",
+        "p6": "C’est le moment de créer ; de s’élancer vers de nouveaux buts, de nouvelles opportunités ; d’insuffler un élan novateur dans notre quotidien.",
+        "p7": "A l’image des bulbes qui sortent leurs têtes du berceau de la Terre, et des fleurs qui s’ouvrent au monde, nous sommes appelés à oser aller vers la lumière, à se montrer tel que nous sommes, à rayonner dans notre singularité.",
+        "p8": "A être, tout simplement.",
+        "p9": "Le rituel d’Ostara offre un temps de connexion aux énergies printanières.",
+        "p10": "Je vous accompagne d’abord lors d’un rituel d’intentions, afin d’ouvrir symboliquement l’espace à tous vos nouveaux projets et souhaits pour le cycle à venir.",
+        "p11": "Puis, en résonnance avec l’appel du jardin qui demande à être entretenu, stimulé, abreuvé, choyé… je prend soin du jardin de votre corps et de votre âme. J’honore la fleur que vous êtes, et vous apporte les ressources nécessaires à votre floraison.",
+        "p12": "J’arrose vos racines, je vous aide à vous ancrer profondément. Je relance votre sève vitale, les flux qui vous traversent. J’insuffle un élan de vie et de renouveau dans votre corps, afin que du bourgeon qui renferme toutes les potentialités, vous vous éleviez vers le Ciel et vous épanouissiez pleinement.",
+        "p13": "Tout au long du soin, je veille à réactiver votre système lymphatique et sanguin, pour une meilleure circulation, une meilleure irrigation.",
+        "p14": "Je prend soin de soulager vos organes émonctoires (plus particulièrement le foie, associé au printemps en Médecine Traditionnelle Chinoise), et d’activer une détox douce de votre organisme.",
+        "p15": "En bref, je propose un réveil tout en douceur de votre être, un ménage de printemps régénérant pour vos organes et votre peau… Un soin fleuri et enchanté où la poésie végétale est au rendez-vous !"
+      },
+      "physicalBenefits": {
+        "title": "Bienfaits physiques",
+        "p1": "Active et soulage le système lymphatique",
+        "p2": "Favorise l’élimination des toxines",
+        "p3": "Draine et relance la circulation",
+        "p4": "Réduit le cortisol, l’hormone du stress",
+        "p5": "Stimule le nerf vague",
+        "p6": "Désengorge les organes émonctoires et détoxifie le foie",
+        "p7": "Active les capacités d’auto-nettoyage du corps",
+        "p8": "Vivifie, dynamise, énergétise le corps"
+      },
+      "energeticEmotionalBenefits": {
+        "title": "Bienfaits énergétiques et émotionnels",
+        "p1": "Stimule l’ouverture sur le monde et la nature",
+        "p2": "Permet un “ménage de printemps” énergétique",
+        "p3": "Relance la créativité",
+        "p4": "Vitalise et donne l’énergie nécessaire à la mise en marche, vers l’aboutissement de ses projets",
+        "p5": "Facilite l’ancrage nécessaire à toute élévation, propulsion"
+      },
+      "when": {
+        "r1": "Vivent leur printemps intérieur (puberté)",
+        "r2": "Sont dans leur phase pré-ovulatoire",
+        "r3": "Se sentent en stagnation",
+        "r4": "Veulent impulser de la nouveauté dans leur vie",
+        "r5": "Sentent l’appel du renouveau de la Nature",
+        "r6": "Ont besoin de soutien pour la mise en route d’un projet",
+        "r7": "Cherchent à se reconnecter à leur créativité",
+        "r8": "Veulent marquer un nouveau départ"
+      },
+      "whatsIncludes": {
+        "title": "Ce rituel comprend :",
+        "i1": "Rituel d’intentions,",
+        "i2": "bain de pied,",
+        "i3": "soin du visage de printemps (honey tapping, cataplasme à l’argile, drainage aux pinceaux...),",
+        "i4": "diapasons,",
+        "i5": "massage des pieds,",
+        "i6": "pompages et activation de la lymphe...",
+        "list": "Rituel d’intentions, bain de pied, soin du visage de printemps (honey tapping, cataplasme à l’argile, drainage aux pinceaux...), diapasons, massage des pieds, pompages et activation de la lymphe..."
+      },
+      "duration": "3h",
+      "pricing": "185€ (Cataplasme ventre chaud à la farine de lin et huile de ricin en option : +10€ → réduit l'inflammation, favorise le transit intestinal, décongestionne et détoxifie)",
+      "contraindication": "Grossesse",
+      "important": "Merci de m'informer en amont en cas d'allergies à certaines plantes/actifs"
     },
     "Litha": {
       "name": "Rituel Litha",
-      "description": "Eté"
+      "description": "Eté",
+      "descriptionDetail": {
+        "p1": "Litha est le sabbat célébré le jour de l’équinoxe d’été, soit le jour le plus long de l’année",
+        "p2": "Le Soleil, indispensable à toute forme de vie, occupe une place sacrée dans les festivités traditionnelles. A ce moment il est à son apogée, la lumière rayonne de sa pleine puissance, offrant chaleur et joie sur son passage. ",
+        "p3": "Symbole d’énergie et de vitalité, il est honoré par l’élément qui lui est le plus intime : le feu.",
+        "p4": "Aussi contradictoire que cela paraisse, l'eau a aussi une très grande importance lors de l’équinoxe d’été. On lui prête des vertus thérapeutiques, divinatoires et magiques. Les coutumes autour de l'eau (rosée, eau de lune, sources, fontaines, mer...) sont nombreuses, et surtout, tout aussi importantes que celles autour du feu.",
+        "p5": "Litha vient aussi nous parler d’abondance, de récoltes, de prospérité. Après le repos de l’hiver, et l’impulsion du printemps, il est maintenant temps de célébrer le fruit de notre travail. Les premiers cadeaux de l’été s’offrent à nous, les plantes médicinales sont gorgées de soleil, pleines de vie et de propriétés… c’est l’heure de moissonner, de cueillir, de ramasser.",
+        "p6": "Pour finir, dans de nombreuses cultures, on dit qu’à cette saison le Dieu-Soleil et la Terre-Mère se rencontrent, manifestant alors union et fertilité.",
+        "p7": "Litha nous invite donc à profiter des présents de la vie, s’offrir du bon temps ; célébrer la richesse de l’existence terrestre. ",
+        "p8": "A laisser pleinement rayonner notre feu intérieur, notre force vitale.",
+        "p9": "Et à connecter en nous les forces masculines du Soleil et féminines de la Terre.",
+        "p10": "Le rituel de Litha est dynamisant, rafraîchissant et vitalisant.",
+        "p11": "Le premier temps du soin est spécialement pensé pour soulager les jambes lourdes et les pieds gonflés par la chaleur estivale. Vous découvrirez alors la magie des compresses froides, et des plantes spécifiques à la bonne circulation. ",
+        "p12": "Puis, un rituel intégral du visage alliant la douceur du miel, la fraîcheur de l’aloe vera, la pétillance de l’hibiscus… pour un teint éclatant ; une peau hydratée, rayonnante et lumineuse.",
+        "p13": "Pour finir, je vous propose un rituel psychomagique de purification, bénédiction, et abondance (en nature, à 5min à pied de mon lieu de soin). Un baptême de feu et d’eau, en hommage à Saint Jean le Baptiste et aux rites traditionnels de Litha."
+      },
+      "physicalBenefits": {
+        "title": "Bienfaits physiques",
+        "p1": "Active et draine le système lymphatique",
+        "p2": "Favorise la circulation sanguine",
+        "p3": "Réduit le cortisol et stimule le nerf vague",
+        "p4": "Vivifie, dynamise, énergétise le corps",
+        "p5": "Stimule le nerf vague",
+        "p6": "Soulage les jambes lourdes et pieds gonflés",
+        "p7": "Apporte un coup d’éclat au visage"
+      },
+      "energeticEmotionalBenefits": {
+        "title": "Bienfaits énergétiques et émotionnels",
+        "p1": "Ramène de la joie de vivre, de l’énergie vitale",
+        "p2": "Permet de s’offrir un temps pour soi, de gratitude et de reconnaissance pour les récoltes annuelles",
+        "p3": "Equilibre le feu dans le corps : en ramène ou le tempère",
+        "p4": "Ouvre au monde, aux autres, permet de se tourner vers l’extérieur",
+        "p5": "Aide à s’autoriser à briller",
+        "p6": "Purifie les corps subtils ",
+        "p7": "Soulage les lourdeurs de l’esprit, tout ce qui retient l’allégresse",
+        "p8": "Amène confiance et foi dans l’avenir"
+      },
+      "when": {
+        "r1": "Vivent leur été intérieur (phase de la mère)",
+        "r2": "Sont en train d’ovuler",
+        "r3": "Manquent de joie, de soleil et de lumière dans leurs vies",
+        "r4": "Regardent le verre à moitié vide",
+        "r5": "Manquent de confiance en elles",
+        "r6": "Confondent bien être et selfcare avec paresse",
+        "r7": "Sont sujettes à des excès de colère",
+        "r8": "Manquent de libido, d’énergie",
+        "r9": "N’arrivent pas à concrétiser leurs projets"
+      },
+      "whatsIncludes": {
+        "title": "Ce rituel comprend :",
+        "i1": "Rituel d’intentions,",
+        "i2": "bain de pied,",
+        "i3": "soin du visage de printemps (honey tapping, cataplasme à l’argile, drainage aux pinceaux...),",
+        "i4": "diapasons,",
+        "i5": "massage des pieds,",
+        "i6": "pompages et activation de la lymphe...",
+        "list": "Bain de pied, massage demie-jambe à l’huile et aloe vera frais, puis compresses froides circulatoires ; rituel du visage d’été (honey tapping, aloe vera, drainage aux pinceaux, cataplasme hibiscus, skinicing...) ; rituel du baptême d’eau et de feu en extérieur."
+      },
+      "duration": "3h",
+      "pricing": "185€",
+      "contraindication": "Grossesse",
+      "important": "Merci de m'informer en amont en cas d'allergies à certaines plantes/actif. Veuillez emmener maillot et serviette de bain, tongs ou idéalement chaussures d’eau."
     },
     "Mabon": {
       "name": "Rituel Mabon",
@@ -174,16 +533,110 @@
     },
     "GardiensTerre": {
       "name": "Rituel des Gardiens de la Terre",
-      "description": "Soin botanique de beauté et bien être, en collaboration avec les richesses de la Terre Mère"
+      "description": "Soin botanique de beauté et bien être, en collaboration avec les richesses de la Terre Mère",
+      "descriptionDetail": {
+        "p1": "La femme est, depuis la nuit des temps, en connexion, en relation et au service de la Terre et du Vivant. Alors intuitivement, elle a toujours fait appel aux sagesses de la nature et des végétaux pour prendre soin d’elle et de son corps.",
+        "p2": "Ce rituel est un soin botanique de beauté et bien être du visage et du buste, à la (re)découverte des richesses de la Terre Mère et de ses Gardiens. Une plongée dans la magie des rites de beauté ancestraux, issus de nos lignées féminines.",
+        "p3": "C’est un soin holistique qui agit sur toutes les dimensions de la femme.",
+        "p4": "Toutes les préparations sont personnalisées et préparées à la minute. Ce soin utilise des actifs bruts, tels que les argiles, les huiles végétales et macérâts, les poudres de plantes, les hydrolats, le miel, etc… ",
+        "p5": "Il fait aussi appel à la médecine de l’eau, celle du son (fréquences vibratoires, sonothérapie) et à la sagesse des minéraux (lithothérapie).",
+        "p6": "Les plantes sont sélectionnées par mes soins selon leurs propriétés physiques, mais aussi leurs vertus vibratoires et sacrées. Elles sont utilisées sous différentes formes (infusion in & out, cataplasmes, pochons, etc…).",
+        "p7": "Chaque soin est différent, et je concocterai la meilleure formule magique pour vous offrir un moment de reliance avec le monde du Vivant."
+      },
+      "physicalBenefits": {
+        "title": "Bienfaits physiques",
+        "p1": "Sur mesure"
+      },
+      "energeticEmotionalBenefits": {
+        "title": "Bienfaits énergétiques et émotionnels",
+        "p1": "Sur mesure" 
+      },
+      "when": {
+        "r1": "Souhaitent se reconnecter à des pratiques de beauté ancestrales",
+        "r2": "Ont une vision holistique de la beauté et du bien être",
+        "r3": "Se sentent appelées par le monde végétal et les éléments",
+        "r4": "Souhaitent simplifier leur routine de beauté et prendre soin d’elles différemment, au travers d’ingrédients bruts, naturels, écologiques et respectueux du vivant"
+      },
+      "whatsIncludes": {
+        "title": "Ce rituel comprend :",
+        "i1": "selon mes ressentis et mon expertise",
+        "list": "selon mes ressentis et mon expertise"
+      },
+      "duration": "3h",
+      "pricing": "185€",
+      "toKnow": "Je source avec attention tous les composants utilisés, et privilégie des produits et plantes d’origine française (voire locale). Je soutiens les petits producteurs ayant une approche respectueuse de la Terre.",
+      "important": "Merci de m’informer en amont en cas d’allergies à certaines plantes/actifs"
     },
     "Myrrhophores": {
       "name": "Myrrhophores",
-      "description": "Le soin inspiré des saintes femmes porteuses d'huile, à base d'onctions sacrées"
+      "description": "Le soin inspiré des saintes femmes porteuses d'huile, à base d'onctions sacrées",
+      "descriptionDetail": {
+        "p1": "Inspiré des thérapies esséniennes-égyptiennes, ce rituel est un voyage dans la Mémoire du temps. Il s’inscrit dans une tradition sacrée très ancienne, et puise son essence dans les savoirs d’une lignée de femmes initiées : Les Myrrophores.",
+        "p2": "Les Saintes femmes, Porteuses de Myrrhe ; les Maîtresses des huiles sacrées ; les Marie… Tant de noms pour désigner ces prêtresses et gardiennes de la sagesse des onctions et des baumes. ",
+        "p3": "Parmi Elles, l’Apôtre des Apôtres, la Madeleine : Maryam de Magdala ; qui a oint le corps du Christ.",
+        "p4": "Les Myrrophores travaillent en collaboration avec le Vivant. Capables de rentrer en communication avec l'Esprit des Plantes, et de se relier intimement à leurs enseignements, elles créent des alliances sacrées au service du divin et de la guérison.",
+        "p5": "Elles incarnent un pont entre les Mondes, en accompagnant les plus grands rituels de passage tels que celui du dernier envol. L’art de la Myrrophore est une médecine du cœur, du don de soi.",
+        "p6": "Le rituel de la Myrrophore est un soin qui place l’aromathérapie vibratoire et spirituelle au service de son évolution personnelle.",
+        "p7": "L’onction est une merveilleuse alliée pour accompagner le corps et l’âme, soutenir les transformations et l’éveil de la conscience. Elle agit à de multiples niveaux en harmonisant les différents corps subtils jusqu’au corps physique, et vient transmettre le sacré dans la matière.",
+        "p8": "Selon ses vertus et la portée vibratoire qui lui est donnée, l’onction sacrée libère, active, informe, décristallise, apaise, unifie, revivifie, ouvre, connecte, ancre… "
+      },
+      "physicalBenefits": {
+        "title": "Bienfaits physiques",
+        "p1": "Sur mesure"
+      },
+      "energeticEmotionalBenefits": {
+        "title": "Bienfaits énergétiques et émotionnels",
+        "p1": "Sur mesure" 
+      },
+      "when": {
+        "r1": "Sont sensibles à l’aromathérapie vibratoire",
+        "r2": "Reconnaissent les plantes comme des enseignantes spirituelles",
+        "r3": "Sentent une appartenance à la lignée des Myrrophores",
+        "r4": "Sont ouvertes à travailler à un niveau plus profond de leur évolution personnelle"
+      },
+      "whatsIncludes": {
+        "title": "Ce rituel comprend :",
+        "list": "Le rituel a lieu en 2 temps. Une première consultation pour aller à la rencontre de son onction sacrée thérapeutique. Pour élaborer l’onction, nous travaillons en co-création selon un processus de mise au monde intuitif. Les huiles essentielles sont choisies collaborativement, puis je confectionne l’onction, l’active et la sacralise pendant plusieurs jours. Une seconde rencontre pour finaliser et personnaliser votre onction, et réaliser le soin physico-énergétique qui lui est propre."
+      },
+      "duration": "45 min à 1h de consultation + 2h finalisation de l’onction et rituel",
+      "pricing": "200€",
+      "toKnow": "Je source avec attention tous les composants utilisés, et privilégie des produits et plantes d’origine française (voire locale). Je soutiens les petits producteurs ayant une approche respectueuse de la Terre.",
+      "important": "Merci de m’informer en amont en cas de maladies hormonaux-dépendantes, pathologies chroniques, réactions cutanées avec les huiles essentielles, pathologies respiratoires (asthme) et allergiques.",
+      "contraindication": "grossesse, allaitement, troubles convulsifs et épilepsie, pathologies chroniques nécessitant un traitement médicamenteux quotidien, problèmes rénaux ou hépatiques, pathologies cardiovasculaires"
     },
     "DernierEnvol" : {
       "name": "Dernier Envol",
-      "description": "Pour celles qui se préparent au grand voyage, au retour dans les bras du Ciel"
+      "description": "Pour celles qui se préparent au grand voyage, au retour dans les bras du Ciel",
+      "descriptionDetail": {
+        "p1": "Ayant reçu l’appel d’accompagner la femme du lange au linceul,  je propose un rituel pour celles qui se préparent à leur dernier voyage.",
+        "p2": "Dans les derniers jours ou les dernières heures, lorsque la petite flamme de la vie commence à vaciller pour finalement s’éteindre...",
+        "p3": "Mon accompagnement à ce moment constitue à offrir une présence apaisante, bienveillante ; une oreille attentive, même aux mots les plus silencieux. ",
+        "p4": "Parfois je masse, parfois je chante ou fais vibrer mes diapasons… toujours je rassure, afin d’encourager le détachement du corps, et donner confiance dans ce qui s’en vient.",
+        "p5": "Ce rituel de passage peut prendre la forme que vous désirez, et/ou se construire en collaboration avec la famille (si personne inconsciente)."
+      },
+      "physicalBenefits": {
+        "title": "Bienfaits physiques",
+        "p1": "Sur mesure"
+      },
+      "energeticEmotionalBenefits": {
+        "title": "Bienfaits énergétiques et émotionnels",
+        "p1": "Sur mesure" 
+      },
+      "when": {
+        "r1": "Sont sensibles à l’aromathérapie vibratoire",
+        "r2": "Reconnaissent les plantes comme des enseignantes spirituelles",
+        "r3": "Sentent une appartenance à la lignée des Myrrophores",
+        "r4": "Sont ouvertes à travailler à un niveau plus profond de leur évolution personnelle"
+      },
+      "whatsIncludes": {
+        "title": "Déroulé :",
+        "list": "Sur mesure"
+      },
+      "duration": "1 visite, qui dure le temps qu’elle doit durer",
+      "pricing": "A la grâce du cœur (sur donation libre)",
+      "important": "cette offre est un service privé, à la demande des familles. Elle ne pourra être réalisée dans un cadre hospitalier ou d’établissement de santé que sous autorisation de ces derniers"
     },
+    "forTheWomenWho": "Pour les femmes qui :",
     "contact": {
       "sentence1": "Vous vous sentez appelée à vivre un rituel avec moi ?",
       "sentence2": "Vous ne savez pas exactement lequel choisir ?"
@@ -195,7 +648,9 @@
         "location": "Où a lieu le soin ?",
         "pricing": "Tarif du soin",
         "whatsInclude": "Ce qui est inclus",
-        "toKnow": "A savoir"
+        "toKnow": "A savoir",
+        "contraindication": "Contre-indication",
+        "important": "Important"
       }
     }
   },
