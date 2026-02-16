@@ -51,7 +51,7 @@ export const Header = () => {
 
   const navItems = [
     { label: t.homePage.homePage, href: "/" },
-    { label: t.aboutMe.aboutMe, href: "/about" },
+    // { label: t.aboutMe.aboutMe, href: "/about" },
     { label: t.consults.consults, href: "/consultations" },
     { label: t.rituals.careRituals, href: "/soin-rituels" },
   ];

@@ -10,7 +10,7 @@ export const Timeline = (props: TimelineType) => {
     <Grid
       container
       spacing={4}
-      py={2}
+      py={"2rem"}
       position="relative"
       justifyContent={isSmallScreen ? "center" : "space-between"}
       alignItems="center"

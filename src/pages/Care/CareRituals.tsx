@@ -65,10 +65,10 @@ export const CareRituals = () => {
         py={{ xs: 2, sm: "4rem" }}
         px={{ xs: 2, sm: "6rem" }}
       >
-        <Typography variant="h5" fontStyle={'italic'} className='typoTanPearl'>{t.rituals.subTitle}</Typography>
 
         <Grid size={12} container spacing={4} flexDirection={'row'}>
           <Grid size={{ xs: 12, sm: 6 }} container spacing={2} flexDirection={'column'}>
+            <Typography variant="h5" fontWeight={700} fontStyle={'italic'} className='typoTanPearl'>{t.rituals.subTitle}</Typography>
             <Typography>{t.rituals.introduction.sentence1}</Typography>
             <Typography>{t.rituals.introduction.sentence2}</Typography>
             <Typography>{t.rituals.introduction.sentence3}</Typography>
@@ -77,9 +77,48 @@ export const CareRituals = () => {
             <Typography>{t.rituals.introduction.sentence6}</Typography>
           </Grid>
 
-          <Grid size={{ xs: 12, sm: 6 }}>
-            <Typography variant="h6">{t.rituals.reasons.title}</Typography>
-            <BulletedList listItems={reasonsItems} bulletColor="dark" />
+          <Grid
+            size={{ xs: 12, sm: 6 }}
+            sx={{
+              borderWidth: 2,
+              borderStyle: "solid",
+              borderColor: "primary.light",
+              padding: 0.5
+            }}
+          >
+            {/* <Grid
+              sx={{
+                borderWidth: 2,
+                borderStyle: "solid",
+                borderColor: "primary.light",
+                padding: 2
+              }}
+            >
+              <Typography className='typoTanPearl' fontWeight={700}>{t.rituals.reasons.title}</Typography>
+              <BulletedList listItems={reasonsItems} bulletColor="white" />
+            </Grid> */}
+            <Grid
+              sx={{
+                borderWidth: 2,
+                borderStyle: "solid",
+                borderColor: "primary.light",
+                padding: 2
+              }}
+            >
+              <Typography className='typoTanPearl' fontWeight={700} pb={"1rem"}>{t.rituals.reasons.title}</Typography>
+              <Grid container flexDirection={"column"} alignItems={"center"}>
+                {reasonsItems.map((item: string) => (
+                  <Grid container flexDirection={"column"} alignItems={"center"}>
+                    <Typography>
+                      {item}
+                    </Typography>
+                    <Typography className='typoTanPearl' fontWeight={700}>
+                      ~
+                    </Typography>
+                  </Grid>
+                ))}
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
 
@@ -96,11 +135,11 @@ export const CareRituals = () => {
         size={12}
         container
         flexDirection={'column'}
-        spacing={3}
+        spacing={"3rem"}
         py={{ xs: 2, sm: "4rem" }}
         px={{ xs: 2, sm: "6rem" }}
       >
-        <Typography variant="h4">{t.rituals.essence.title}</Typography>
+        <Typography fontWeight={700} className="typoTanPearl" variant="h5">{t.rituals.essence.title}</Typography>
         <Grid size={12} container spacing={2} textAlign={'center'} justifyContent={'center'}>
           <Typography>{t.rituals.essence.description1}</Typography>
           <Typography>{t.rituals.essence.description2}</Typography>
@@ -119,8 +158,8 @@ export const CareRituals = () => {
         px={{ xs: 2, sm: "6rem" }}
         alignItems={'center'}
       >
+        <Typography fontWeight={700} className="typoTanPearl" variant="h5">{t.rituals.possibilities.title}</Typography>
         <Grid size={{ xs: 12, sm: 7 }}>
-          <Typography variant="h6">{t.rituals.possibilities.title}</Typography>
           <BulletedList listItems={possibilitiesItems} bulletColor="dark" />
         </Grid>
 
@@ -130,22 +169,28 @@ export const CareRituals = () => {
       </Grid>
 
       {/* Liste des rituels */}
-      <Grid size={12} container flexDirection={'column'} spacing={6} py={{ xs: 2, sm: "4rem" }} px={{ xs: 2, sm: "6rem" }}>
-        <Typography variant="h3">{t.rituals.ritualsListTitle}</Typography>
-
-        <Grid size={12} container flexDirection={{ xs: 'column', sm: 'row' }} spacing={{ xs: 2, sm: 4 }}>
-          {/* Rituel de la poitrine et du coeur */}
-          <RitualItem name={t.rituals.chestHeart.name} image={Poitrine} description={t.rituals.chestHeart.description} link='/soin-rituels/poitrine-coeur' size={4} />
-
-          {/* Rituel de la Matricia */}
-          <RitualItem name={t.rituals.Matricia.name} image={Matricia} description={t.rituals.Matricia.description} link='/soin-rituels/matricia' size={4} />
-
-          {/* Rituel Chrysalide */}
-          <RitualItem name={t.rituals.Chrysalide.name} image={Chrysalide} description={t.rituals.Chrysalide.description} link='/soin-rituels/chrysalide' size={4} />
-        </Grid>
+      <Grid size={12} container flexDirection={'column'} spacing={"6rem"} py={{ xs: 2, sm: "4rem" }} px={{ xs: 2, sm: "6rem" }}>
 
         <Grid size={12} container flexDirection={'column'} spacing={2}>
-          <Typography variant="h3">{t.rituals.ritualsCategory.mom}</Typography>
+          <Typography fontWeight={700} className="typoTanPearl" variant="h5" pb={"1rem"}>
+            {t.rituals.ritualsListTitle}
+          </Typography>
+
+          <Grid size={12} container flexDirection={{ xs: 'column', sm: 'row' }} spacing={{ xs: 2, sm: 4 }}>
+            {/* Rituel de la poitrine et du coeur */}
+            <RitualItem name={t.rituals.chestHeart.name} image={Poitrine} description={t.rituals.chestHeart.description} link='/soin-rituels/poitrine-coeur' size={4} />
+
+            {/* Rituel de la Matricia */}
+            <RitualItem name={t.rituals.Matricia.name} image={Matricia} description={t.rituals.Matricia.description} link='/soin-rituels/matricia' size={4} />
+
+            {/* Rituel Chrysalide */}
+            <RitualItem name={t.rituals.Chrysalide.name} image={Chrysalide} description={t.rituals.Chrysalide.description} link='/soin-rituels/chrysalide' size={4} />
+          </Grid>
+        </Grid>
+
+        {/* Les rituels pour les mamans */}
+        <Grid size={12} container flexDirection={'column'} spacing={2}>
+          <Typography fontWeight={700} className="typoTanPearl" variant="h5" pb={"1rem"}>{t.rituals.ritualsCategory.mom}</Typography>
 
           <Grid size={12} container flexDirection={{ xs: 'column', sm: 'row' }} spacing={{ xs: 2, sm: 4 }}>
             {/* Rituel des Matronae */}
@@ -156,8 +201,9 @@ export const CareRituals = () => {
           </Grid>
         </Grid>
 
+        {/* Les rituels saisonniers */}
         <Grid size={12} container flexDirection={'column'} spacing={2}>
-          <Typography variant="h3">{t.rituals.ritualsCategory.season.title}</Typography>
+          <Typography fontWeight={700} className="typoTanPearl" variant="h5" pb={"1rem"}>{t.rituals.ritualsCategory.season.title}</Typography>
           <Typography>{t.rituals.ritualsCategory.season.description}</Typography>
           <Grid size={12} container flexDirection={{ xs: 'column', sm: 'row' }} spacing={{ xs: 2, sm: 4 }}>
             {/* Rituel Yule */}
@@ -174,8 +220,9 @@ export const CareRituals = () => {
           </Grid>
         </Grid>
 
+        {/* Les rituels personnalisés */}
         <Grid size={12} container flexDirection={'column'} spacing={2}>
-          <Typography variant="h3">{t.rituals.ritualsCategory.personalized}</Typography>
+          <Typography fontWeight={700} className="typoTanPearl" variant="h5" pb={"1rem"}>{t.rituals.ritualsCategory.personalized}</Typography>
 
           <Typography>Des soins signature, entièrement personnalisés, pensés pour vous et par vous</Typography>
 
@@ -194,7 +241,7 @@ export const CareRituals = () => {
       </Grid>
 
       {/* Espace de soin */}
-      <Grid size={12} container spacing={4} flexDirection={'column'} py={{ xs: 2, sm: '3rem' }} px={{ xs: 2, sm: '6rem' }}>
+      <Grid size={12} container spacing={"4rem"} flexDirection={'column'} py={{ xs: 2, sm: '3rem' }} px={{ xs: 2, sm: '6rem' }}>
         {/* <Typography variant="h4" marginBottom={2}>{t.rituals.treatmentArea.treatmentArea}</Typography> */}
 
         <Grid size={12} container flexDirection={'row'} spacing={2}>
@@ -222,12 +269,10 @@ export const CareRituals = () => {
         </Grid>
 
         <Grid>
-          <Typography variant="h5" fontWeight="bold" gutterBottom>Comment venir ?</Typography>
+          <Typography fontWeight={700} className="typoTanPearl" variant="h5" pb={"1rem"}>Comment venir ?</Typography>
           <Localisation cities={cities} />
         </Grid>
       </Grid>
-
-
 
       <Grid size={12} container spacing={2} flexDirection={'column'} py={2} px={{ xs: 2, sm: '6rem' }}>
         <Typography>{t.rituals.contact.sentence1}</Typography>

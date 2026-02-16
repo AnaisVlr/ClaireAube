@@ -62,7 +62,7 @@ export const Consultations = () => {
       question: t.consults.faq.question5,
       answer: (
         <Grid>
-          <Grid size={12} container spacing={1} flexDirection={{xs: 'column', sm: 'row'}}>
+          <Grid size={12} container spacing={1} flexDirection={{ xs: 'column', sm: 'row' }}>
             <Typography>{t.consults.faq.answer5}</Typography>
             <Typography noWrap>{t.general.email}</Typography>
           </Grid>
@@ -107,30 +107,35 @@ export const Consultations = () => {
     }
   ]
 
-  const thematiquesList: string[] = [
+  const thematiquesList1: string[] = [
     t.consults.thematiques.thematique1,
     t.consults.thematiques.thematique2,
     t.consults.thematiques.thematique3,
     t.consults.thematiques.thematique4,
-    t.consults.thematiques.thematique5,
+    t.consults.thematiques.thematique5
+  ]
+
+  const thematiquesList2: string[] = [
     t.consults.thematiques.thematique6,
     t.consults.thematiques.thematique7,
     t.consults.thematiques.thematique8,
     t.consults.thematiques.thematique9,
-    t.consults.thematiques.thematique10,
+    t.consults.thematiques.thematique10
   ]
 
-  const expectationsList: string[] = [
+  const expectationsList1: string[] = [
     t.consults.expectations.expectation1,
     t.consults.expectations.expectation2,
     t.consults.expectations.expectation3,
     t.consults.expectations.expectation4,
-    t.consults.expectations.expectation5,
+    t.consults.expectations.expectation5
+  ]
+  const expectationsList2: string[] = [
     t.consults.expectations.expectation6,
     t.consults.expectations.expectation7,
     t.consults.expectations.expectation8,
     t.consults.expectations.expectation9,
-    t.consults.expectations.expectation10,
+    t.consults.expectations.expectation10
   ]
 
   const timelineItems = [
@@ -142,50 +147,74 @@ export const Consultations = () => {
   ];
 
   return (
-    <Grid mt={{ xs: 8, sm: '4rem' }} px={{ xs: 2, sm: '6rem' }} py={{ xs: 2, sm: '2rem' }}>
+    <Grid mt={{ xs: 8, sm: '4rem' }} py={{ xs: 2, sm: '2rem' }}>
       {/* Intro*/}
-      <Grid size={12} container spacing={2} flexDirection={{ xs: 'column', sm: "row" }}>
+      <Grid size={12} container spacing={2} px={{ xs: 2, sm: '6rem' }} py={"2rem"} flexDirection={{ xs: 'column', sm: "row" }}>
         <Grid size={{ xs: 12, sm: 8 }}>
           <Typography>{t.consults.intro.intro1}</Typography>
           <Typography>{t.consults.intro.intro2}</Typography>
           <Typography>{t.consults.intro.intro3}</Typography>
         </Grid>
         <Grid size={{ xs: 12, sm: 4 }} textAlign={"center"}>
-          <img src={consultImg} style={{ width: "20rem" }} />
+          <img src={consultImg} style={{ width: "20rem", borderRadius: "1rem" }} />
         </Grid>
       </Grid>
 
       {/* Moment de vie */}
-      <Grid size={12} py={4}>
-        <Typography variant="h6">{t.consults.lifeMoments.title}</Typography>
+      <Grid size={12} px={{ xs: 2, sm: '6rem' }} py={"2rem"}>
+        <Typography fontWeight={700} className="typoTanPearl" variant="h5" py={"3rem"}>{t.consults.lifeMoments.title}</Typography>
         <Timeline timelineItems={timelineItems} />
-        <Grid>
-          <Typography>Mais aussi : </Typography>
+        <Grid py={"1rem"}>
+          <Typography variant="h6">Mais aussi : </Typography>
           <BulletedList listItems={[t.consults.lifeMoments.otherMoment1, t.consults.lifeMoments.otherMoment2]} bulletColor="dark" />
         </Grid>
       </Grid>
 
       {/* Thématiques */}
-      <Grid size={12}>
-        <Typography variant="h4">{t.consults.thematiques.title}</Typography>
-        <BulletedList listItems={thematiquesList} bulletColor="dark" />
+      <Grid size={12} px={{ xs: 2, sm: '6rem' }} py={"2rem"}>
+        <Typography fontWeight={700} className="typoTanPearl" variant="h5">{t.consults.thematiques.title}</Typography>
+        <Grid size={12} pt={"1.5rem"} container spacing={2} flexDirection={{ xs: 'column', sm: "row" }}>
+          <Grid size={{ xs: 12, sm: 6 }}>
+            <BulletedList listItems={thematiquesList1} bulletColor="dark" />
+          </Grid>
+          <Grid size={{ xs: 12, sm: 6 }}>
+            <BulletedList listItems={thematiquesList2} bulletColor="dark" />
+          </Grid>
+        </Grid>
       </Grid>
 
       {/* Bannière photo avec citation */}
-      <Grid size={12} textAlign={"center"} sx={{ padding: 4 }}>
+      <Grid
+        px={{ xs: 2, sm: '6rem' }}
+        size={12}
+        textAlign={"center"}
+        sx={{
+          padding: "6rem 2rem",
+          color: "secondary.main",
+          backgroundColor: "primary.main",
+          margin: "2rem 0rem"
+        }}
+      >
         <Typography fontWeight={700} className="typoTanPearl">{t.consults.citation}</Typography>
       </Grid>
 
       {/* Expectations */}
-      <Grid size={12}>
-        <Typography gutterBottom variant="h4">{t.consults.expectations.title}</Typography>
-        <Typography>{t.consults.expectations.intro}</Typography>
-        <BulletedList listItems={expectationsList} bulletColor="dark" />
+      <Grid size={12} px={{ xs: 2, sm: '6rem' }} py={"3rem"}>
+        <Typography fontWeight={700} className="typoTanPearl" variant="h5">{t.consults.expectations.title}</Typography>
+        <Typography pt={"1.5rem"}>{t.consults.expectations.intro}</Typography>
+        <Grid size={12} pt={"1rem"} container spacing={2} flexDirection={{ xs: 'column', sm: "row" }}>
+          <Grid size={{ xs: 12, sm: 6 }}>
+            <BulletedList listItems={expectationsList1} bulletColor="dark" />
+          </Grid>
+          <Grid size={{ xs: 12, sm: 6 }}>
+            <BulletedList listItems={expectationsList2} bulletColor="dark" />
+          </Grid>
+        </Grid>
       </Grid>
 
       {/* FAQ */}
-      <Grid size={12}>
-        <Typography gutterBottom variant="h4">{t.consults.faq.FAQ}</Typography>
+      <Grid size={12} px={{ xs: 2, sm: '6rem' }} py={"2rem"}>
+        <Typography pb={"2rem"} fontWeight={700} className="typoTanPearl" variant="h4">{t.consults.faq.FAQ}</Typography>
         <FAQ questionList={questionsFAQ} />
       </Grid>
     </Grid>

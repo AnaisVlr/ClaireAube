@@ -65,9 +65,9 @@ export const Ritual = () => {
   return (
     <Grid container flexDirection={'column'} spacing={3} py={{ xs: '4rem', sm: '6rem' }} px={{ xs: 2, sm: "6rem" }}>
 
-      <Grid container spacing={4} flexDirection={{ xs: 'column', sm: 'row' }}>
+      <Grid container spacing={4} flexDirection={{ xs: 'column', sm: 'row' }} py={2}>
         <Grid container spacing={1} size={{ xs: 12, sm: 9 }}>
-          <Typography variant="h5" className='typoTanPearl'>{data.ritualName}</Typography>
+          <Typography fontWeight={700} className="typoTanPearl" variant="h5">{data.ritualName}</Typography>
           <Grid size={12}>
             {data.ritualDescrition}
           </Grid>
@@ -77,41 +77,41 @@ export const Ritual = () => {
         </Grid>
       </Grid>
 
-      <Grid>
-        <Typography variant="h6">{t.rituals.chestHeart.whatsIncludes.title}</Typography>
+      <Grid py={2}>
+        <Typography fontWeight={700} className="typoTanPearl" variant="h6">{t.rituals.chestHeart.whatsIncludes.title}</Typography>
         {/* <BulletedList listItems={data.whatsIncludes} bulletColor="dark" /> */}
-        <Typography>{data.whatsIncludes}</Typography>
+        <Typography >{data.whatsIncludes}</Typography>
       </Grid>
 
-      <Grid container flexDirection={{ xs: 'column', sm: 'row' }}>
+      <Grid container flexDirection={{ xs: 'column', sm: 'row' }} py={2}>
         <Grid
           size={{ xs: 12, sm: 6 }}
-          padding={2}
+          padding={3}
           sx={{
             backgroundColor: 'secondary.light',
             borderRadius: '1rem'
           }}
         >
-          <Typography variant="h6">{t.rituals.chestHeart.physicalBenefits.title}</Typography>
+          <Typography fontWeight={700} className="typoTanPearl" variant="h6">{t.rituals.chestHeart.physicalBenefits.title}</Typography>
           <BulletedList listItems={data.physicalBenefits} bulletColor="dark" />
         </Grid>
 
         <Grid
           size={{ xs: 12, sm: 6 }}
-          padding={2}
+          padding={3}
           sx={{
             backgroundColor: 'secondary.light',
             borderRadius: '1rem'
           }}
         >
-          <Typography variant="h6">{t.rituals.chestHeart.energeticEmotionalBenefits.title}</Typography>
+          <Typography fontWeight={700} className="typoTanPearl" variant="h6">{t.rituals.chestHeart.energeticEmotionalBenefits.title}</Typography>
           <BulletedList listItems={data.energeticEmotionalBenefits} bulletColor="dark" />
         </Grid>
       </Grid>
 
       {/* FAQ */}
-      <Grid>
-        <Typography gutterBottom variant="h4">{t.consults.faq.FAQ}</Typography>
+      <Grid pt={4}>
+        <Typography pb={"2rem"} fontWeight={700} className="typoTanPearl" variant="h4">{t.consults.faq.FAQ}</Typography>
         <FAQ questionList={questionsFAQ} />
       </Grid>
     </Grid>
