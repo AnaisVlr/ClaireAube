@@ -67,7 +67,7 @@ export const HomePage = () => {
         spacing={2}
         flexDirection={{ xs: 'column', sm: 'row' }}
         py={2}
-        px={2}
+        px={12}
         pt={{ xs: 6, sm: 12 }}
       >
         <Grid size={{ xs: 12, sm: 4 }} className="pictureProfile" textAlign={'center'}>
@@ -86,9 +86,11 @@ export const HomePage = () => {
         </Grid>
       </Grid>
 
-      <video autoPlay muted playsInline width={"100%"}>
-        <source src={video2} type="video/mp4" />
-      </video>
+      <Grid p={"6rem"}>
+        <video autoPlay muted playsInline width={"100%"}>
+          <source src={video2} type="video/mp4" />
+        </video>
+      </Grid>
 
       <Grid
         container

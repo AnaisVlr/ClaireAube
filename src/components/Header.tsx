@@ -1,4 +1,5 @@
-import logo from '../assets/img/logo/logo_white.png'
+import logoTerracota from '../assets/img/logo/logo_terracota.webp'
+import logoWhite from '../assets/img/logo/logo_white.png'
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -39,7 +40,7 @@ export const Header = () => {
     observer.observe(videoSection);
 
     return () => observer.disconnect();
-  }, [location.pathname]); 
+  }, [location.pathname]);
 
   const handleOpenNavMenu = (event: MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -67,8 +68,9 @@ export const Header = () => {
       elevation={scrolled ? 1 : 0}
       sx={{
         transition: "background-color 0.4s ease",
-        backgroundColor: scrolled ? "primary.main" : "transparent",
-        boxShadow: scrolled ? "" : "none",
+        backgroundColor: scrolled ? "secondary.main" : "transparent",
+        boxShadow: "none",
+        color: scrolled ? 'secondary.main' : 'primary.main'
       }}
     >
       <Container maxWidth="xl">
@@ -86,7 +88,7 @@ export const Header = () => {
               height: '3.5rem'
             }}
           >
-            <img src={logo} alt="Logo Claire Aube" className='logo' loading="lazy" />
+            <img src={scrolled ? logoTerracota : logoWhite} alt="Logo Claire Aube" className='logo' loading="lazy" />
           </Typography>
 
           {/* Menu Mobile */}
@@ -119,7 +121,8 @@ export const Header = () => {
                     sx={{
                       textAlign: 'center',
                       fontWeight: location.pathname === item.href ? "bold" : "normal",
-                      textDecoration: location.pathname === item.href ? "underline" : "none"
+                      textDecoration: location.pathname === item.href ? "underline" : "none",
+                      color: scrolled ? 'secondary.main' : 'primary.main'
                     }}
                   >
                     {item.label}
@@ -141,7 +144,7 @@ export const Header = () => {
               height: '3rem'
             }}
           >
-            <img src={logo} alt="Logo Claire Aube" className='logo' loading="lazy" />
+            <img src={scrolled ? logoWhite : logoTerracota} alt="Logo Claire Aube" className='logo' loading="lazy" />
           </Typography>
 
           {/* Menu Desktop */}
@@ -153,7 +156,7 @@ export const Header = () => {
                 to={item.href}
                 sx={{
                   my: 0,
-                  color: 'secondary.main',
+                  color: scrolled ? 'primary.main' : 'secondary.main',
                   display: 'block',
                   textTransform: 'none',
                   fontSize: '1rem',
@@ -179,8 +182,8 @@ export const Header = () => {
               disableElevation
               sx={{
                 textTransform: 'none',
-                backgroundColor: 'secondary.main',
-                color: 'primary.main'
+                backgroundColor: scrolled ? 'primary.main' : 'secondary.main',
+                color: scrolled ? 'secondary.main' : 'primary.main'
               }}
             >
               {t.general.contactMe}
